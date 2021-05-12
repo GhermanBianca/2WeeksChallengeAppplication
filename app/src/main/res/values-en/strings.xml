@@ -508,5 +508,13 @@
     <string name="english" >English</string>
     <string name="choose_language">Choose Language</string>
 
+    <string name="buttocks_thighs_abs">Buttocks &amp; Thighs &amp; Abs</string>
+    <string name="fullbody">Full body</string>
+    <string name="buttocks_abs">Buttocks &amp; Abs </string>
+    <string name="cardio">Cardio</string>
+    <string name="yoga">Yoga</string>
+    <string name="relax">Relax</string>
+    <string name="buttock_thigs">Buttocks &amp; Thighs</string>
+
 
 </resources>

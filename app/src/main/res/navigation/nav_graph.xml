@@ -101,8 +101,8 @@
     <fragment
         android:id="@+id/dayChallengeFragment"
         android:name="com.example.workouthome.fragments.DayChallengeFragment"
-        android:label="fragment_day_challenge"
-        tools:layout="@layout/fragment_day_challenge" >
+        android:label="@string/day_name"
+        tools:layout="@layout/fragment_day_challenge">
         <argument
             android:name="challengeBUndle"
             app:argType="string" />
