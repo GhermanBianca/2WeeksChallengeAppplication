@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import com.example.workouthome.R
 import com.example.workouthome.databinding.FragmentSettingsBinding
+import com.example.workouthome.utils.Constants
 import java.util.*
 
 
@@ -22,11 +23,14 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
     private val binding get() = _binding!!
     val listLanguages = arrayOf("Română", "English")
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        _binding?.selectedLanguage?.text = resources.getString(R.string.english)
+    }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
         _binding = FragmentSettingsBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -38,7 +42,6 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
 
         _binding?.cardChangeLanguage?.setOnClickListener {
             showChangeLanguage()
-            _binding?.selectedLanguage?.text = resources.getString(R.string.english)
         }
     }
 
