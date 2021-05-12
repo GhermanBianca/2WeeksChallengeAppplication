@@ -38,6 +38,7 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
 
         _binding?.cardChangeLanguage?.setOnClickListener {
             showChangeLanguage()
+            _binding?.selectedLanguage?.text = resources.getString(R.string.english)
         }
     }
 
