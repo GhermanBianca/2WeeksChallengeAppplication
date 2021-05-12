@@ -3,6 +3,7 @@ package com.example.workouthome.viewmodel
 import com.example.workouthome.R
 
 class ChallengeViewModel {
+    // set path for every video
     fun setChallengeVideo(dayNumber: Int) : String {
         var videoPath = ""
         when (dayNumber) {
