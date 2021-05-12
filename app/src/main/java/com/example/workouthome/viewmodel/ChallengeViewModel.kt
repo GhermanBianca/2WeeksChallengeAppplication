@@ -14,6 +14,7 @@ class ChallengeViewModel {
             }
             3 -> {
                 videoPath = "android.resource://" + "com.example.workouthome" + "/" + R.raw.test_android
+
             }
         }
         return videoPath
