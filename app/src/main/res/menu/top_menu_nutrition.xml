@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cnb_unselectedColor="#666666">
+
+    <item
+        android:id="@+id/calories_level_1"
+        android:icon="@drawable/ic_apple"
+        android:title="@string/one_thousand_three_hundred"
+        app:cnb_iconColor="@color/red"/>
+
+    <item
+        android:id="@+id/calories_level_2"
+        android:icon="@drawable/ic_banana"
+        android:title="@string/one_thousand_six_hundred"
+        app:cnb_iconColor="@color/yellow"/>
+
+    <item
+        android:id="@+id/calories_level_3"
+        android:icon="@drawable/ic_choco"
+        android:title="@string/two_thousand"
+        app:cnb_iconColor="@color/brown"/>
+
+    <item
+        android:id="@+id/vegetarian_level"
+        android:icon="@drawable/ic_vegetarian"
+        android:title="@string/vegetarian"
+        app:cnb_iconColor="@color/green"/>
+</menu>

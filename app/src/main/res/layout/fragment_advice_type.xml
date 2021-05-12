@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/advice_type_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin10"
+    tools:context=".fragments.AdviceTypeFragment">
+
+    <ImageView
+        android:id="@+id/image_type_advice"
+        android:layout_width="@dimen/width320"
+        android:layout_height="@dimen/height240"
+        android:src="@drawable/fitness_advice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/image" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="@dimen/width320"
+        android:layout_height="@dimen/height5"
+        android:background="@drawable/line_two_color_advice_type"
+        app:layout_constraintEnd_toEndOf="@id/image_type_advice"
+        app:layout_constraintStart_toStartOf="@id/image_type_advice"
+        app:layout_constraintTop_toBottomOf="@id/image_type_advice" />
+
+    <TextView
+        android:id="@+id/title_advice"
+        android:layout_width="@dimen/width150"
+        android:layout_height="@dimen/height30"
+        android:layout_marginTop="@dimen/marginTop10"
+        android:text="@string/text_advice_name"
+        android:textAllCaps="true"
+        android:textColor="@color/darkPink"
+        android:textSize="@dimen/size18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_line" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/advice_type_rv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/marginTop10"
+        android:layout_marginBottom="@dimen/marginTop20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_advice" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

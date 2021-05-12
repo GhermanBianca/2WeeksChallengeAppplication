@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/width95"
+    android:layout_height="@dimen/height60"
+    app:cardCornerRadius="@dimen/cornerRadius8"
+    android:layout_marginStart="@dimen/marginStart10"
+    android:layout_marginEnd="@dimen/marginEnd11"
+    android:layout_marginTop="@dimen/marginTop12"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/width93"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/number_day_tv"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height40"
+            android:maxLines="1"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/marginStart16"
+            android:layout_marginTop="@dimen/marginTop5"
+            android:text="@string/day_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/number_day_number"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height40"
+            android:layout_marginStart="@dimen/marginStart5"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/marginTop5"
+            android:maxLines="1"
+            android:text="@string/one"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size20"
+            app:layout_constraintStart_toEndOf="@id/number_day_tv"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

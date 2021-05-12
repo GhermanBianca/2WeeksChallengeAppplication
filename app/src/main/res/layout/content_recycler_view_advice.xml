@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/marginStart70"
+    android:layout_marginEnd="@dimen/marginEnd70"
+    app:cardCornerRadius="@dimen/cornerRadius8"
+    app:cardElevation="@dimen/elevation5"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/advice_type"
+            android:textStyle="bold"
+            android:layout_width="@dimen/width100"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginStart10"
+            android:text="@string/nutritions"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_advice_type"
+            android:layout_width="@dimen/width100"
+            android:layout_height="@dimen/height80"
+            android:layout_marginStart="@dimen/marginStart10"
+            android:layout_marginEnd="@dimen/marginEnd10"
+            android:src="@drawable/fitness_advice"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/advice_type"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/image" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

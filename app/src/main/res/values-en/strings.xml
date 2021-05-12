@@ -1,0 +1,512 @@
+<resources>
+    <string name="app_name">Workout Home</string>
+    <string name="register">Sign up to get started!</string>
+    <string name="create_profile">SIGN UP</string>
+    <string name="create_prof">Create</string>
+    <string name="sign_in">Log in</string>
+    <string name="please_wait">Please wait&#8230;</string>
+    <string name="please_click_back_again_to_exit">Please press again to exit the application</string>
+    <string name="complete">Complete all the fields to enter the account!</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Full name</string>
+    <string name="conect">Sign in</string>
+    <string name="complete_field">Complete all the fields to customize the profile!</string>
+
+    <string name="nav_my_profile">My profile</string>
+    <string name="nav_sign_out">Sign out</string>
+    <string name="start">start</string>
+    <string name="close">close</string>
+    <string name="image_contentDescription">image</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+
+    <string name="about_me">About Me</string>
+    <string name="alert">Alert</string>
+    <string name="history">History</string>
+    <string name="settings">Settings</string>
+    <string name="point">.</string>
+    <string name="slash">/</string>
+    <string name="cm"> cm</string>
+    <string name="kg"> kg</string>
+
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="desired_weight">Desired Weight</string>
+    <string name="birthday">Birthday</string>
+    <string name="gender">Gender</string>
+
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="update">Update</string>
+
+
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+
+    <string name="challenges">Challenges</string>
+    <string name="exercices">Exercices</string>
+    <string name="advices">Advices</string>
+    <string name="nutritions">Nutritions</string>
+    <string name="various">Various</string>
+    <string name="sport">Sport</string>
+    <string name="image">image</string>
+    <string name="user_image">User Image</string>
+    <string name="confirm_password">Confirm Password</string>
+
+    <string name="profile_image">profile_image</string>
+    <string name="adapter_initialized">aboutMeAdapter should be initialized</string>
+    <string name="permission_not_granted">Oops, you just denied permission to access storage. You can change the choice in the settings.</string>
+    <string name="description_advice_title">Cravings</string>
+    <string name="content_advice">You can have one day a week in which to give free rein to your desires.
+         If 80% of your diet is healthy, in the remaining percentage you can satisfy your cravings. That is why a balanced diet is recommended in order to have long-term results.
+         Strict diets bring immediate results, but then the fattening process will follow.</string>
+
+    <string name="day_name">Day </string>
+    <string name="day_two">Day 2</string>
+    <string name="day_three">Day 3</string>
+    <string name="day_four">Day 4</string>
+    <string name="day_five">Day 5</string>
+    <string name="day_six">Day 6</string>
+    <string name="day_seven">Day 7</string>
+    <string name="day_eight">Day 8</string>
+    <string name="day_nine">Day 9</string>
+    <string name="day_ten">Day 10</string>
+    <string name="day_eleven">Day 11</string>
+    <string name="day_twelve">Day 12</string>
+    <string name="day_thirteen">Day 13</string>
+    <string name="day_fourteen">Day 14</string>
+    <string name="one">1</string>
+
+
+    <string name="text_advice_name">Nutrition</string>
+
+    <string name="breakfast_name">Breakfast</string>
+    <string name="snack_name">Snack</string>
+    <string name="lunch_name">Lunch</string>
+    <string name="dinner_name">Dinner</string>
+
+    <string name="breakfast_dayone_level_one">boiled eggs + cherry tomatoes 300g + 1 slice of wholemeal bread (25g)</string>
+    <string name="snack_dayone_level_one_first">Greek yogurt 10% 200g</string>
+    <string name="snack_dayone_level_one_second">1 small banana 150g</string>
+    <string name="lunch_dayone_level_one">Baked turkey breast 150g + asparagus 300g</string>
+    <string name="dinner_dayone_level_one">Chicken breast salad 100g + boiled chickpeas 100g + cherry tomatoes 200g + arugula 50g</string>
+
+    <string name="breakfast_daytwo_level_one">Oatmeal 50g + 3.5% milk 200ml + 1 teaspoon cocoa</string>
+    <string name="snack_daytwo_level_one_first">Caju 20g</string>
+    <string name="snack_daytwo_level_one_second">Greek yogurt 10% 150g</string>
+    <string name="lunch_daytwo_level_one">Baked beef 150g + mix of frozen vegetables 300g</string>
+    <string name="dinner_daytwo_level_one">Chicken breast 100g + carrots 100g + red beans 100g + arugula 50g</string>
+
+    <string name="breakfast_daythree_level_one">Cottage Cheese 2.2% 185g + tomatoes 100g + 1 slice of wholemeal bread (25g)</string>
+    <string name="snack_daythree_level_one_first">Strawberries 200g</string>
+    <string name="snack_daythree_level_one_second">Raw hazelnuts 20g</string>
+    <string name="lunch_daythree_level_one">Turkey breast 200g + 1 baked sweet potato 200g</string>
+    <string name="dinner_daythree_level_one">Hummus 100g + carrots 150g + tomatoes 150g + onion (to taste) + chickpeas 150g</string>
+
+    <string name="breakfast_dayfour_level_one">2 egg whites and 1 egg yolk + 200g cherry tomatoes + 1 slice of wholemeal bread (25g)</string>
+    <string name="snack_dayfour_level_one_first">Rounds of wholemeal flour 50g with salmon 30g</string>
+    <string name="snack_dayfour_level_one_second">Greek yogurt 10% 150g</string>
+    <string name="lunch_dayfour_level_one">Chicken breast 175g + broccoli 350g</string>
+    <string name="dinner_dayfour_level_one">Chicken breast 175g + broccoli 350g</string>
+
+    <string name="breakfast_dayfive_level_one">Oatmeal 80g + 3.5% milk 200ml + 1 teaspoon cocoa</string>
+    <string name="snack_dayfive_level_one_first">1 Golden apple</string>
+    <string name="snack_dayfive_level_one_second">Greek yogurt 10% 150g</string>
+    <string name="lunch_dayfive_level_one">Turkey breast 175g + frozen pod beans 400g</string>
+    <string name="dinner_dayfive_menu_level_one">Cottage cheese 2.2% fat 200g + 1 wheat spread (20g)</string>
+
+    <string name="breakfast_daysix_level_one">2 boiled eggs + 1 slice of wholemeal bread + tomatoes 200g</string>
+    <string name="snack_daysix_level_one_first">1 small banana 100g</string>
+    <string name="snack_daysix_level_one_second">Baked hazelnuts (not fried) 20g</string>
+    <string name="lunch_daysix_level_one">Beef 150g + pea puree 350g</string>
+    <string name="dinner_daysix_level_one">Tuna in its own sauce 125g + tomatoes 200g + carrots 100g + arugula</string>
+
+    <string name="breakfast_dayseven_level_one">Oatmeal 50g + 3.5% milk 150ml + a little cinnamon</string>
+    <string name="snack_dayseven_level_one_first">Rounds of wholemeal flour 50g with salmon 30g</string>
+    <string name="snack_dayseven_level_one_second">1 small Golden apple</string>
+    <string name="lunch_dayseven_level_one">Baked trout 175g + boiled broccoli 250g</string>
+    <string name="dinner_dayseven_level_one">Cottage cheese 2.2% fat 200g + tomatoes 200g</string>
+
+    <string name="breakfast_dayeight_level_one">Covalact 6% lean cow cheese 150g + 150g cherry tomatoes + 1 slice of wholemeal bread 25g</string>
+    <string name="snack_dayeight_level_one_first">Dark chocolate 80% 20g</string>
+    <string name="snack_dayeight_level_one_second">50g almonds, walnuts or oatmeal with yogurt</string>
+    <string name="lunch_dayeight_level_one">Chicken breast 150g + salad of vegetables 250g + olive oil 10ml</string>
+    <string name="dinner_dayeight_level_one">Chicken breast 125g + arugula 75g + cucumber 100g + cherry tomatoes 100g + olive oil 10ml</string>
+
+    <string name="breakfast_daynine_level_one"><![CDATA[&#189; avocado + 1 slice of toast (about 25g) + 1 boiled egg + peppers / tomatoes 100g]]></string>
+    <string name="snack_daynine_level_one_first">1 small banana</string>
+    <string name="snack_daynine_level_one_second">50g almonds, walnuts or oatmeal with yogurt</string>
+    <string name="lunch_daynine_level_one">150g fish with 150g polenta</string>
+    <string name="dinner_daynine_level_one">250g lentil cream soup + 10g croutons (few, just to taste)</string>
+
+    <string name="breakfast_dayten_level_one">Oatmeal 50g + milk 1.5% 200ml + brown raisins 30g</string>
+    <string name="snack_dayten_level_one_first">1 apple + pumpkin seeds 20g</string>
+    <string name="snack_dayten_level_one_second">50g almonds, walnuts or oatmeal with yogurt</string>
+    <string name="lunch_dayten_level_one">Salmon 150g + mix of frozen vegetables (without broccoli or peas, beans) 200g (weighed after boiling or steaming) + olive oil 10g</string>
+    <string name="dinner_dayten_level_one">Chicken breast 75g + 125g lettuce + 125g cherry tomatoes + 100g bell pepper + 10ml olive oil</string>
+
+    <string name="breakfast_dayeleven_level_one"><![CDATA[&#189; avocado + 1 slice of toast (about 25g) + peppers / tomatoes 100g]]></string>
+    <string name="snack_dayeleven_level_one_first">1 apple + 15g pumpkin seeds</string>
+    <string name="snack_dayeleven_level_one_second">1 large banana</string>
+    <string name="lunch_dayeleven_level_one">Baked pork tenderloin 150g + 200g raw salad + 10g olive oil</string>
+    <string name="dinner_dayeleven_level_one">250g mushroom soup + 10g croutons</string>
+
+    <string name="breakfast_daytwelve_level_one">40g oatmeal + 1.5% milk 200ml + honey 10g (a teaspoon)</string>
+    <string name="snack_daytwelve_level_one_first">A favorite dessert</string>
+    <string name="snack_daytwelve_level_one_second">50g almonds, walnuts or oatmeal with yogurt</string>
+    <string name="lunch_daytwelve_level_one">Boiled lentils (weighed before boiling) 150g + chicken breast 150g</string>
+    <string name="dinner_daytwelve_level_one">Salad from: chickpeas 100g + carrots 150g + black radish 125g + olive oil 10ml</string>
+
+    <string name="breakfast_daythirteen_level_one">Greek yogurt 2% 150g + 1 slice of wholemeal bread (approx. 25g) + cherry tomatoes 100g</string>
+    <string name="snack_daythirteen_level_one_first">Pumpkin seeds 10g + 1 apple</string>
+    <string name="snack_daythirteen_level_one_second">50g almonds, walnuts or oatmeal with yogurt</string>
+    <string name="lunch_daythirteen_level_one">Pasta 300g</string>
+    <string name="dinner_daythirteen_level_one">Salad from: cow\'s milk 100g + cherry tomatoes 150g + ruccola 150g</string>
+
+    <string name="breakfast_dayfourteen_level_one">40g oatmeal + 1.5% milk 200ml + honey 10g (a teaspoon)</string>
+    <string name="snack_dayfourteen_level_one_first">Sunflower seeds 10g + 1 apple</string>
+    <string name="snack_dayfourteen_level_one_second">Chocolate 50g</string>
+    <string name="lunch_dayfourteen_level_one">Zucchini 200g stuffed with lean cow\'s cheese 3% 100g</string>
+    <string name="dinner_dayfourteen_level_one">Salad from: 125g lettuce + 100g cherry tomatoes + 50g canned sweet corn + 70g chicken breast + 10ml olive oil</string>
+
+
+    <string name="breakfast_dayone_level_two">2 boiled eggs + 75g mozzarella + 200g red radishes + 1 slice of wholemeal bread (25g)</string>
+    <string name="snack_dayone_level_two_first">1 small banana 100g</string>
+    <string name="snack_dayone_level_two_second">Wholemeal flour spreads 70g with salmon 50g</string>
+    <string name="lunch_dayone_level_two">Baked turkey breast 200g + asparagus 300g</string>
+    <string name="dinner_dayone_level_two">Tuna in its own juice 125g + white beans 125g + tomatoes 150g + lettuce 100g</string>
+
+    <string name="breakfast_daytwo_level_two">Oatmeal 100g + 3.5% milk 200ml + cranberries 15g + a little cocoa powder</string>
+    <string name="snack_daytwo_level_two_first">Strawberries 250g</string>
+    <string name="snack_daytwo_level_two_second">Greek yogurt 10% fat</string>
+    <string name="lunch_daytwo_level_two">Baked beef 175g + mix of frozen vegetables 300g</string>
+    <string name="dinner_daytwo_level_two">Chicken breast 100g + carrots 100g + lettuce 100g + red radishes 100g + red beans 100g</string>
+
+    <string name="breakfast_daythree_level_two">Cottage Cheese 2.2% 220g + ridichi roșii 100g + 1 felie de pâine integrală(25g)</string>
+    <string name="snack_daythree_level_two_first">Alune crude 30g</string>
+    <string name="snack_daythree_level_two_second">2 kiwi</string>
+    <string name="lunch_daythree_level_two">Piept de curcan 175g + cartofi dulci la cuptor 200g(2 cartofi)</string>
+    <string name="dinner_daythree_level_two">Hummus 200g + 2 rondele de orez(50g ambele) + telemea 50g + roșii cherry 300g</string>
+
+    <string name="breakfast_dayfour_level_two">3 egg omelette + red radish 200g + 1 slice of wholemeal bread (25g)</string>
+    <string name="snack_dayfour_level_two_first">Greek yogurt 10% fat 100g</string>
+    <string name="snack_dayfour_level_two_second">1 large banana</string>
+    <string name="lunch_dayfour_level_two">Trout 200g + boiled quinoa 250g</string>
+    <string name="dinner_dayfour_level_two">Cottage Cheese 2.2% 220g + red radishes 100g</string>
+
+    <string name="breakfast_dayfive_level_two">Avocado 125g + cherry tomatoes 200g + 1 slice of wholemeal bread</string>
+    <string name="snack_dayfive_level_two_first">Wholemeal flour spreads 80g with salmon 60g</string>
+    <string name="snack_dayfive_level_two_second">1 Golden apple</string>
+    <string name="lunch_dayfive_level_two">Grilled chicken breast 225g + baked sweet potatoes with rosemary 300g</string>
+    <string name="dinner_dayfive_level_two">Chicken breast 100g + carrots 100g + lettuce 100g + red radishes 100g + red beans 100g</string>
+
+    <string name="breakfast_daysix_level_two">2 boiled eggs + mozzarella 75g + 1 slice of wholemeal bread + red radishes 125g</string>
+    <string name="snack_daysix_level_two_first">Strawberries 250g</string>
+    <string name="snack_daysix_level_two_second">1 small banana 100g</string>
+    <string name="lunch_daysix_level_two">Baked trout 200g + boiled brown rice 250g</string>
+    <string name="dinner_daysix_level_two">Chicken breast 125g + boiled chickpeas 100g + lettuce 100g + carrots 100g</string>
+
+    <string name="breakfast_dayseven_level_two">Oatmeal 75g + 3.5% milk 200ml + a little cocoa powder</string>
+    <string name="snack_dayseven_level_two_first">Greek yogurt 10% fat 100g</string>
+    <string name="snack_dayseven_level_two_second">Caju 20g</string>
+    <string name="lunch_dayseven_level_two">Chicken breast 175g + asparagus 300g</string>
+    <string name="dinner_dayseven_level_two">Cottage Cheese 2.2% 220g + red radishes 100g + rice spread 40g</string>
+
+    <string name="breakfast_dayeight_level_two">Omelette of 3 eggs + vegetables + salsa or spicy sauce</string>
+    <string name="snack_dayeight_level_two_first">Skim cheese + rice crackers</string>
+    <string name="snack_dayeight_level_two_second">Vegetable soup 300g</string>
+    <string name="lunch_dayeight_level_two">Greens + a quarter of avocado + pieces of chicken + a fat-free sauce, all in a wholemeal tortilla</string>
+    <string name="dinner_dayeight_level_two">Salmon + couscous 200g</string>
+
+    <string name="breakfast_daynine_level_two">Coffee or tea + 1 slice of black bread + white cottage cheese + 2 kiwis</string>
+    <string name="snack_daynine_level_two_first">1 Greek yogurt</string>
+    <string name="snack_daynine_level_two_second">Grapes 100g</string>
+    <string name="lunch_daynine_level_two">Salad 100g + 1 teaspoon of oil and one teaspoon of vinegar + 100g pumpkin souffle + 1 slice of Telemea cheese + 1 slice of black bread</string>
+    <string name="dinner_daynine_level_two">Cabbage salad 150g + 1 teaspoon oil and 1 teaspoon vinegar + lobster 120g + 1 tablespoon lean mayonnaise + natural broccoli garnish 150g + 1 slice black bread
+         + 1 small natural yogurt</string>
+
+    <string name="breakfast_dayten_level_two">1 boiled egg + avocado 100g + cherry tomatoes 150g + 1 slice of wholemeal bread</string>
+    <string name="snack_dayten_level_two_first">Low-fat cottage cheese 200g</string>
+    <string name="snack_dayten_level_two_second">3 slices of melon</string>
+    <string name="lunch_dayten_level_two">Tomato salad 100g + 1 teaspoon oil and 1 teaspoon vinegar + 1 serving fish in the oven 200 g + onion and parsley + natural rice 30g + grated cheese 20g + 2 kiwis</string>
+    <string name="dinner_dayten_level_two">100g grated red cabbage salad + 2 eggs omelette with greens + 100g au gratin zucchini garnish + 20g grated cheese + 1 slice of black bread + 1 fruit yogurt
+         + 1 peach</string>
+
+    <string name="breakfast_dayeleven_level_two">60g oats with 2 tablespoons of raisins and almonds, 200g skim milk and 1 small banana</string>
+    <string name="snack_dayeleven_level_two_first">3 tablespoons hummus + cucumber, carrots and celery 100g</string>
+    <string name="snack_dayeleven_level_two_second">1 Greek yogurt</string>
+    <string name="lunch_dayeleven_level_two">Chicken noodle soup + green leafy vegetables 200g mixed with grilled salmon 85g + 1 slice of wholemeal bread</string>
+    <string name="dinner_dayeleven_level_two">Baked steak 115g + 2 baked red potatoes + 1 tablespoon olive oil + broccoli 50g</string>
+
+    <string name="breakfast_daytwelve_level_two">60g oatmeal + 200ml milk + a banana</string>
+    <string name="snack_daytwelve_level_two_first">Dark chocolate 30g</string>
+    <string name="snack_daytwelve_level_two_second">A small banana</string>
+    <string name="lunch_daytwelve_level_two">Vegetable cream soup 200g + croquettes</string>
+    <string name="dinner_daytwelve_level_two">Baked fish 150g + frozen vegetables 150g + margarine 10g</string>
+
+    <string name="breakfast_daythirteen_level_two">2 boiled eggs + 75g mozzarella + 200g red radishes + 1 slice of wholemeal bread (25g)</string>
+    <string name="snack_daythirteen_level_two_first">Strawberries 250g</string>
+    <string name="snack_daythirteen_level_two_second">2 kiwis</string>
+    <string name="lunch_daythirteen_level_two">Chicken breast 175g + asparagus 300g</string>
+    <string name="dinner_daythirteen_level_two">Boiled vegetables with meat: 50g chicken breast + 45g barley + 100g broccoli + 200g cauliflower + 50g onion + 100g red pepper + sugar-free fruit tea</string>
+
+    <string name="breakfast_dayfourteen_level_two">Avocado 125g + cherry tomatoes 200g + 1 slice of wholemeal bread</string>
+    <string name="snack_dayfourteen_level_two_first">Avocado 125g + cherry tomatoes 200g + 1 slice of wholemeal bread</string>
+    <string name="snack_dayfourteen_level_two_second">1 large banana</string>
+    <string name="lunch_dayfourteen_level_two">Baked fish 200g + boiled brown rice 250g</string>
+    <string name="dinner_dayfourteen_level_two">Grilled chicken 125g + brown rice and spinach 100g</string>
+
+
+
+    <string name="breakfast_dayone_level_three">3 boiled eggs + 75g mozzarella + 200g red radishes + 1 slice of wholemeal bread (25g)</string>
+    <string name="snack_dayone_level_three_first">2 small bananas (250g both)</string>
+    <string name="snack_dayone_level_three_second">Wholemeal flour spreads 50g with salmon 50g</string>
+    <string name="lunch_dayone_level_three">Baked turkey breast 200g + boiled brown rice 300g</string>
+    <string name="dinner_dayone_level_three">Tuna in own juice 125g + white beans 250g + tomatoes 150g + lettuce 100g</string>
+
+    <string name="breakfast_daytwo_level_three">Oatmeal 125g + 3.5% milk 225ml + cranberries 200g + a little cocoa powder</string>
+    <string name="snack_daytwo_level_three_first">Strawberries 300g</string>
+    <string name="snack_daytwo_level_three_second">Greek yogurt 10% 200g</string>
+    <string name="lunch_daytwo_level_three">Grilled trout / oven 200g + baked sweet potatoes 300g</string>
+    <string name="dinner_daytwo_level_three">Chicken breast 125g + carrots 100g + lettuce 100g + red radishes 100g + red beans 100g</string>
+
+    <string name="breakfast_daythree_level_three">Cottage Cheese 2.2% 220g + red radishes 150g + 2 slices of wholemeal bread (50g both)</string>
+    <string name="snack_daythree_level_three_first">1 large banana 150g</string>
+    <string name="snack_daythree_level_three_second">Caju 30g</string>
+    <string name="lunch_daythree_level_three">Grilled chicken breast 200g + baked sweet potatoes 300g</string>
+    <string name="dinner_daythree_level_three">Cow cheese 200g + wholemeal sandwiches 50g + cherry tomatoes 200g</string>
+
+    <string name="breakfast_dayfour_level_three">Omelette with 3 whole eggs + tomatoes 150g + 2 slices of wholemeal bread (50g)</string>
+    <string name="snack_dayfour_level_three_first">1 grapefruit</string>
+    <string name="snack_dayfour_level_three_second">Greek yogurt 10% 200g</string>
+    <string name="lunch_dayfour_level_three">Baked beef 250g + brown rice 250g</string>
+    <string name="dinner_dayfour_level_three">Baked sweet potatoes 200g + cottage cheese 200g</string>
+
+    <string name="breakfast_dayfive_level_three">Oatmeal 150g + 3.5% milk 250ml + brown raisins 15g</string>
+    <string name="snack_dayfive_level_three_first">Strawberries 300g</string>
+    <string name="snack_dayfive_level_three_second">Raw hazelnuts 50g</string>
+    <string name="lunch_dayfive_level_three">Baked chicken breast 200g + broccoli 350g</string>
+    <string name="dinner_dayfive_level_three">Tuna in own juice 150g + red beans 250g + tomatoes 200g + onion (to taste)</string>
+
+    <string name="breakfast_daysix_level_three">Oatmeal 150g + 3.5% milk 250ml + brown raisins 15g + a little cinnamon</string>
+    <string name="snack_daysix_level_three_first">2 small bananas (200g both)</string>
+    <string name="snack_daysix_level_three_second">Greek yogurt 10% 200g</string>
+    <string name="lunch_daysix_level_three">Baked salmon 200g + asparagus 350g</string>
+    <string name="dinner_daysix_level_three">Chicken breast 100g + red beans 150g + cabbage 150g + carrots 150g</string>
+
+    <string name="breakfast_dayseven_level_three">Omelette of 3 eggs + 1 slice of wholemeal bread 25g + cherry tomatoes 250g</string>
+    <string name="snack_dayseven_level_three_first">Wholemeal flour spreads 50g with salmon 50g</string>
+    <string name="snack_dayseven_level_three_second">Caju 40g</string>
+    <string name="lunch_dayseven_level_three">Chicken breast 225g + boiled brown rice 300g</string>
+    <string name="dinner_dayseven_level_three">Cow cheese 200g + wholemeal sandwiches 75g + cherry tomatoes 200g</string>
+
+    <string name="breakfast_dayeight_level_three">Vegetable omelette: 2 eggs + spinach 20g + mushrooms 24g + broccoli 23g + sweet potatoes 205g + olive oil 15ml</string>
+    <string name="snack_dayeight_level_three_first">1 medium apple + peanut butter 32g</string>
+    <string name="snack_dayeight_level_three_second">Cheddar cheese 56g + grapes 92g</string>
+    <string name="lunch_dayeight_level_three">1 loaf of whole wheat bread + Mediterranean tone 140g + sliced red onion + celery + a quarter of avocado + shredded feta cheese 9g</string>
+    <string name="dinner_dayeight_level_three">Baked salmon 140g + 30ml olive oil + 82g boiled wild rice + 180g fried asparagus + 100g fried eggplant</string>
+
+    <string name="breakfast_daynine_level_three">2 slices of wholemeal toast + 32g almond butter + 1 banana + cinnamon, to taste</string>
+    <string name="snack_daynine_level_three_first">Unsweetened milk 180g + spinach 20g + protein powder 42g + blueberries 123g + seeds 14g</string>
+    <string name="snack_daynine_level_three_second">Fresh carrots and celery + 2 tablespoons hummus + 1 slice of wholemeal bread</string>
+    <string name="lunch_daynine_level_three">Half an avocado + 140g canned tuna + 75g cherry tomatoes + 100g mixed greens</string>
+    <string name="dinner_daynine_level_three">Chicken 140g + broccoli 176g + boiled brown rice 82g + fresh garlic and ginger + soy sauce 15ml, to taste</string>
+
+    <string name="breakfast_dayten_level_three">Simple Greek yogurt 200g + fresh blueberries 74g + sliced strawberries 76g + granola 30g</string>
+    <string name="snack_dayten_level_three_first">1 banana + almond butter 24g</string>
+    <string name="snack_dayten_level_three_second">1 protein bar (containing about 200–250 calories, less than 12g of sugar and at least 5g of fiber)</string>
+    <string name="lunch_dayten_level_three">Boiled rice noodles 132g + tofu 141g + peas 125g + creamy peanut butter 16g + soy sauce 10g + honey 14g + half a cup of tea</string>
+    <string name="dinner_dayten_level_three">3 corn tortilla + grilled cod 170g + half an avocado</string>
+
+    <string name="breakfast_dayeleven_level_three">Avocado halves + 2 slices of wholemeal toast + 15ml olive oil + 1 egg</string>
+    <string name="snack_dayeleven_level_three_first">Simple Greek yogurt 200g + sliced strawberries 125g</string>
+    <string name="snack_dayeleven_level_three_second">21g (2 squares) of dark chocolate + 15 almonds</string>
+    <string name="lunch_dayeleven_level_three">Cooked quinoa 93g + grilled chicken 142g + olive oil 15ml + mixed vegetables 180g, without starch</string>
+    <string name="dinner_dayeleven_level_three">Tomatoes 120g + baked pumpkin 100g + cooked corn 75g + onion 28g + pepper</string>
+
+    <string name="breakfast_daytwelve_level_three">Oats 80g + hemp seeds 14g + flax seeds 12g + dried cherries 20g + a Greek yogurt</string>
+    <string name="snack_daytwelve_level_three_first">Half sliced bell peppers + carrots 100g + guacamole 60g</string>
+    <string name="snack_daytwelve_level_three_second">Chia pudding 170g + half a sliced banana</string>
+    <string name="lunch_daytwelve_level_three">1 whole wheat tortilla + grilled red pepper 60g + 5 slices of grilled zucchini + fresh mozzarella 84g</string>
+    <string name="dinner_daytwelve_level_three">Pesto 30g + whole wheat or brown rice 42g + shrimp 170g + peas 80g + grated Parmesan cheese 5g</string>
+
+    <string name="breakfast_daythirteen_level_three">1 sandwich with ground avocado and 1 boiled egg + 1 salad with as many greens as possible (spinach, lettuce, asparagus, parsley) with lemon juice,
+         orange slices and seeds (flax, chia) + 1 large plum</string>
+    <string name="snack_daythirteen_level_three_first">1 medium apple and roasted and unsalted hazelnuts 100g</string>
+    <string name="snack_daythirteen_level_three_second">1 medium pear and walnuts 50g</string>
+    <string name="lunch_daythirteen_level_three">Brown rice 100g + vegan sauce with tomatoes, curry, olive oil, cubes of toast and parsley + 2 glasses of natural fruit juice</string>
+    <string name="dinner_daythirteen_level_three">Code grill 100g 150g Green beans (put carrot, cucumber seeds) or brown rice with pesto sauce 100g</string>
+
+    <string name="breakfast_dayfourteen_level_three">1 plain and low-fat Greek yogurt + 100g cereal flakes + 50g blueberries</string>
+    <string name="snack_dayfourteen_level_three_first">Hummus 50g and 3 medium carrots</string>
+    <string name="snack_dayfourteen_level_three_second">1 medium apple and fried hazelnuts without salt 50g</string>
+    <string name="lunch_dayfourteen_level_three">Chickpeas 200g with salad of vegetables and greens of your choice</string>
+    <string name="dinner_dayfourteen_level_three">Grilled pork steak 150g, asparagus and cherry tomato sauce</string>
+
+
+
+    <string name="breakfast_dayone_vegetarian_level">1 slice wholemeal toast Panemar + 75g avocado + 3 boiled egg whites + 80g cottage cheese 2.2%</string>
+    <string name="snack_dayone_vegetarian_level_first">1 Golden apple</string>
+    <string name="snack_dayone_vegetarian_level_second">Nectarine 200g</string>
+    <string name="lunch_dayone_vegetarian_level">Low grain beans 200g + soy 100g</string>
+    <string name="dinner_dayone_vegetarian_level">Lentil cream soup 200g</string>
+
+    <string name="breakfast_daytwo_vegetarian_level">Two egg whites and 1 whole egg + 150g cherry tomatoes + 1 slice of wholemeal bread</string>
+    <string name="snack_daytwo_vegetarian_level_first">Cherries 200g</string>
+    <string name="snack_daytwo_vegetarian_level_second">1 Golden apple</string>
+    <string name="lunch_daytwo_vegetarian_level">Wholemeal pasta 200g + sauteed vegetables: mushrooms 100 g + broccoli 100g + peppers 60g</string>
+    <string name="dinner_daytwo_vegetarian_level">Greek yogurt 2% 150g + previously hydrated chia seeds 20g</string>
+
+    <string name="breakfast_daythree_vegetarian_level">60g oatmeal + 200ml milk + 10g cranberries</string>
+    <string name="snack_daythree_vegetarian_level_first">Cherries 200g</string>
+    <string name="snack_daythree_vegetarian_level_second">1 cup of green tea</string>
+    <string name="lunch_daythree_vegetarian_level">Spinach (cooked with milk) 200g + 2 eggs (mesh)</string>
+    <string name="dinner_daythree_vegetarian_level">Arugula 150g + tomatoes 90g + cottage cheese 2.2% 70g + 2 boiled egg whites</string>
+
+    <string name="breakfast_dayfour_vegetarian_level">Peanut butter 45g + 2 slices wholemeal bread</string>
+    <string name="snack_dayfour_vegetarian_level_first">Nectarine 200g</string>
+    <string name="snack_dayfour_vegetarian_level_second">2 slices of expanded rice</string>
+    <string name="lunch_dayfour_vegetarian_level">Frittata of 1 whole egg + 3 egg whites + spinach 200g</string>
+    <string name="dinner_dayfour_vegetarian_level">Impact whey Protein 25g + water 200ml (after training)</string>
+
+    <string name="breakfast_dayfive_vegetarian_level">Covalact 2% lean cow cheese 150g + cherry tomatoes 150g + 1 slice wholemeal bread 25g</string>
+    <string name="snack_dayfive_vegetarian_level_first">Almonds 10g + 1 orange</string>
+    <string name="snack_dayfive_vegetarian_level_second">Apple cake 100g or dark chocolate 85% cocoa 30g (have the same number of calories)</string>
+    <string name="lunch_dayfive_vegetarian_level">Bean stew 200g + fresh cabbage salad 200g</string>
+    <string name="dinner_dayfive_vegetarian_level">Telemea 150g + arugula 75g + cucumber 100g + cherry tomatoes 100g + olive oil 10ml</string>
+
+    <string name="breakfast_daysix_vegetarian_level">1 boiled egg + 1 slice of wholemeal bread 25g + red bell pepper 150g</string>
+    <string name="snack_daysix_vegetarian_level_first">Raw almonds 15g + Greek yogurt 10% 150g</string>
+    <string name="snack_daysix_vegetarian_level_second"><![CDATA[Pumpkin seeds, unsalted, unroasted 15g + &#189; grapefruit]]></string>
+    <string name="lunch_daysix_vegetarian_level">Baked soybean meatballs 200g + boiled brown rice 100g + olive oil 10ml</string>
+    <string name="dinner_daysix_vegetarian_level">Salad from: lettuce 125g, tomatoes 100g, chickpeas 125g, cow\'s milk 50g, 10 ml olive oil</string>
+
+    <string name="breakfast_dayseven_vegetarian_level"><![CDATA[&#189; avocado + 1 slice of toast (approx. 25g) + 1 boiled egg + tomatoes / peppers 100g]]></string>
+    <string name="snack_dayseven_vegetarian_level_first">Pumpkin seeds 15g + 1 apple</string>
+    <string name="snack_dayseven_vegetarian_level_second">Greek yogurt 2% 150g</string>
+    <string name="lunch_dayseven_vegetarian_level">Boiled quinoa 200g + tomato sauce + oregano / basil</string>
+    <string name="dinner_dayseven_vegetarian_level">250g Cream of mushroom soup + 10g croutons (few, just to taste)</string>
+
+    <string name="breakfast_dayeight_vegetarian_level"><![CDATA[60g oatmeal cooked in skim milk (almond milk) 150ml and 150ml water + &#189; medium apple + 2 tablespoons chopped walnuts]]></string>
+    <string name="snack_dayeight_vegetarian_level_first"><![CDATA[&#189; medium apple + &#189; tablespoon peanut butter]]></string>
+    <string name="snack_dayeight_vegetarian_level_second">1 fat-free Greek yogurt + 50g blueberries + 1 tablespoon honey</string>
+    <string name="lunch_dayeight_vegetarian_level">Salad from: 1 salad + cherry tomatoes 100g + cucumbers 100g + seasoned chickpeas 50g + 2 tablespoons feta cheese</string>
+    <string name="dinner_dayeight_vegetarian_level">1 serving of Frittata with mozzarella, basil and zucchini + 100g greens + 5g olive oil + 5g balsamic vinegar + 2 slices of toasted baguette, preferably
+         of whole wheat, over which you sprinkled 1 tablespoon of olive oil</string>
+
+    <string name="breakfast_daynine_vegetarian_level">1 Greek yogurt 0% fat + muesli 50g + blueberries 50g</string>
+    <string name="snack_daynine_vegetarian_level_first">1 medium banana + 50g nuts</string>
+    <string name="snack_daynine_vegetarian_level_second">Dark chocolate 50g</string>
+    <string name="lunch_daynine_vegetarian_level">3 slices of bruschetta with cheddar and tomato cheese + 100g greens + 100g cucumber + 100g carrot</string>
+    <string name="dinner_daynine_vegetarian_level">2 sticks with zucchini and black beans</string>
+
+    <string name="breakfast_dayten_vegetarian_level">2 slices of wholemeal toast + 2 tablespoons peanut butter + 1 banana</string>
+    <string name="snack_dayten_vegetarian_level_first">1 boiled egg, seasoned with salt and pepper + 100g walnuts</string>
+    <string name="snack_dayten_vegetarian_level_second">1 Greek yogurt with blueberries 100g</string>
+    <string name="lunch_dayten_vegetarian_level">Salad from: 1 salad + cherry tomatoes 100g + cucumbers 100g + seasoned chickpeas 50g + 2 tablespoons feta cheese</string>
+    <string name="dinner_dayten_vegetarian_level">2 cups Gnocchi with tomatoes and artichokes + 2 cups of green mix</string>
+
+    <string name="breakfast_dayeleven_vegetarian_level">1 Greek yogurt + muesli 100g + blueberries 100g</string>
+    <string name="snack_dayeleven_vegetarian_level_first">1 orange + walnut 50g</string>
+    <string name="snack_dayeleven_vegetarian_level_second">1 medium banana + 15g peanut butter</string>
+    <string name="lunch_dayeleven_vegetarian_level">1 half cup of Gnocchi with tomatoes and artichokes + greens 100g + cherry tomatoes 100g + grated carrot 25g</string>
+    <string name="dinner_dayeleven_vegetarian_level">Bowl of beans and rice with vegetables: brown rice 200g + black beans 200g + 1/2 green bell pepper and 1/2 onion chopped and hardened in a tablespoon of olive oil +
+      30g sliced feta cheese + 5g salsa sauce</string>
+
+    <string name="breakfast_daytwelve_vegetarian_level"><![CDATA[2 slices of toast, wholemeal + &#189; medium avocado, crushed + 2 large eggs, cooked in olive oil 5g]]></string>
+    <string name="snack_daytwelve_vegetarian_level_first"><![CDATA[&#189; green bell pepper, finely chopped + 25g hummus + 3 medium carrots]]></string>
+    <string name="snack_daytwelve_vegetarian_level_second"><![CDATA[&#189; medium apple + 30g walnut + 30g Cheddar cheese]]></string>
+    <string name="lunch_daytwelve_vegetarian_level">Rice with vegetables 300g</string>
+    <string name="dinner_daytwelve_vegetarian_level">2 cups Tikka Masala filled with vegetables + scalded spinach 200 + 1 stick</string>
+
+    <string name="breakfast_daythirteen_vegetarian_level">1 Greek yogurt 0% fat + muesli 50g + blueberries or other berries 50g</string>
+    <string name="snack_daythirteen_vegetarian_level_first">Hummus 25g + 3 medium carrots + 1 hard boiled egg, seasoned with salt and pepper</string>
+    <string name="snack_daythirteen_vegetarian_level_second">1 kiwi</string>
+    <string name="lunch_daythirteen_vegetarian_level">Vegetable pots, raw vegetable salad</string>
+    <string name="dinner_daythirteen_vegetarian_level">1 stick + 1 small tomato + mozzarella balls 30g + fresh basil 5g + 2 cups of greens sprinkled with olive oil 5g and balsamic vinegar 5g +
+         dark chocolate 30g. Heat the glue and smear it with 2 tablespoons of olive oil. Then add the mozzarella and tomatoes. Put it in the oven until the cheese melts.
+         Season with basil just before serving</string>
+
+    <string name="breakfast_dayfourteen_vegetarian_level">Oats 60g + 200ml milk + 1 medium apple + 10g walnut</string>
+    <string name="snack_dayfourteen_vegetarian_level_first">1 banana</string>
+    <string name="snack_dayfourteen_vegetarian_level_second">1 fat-free Greek yogurt + 50g blueberries + 1 tablespoon honey</string>
+    <string name="lunch_dayfourteen_vegetarian_level">3 slices of bruschetta with cheddar and tomato cheese + 100g greens + 100g cucumber + 25g carrot + 5g walnut</string>
+    <string name="dinner_dayfourteen_vegetarian_level">Cabbage salad, a baked potato seasoned with rosemary or other herbs</string>
+
+
+    <string name="one_thousand_three_hundred">1300 kcal</string>
+    <string name="one_thousand_six_hundred">1600 kcal</string>
+    <string name="two_thousand">2000 kcal</string>
+    <string name="vegetarian">vegetarian</string>
+
+    <string name="activity_intro">Intro Activity</string>
+
+    <string name="sport_advice_title_one">The importance of sport</string>
+    <string name="sport_advice_content_one">Try to do sports at least three times a week, between 40 and 60 minutes. Regular physical activity helps you
+                         retain key mental skills throughout your life. These skills are extremely important and include critical thinking,
+                         learning or memory. It also reduces stress, depression and improves sleep quality.</string>
+
+    <string name="sport_advice_title_two">Sports in the morning</string>
+    <string name="sport_advice_content_two">The benefits of morning sports: energy all day, improves good mood, supports the quality of sleep,
+         keeps blood sugar under control, increases testosterone and cortisol levels.</string>
+
+    <string name="sport_advice_title_three">Warming up the muscles</string>
+    <string name="sport_advice_content_three">15 minutes of warm-up are recommended before any workout, so that no pain occurs later.
+         You can start by warming up your upper body, with movements of your neck and head and rotations of your arms and abdomen.
+         The gluteal and abdominal muscles can be warmed up by bending forward, trying to touch the tips of the toes with your hands. By doing these exercises you will also warm your leg muscles,
+         but, also in this sense, you can do some push-ups or stretches. And skipping rope or cardio exercises can be done for warm-up. If, however, muscle fever occurs, you should not stop.
+         Try an hour of yoga, instead of an intense workout and you will feel better.</string>
+
+    <string name="sport_advice_title_four">Relaxation</string>
+    <string name="sport_advice_content_four">After the intense work of all the muscles, they must also relax. For this you can do some stretching exercises,
+         which helps the body regain its elasticity. Stretching involves stretching movements, but also the observance of certain rules. You need to relax,
+         to control your breathing and hold each position for about 15-30 seconds.</string>
+
+    <string name="nutrition_advice_title_one">Cravings</string>
+    <string name="nutrition_advice_content_one">You can have one day a week in which to give free rein to your desires. If 80% of your diet is healthy, in the remaining percentage you can satisfy your cravings.
+                         That is why a balanced diet is recommended in order to have long-term results. Strict diets bring immediate results, but then the fattening process will follow.</string>
+
+    <string name="nutrition_advice_title_two">The appearance of the plate</string>
+    <string name="nutrition_advice_content_two">Proportion of the plate: learn to have protein (chicken, fish, eggs) as much as your palm, carbohydrates (sweet potatoes, brown rice, hummus, beans) as much as your fist,
+                         vegetables as big as 2 fists, and fat as much as a finger. Protein helps the muscles to recover and lose weight because feeding the body with protein the feeling of hunger disappears.</string>
+
+    <string name="nutrition_advice_title_three">Meal schedule</string>
+    <string name="nutrition_advice_content_three">Three main meals and two snacks will speed up your metabolism and burns in your body, and this will help you achieve the results you want.
+                         You should not have meals at fixed hours, it is recommended to eat every 2 hours. In the evening you need to eat 2 hours before bed to have a good night\'s sleep.</string>
+
+    <string name="various_advice_title_one">Flat stomach</string>
+    <string name="various_advice_content_one">The abdomen is worked in the kitchen due to caloric deficit. In vain you will do exercises that work the abdomen, there will be muscles under fat that will not be visible.</string>
+
+    <string name="various_advice_title_two">The importance of sleep</string>
+    <string name="various_advice_content_two">Prioritize your sleep, it influences the weight loss process.</string>
+
+    <string name="various_advice_title_three">Water consumption</string>
+    <string name="various_advice_content_three">It is recommended to consume water between 2–4 l per day, depending on the height, about 2 cups per hour.</string>
+
+    <string name="various_advice_title_four">There is no "I want to lose weight from a certain area of the body"</string>
+    <string name="various_advice_content_four">You can\'t lose weight in isolation, there are no pine exercises to lose weight on a certain part of the body.
+         In order to lose weight, it is necessary to have a caloric deficit, and then through sports to burn calories and shape the body.</string>
+
+    <string name="various_advice_title_five">Replaced</string>
+    <string name="various_advice_content_five">Replace honey and sugar with agave syrup or maple syrup.
+                         Replace normal salt with Himalayan salt; it does not bring so much water retention.
+                         Replace the bread with rice slices.</string>
+
+    <string name="various_advice_title_six">Green tea</string>
+    <string name="various_advice_content_six">It is recommended to drink a cup of green tea a day. It is an antioxidant, helps the kidneys and liver to detoxify the body,
+         but you won\'t just lose weight with green tea.</string>
+
+    <string name="various_advice_title_seven">Lack of energy</string>
+    <string name="various_advice_content_seven">If you feel without energy, try to consume: magnesium, spirulina, collagen or vitamin C + Zinc.</string>
+
+    <string name="test">Buttocks and abdomen </string>
+    <string name="all_challenges">All challenges</string>
+
+    <string name="language_option">Language option</string>
+    <string name="general_settings">General Settings</string>
+    <string name="selected_language">Default</string>
+    <string name="english" >English</string>
+    <string name="choose_language">Choose Language</string>
+
+
+</resources>
