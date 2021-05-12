@@ -21,7 +21,7 @@
     <string name="title_activity_profile">ProfileActivity</string>
 
     <string name="about_me">About Me</string>
-    <string name="alert">Alert</string>
+    <string name="alert">Reminder</string>
     <string name="history">History</string>
     <string name="settings">Settings</string>
     <string name="point">.</string>
