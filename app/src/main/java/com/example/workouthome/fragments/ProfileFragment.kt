@@ -39,5 +39,11 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
             val action = ProfileFragmentDirections.actionProfileFragmentToSettingsFragment()
             findNavController().navigate(action)
         }
+
+        _binding?.cardAlert?.setOnClickListener {
+            val action = ProfileFragmentDirections.actionProfileFragmentToAlarmFragment()
+            findNavController().navigate(action)
+        }
+
     }
 }

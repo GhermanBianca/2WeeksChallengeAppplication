@@ -74,6 +74,13 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_profileFragment_to_alarmFragment"
+            app:destination="@id/alarmFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <activity
         android:id="@+id/sign_out"
@@ -105,4 +112,9 @@
             android:name="challengeBUndle"
             app:argType="string" />
     </fragment>
+    <fragment
+        android:id="@+id/alarmFragment"
+        android:name="com.example.workouthome.fragments.AlarmFragment"
+        android:label="Alarma"
+        tools:layout="@layout/fragment_alarm" />
 </navigation>

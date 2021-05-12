@@ -502,7 +502,7 @@
     <string name="general_settings">Setări generale</string>
     <string name="selected_language">Implicit</string>
     <string name="romanian" translatable="false">Română</string>
-    <string name="english" >English</string>
+    <string name="english">English</string>
     <string name="choose_language">Selectează limba</string>
 
     <string name="buttocks_thighs_abs">Fese &amp; Coapse &amp; Abdomen</string>
@@ -512,16 +512,4 @@
     <string name="yoga">Yoga</string>
     <string name="relax">Relaxare</string>
     <string name="buttock_thigs">Fese &amp; Coapse</string>
-
-
-
-
-
-
-
-
-
-
-
-
 </resources>
