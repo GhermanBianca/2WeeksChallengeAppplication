@@ -87,7 +87,6 @@
     <fragment
         android:id="@+id/dayNutritionFragment"
         android:name="com.example.workouthome.fragments.DayNutritionFragment"
-        android:label="Ziua"
         tools:layout="@layout/fragment_day_nutrition">
         <argument
             android:name="nutritionArgument"
@@ -101,7 +100,6 @@
     <fragment
         android:id="@+id/dayChallengeFragment"
         android:name="com.example.workouthome.fragments.DayChallengeFragment"
-        android:label="@string/day_name"
         tools:layout="@layout/fragment_day_challenge">
         <argument
             android:name="challengeBUndle"
