@@ -110,6 +110,18 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="drinkWaterReminder">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="1411" />
+                            <option name="y" value="178" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="exercisesFragment">
                     <value>
                       <LayoutPositions>

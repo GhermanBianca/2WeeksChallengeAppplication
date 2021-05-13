@@ -1,15 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/black"
     tools:context=".fragments.ReminderFragment">
 
-    <TextView
+    <androidx.cardview.widget.CardView
+        android:id="@+id/drink_water_card"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="hello alarm"
-        android:textColor="@color/white"/>
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin10"
+        app:cardBackgroundColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-</FrameLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_water"
+                android:layout_width="@dimen/width15"
+                android:layout_height="@dimen/height15"
+                android:layout_marginStart="@dimen/marginStart5"
+                android:layout_marginTop="@dimen/marginTop8"
+                android:layout_marginEnd="@dimen/marginEnd5"
+                android:contentDescription="@string/image"
+                android:src="@drawable/ic_water"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_water"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin5"
+                android:text="Consum apă"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size14"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/iv_water"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/view_reminder_water"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height2"
+        android:layout_marginStart="@dimen/marginStart10"
+        android:layout_marginEnd="@dimen/marginEnd10"
+        android:background="@color/grey"
+        app:layout_constraintTop_toBottomOf="@id/drink_water_card"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="5dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/challenge_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin10"
+        app:cardBackgroundColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/view_reminder_water"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_challenge"
+                android:layout_width="@dimen/width15"
+                android:layout_height="@dimen/height15"
+                android:layout_marginStart="@dimen/marginStart5"
+                android:layout_marginTop="@dimen/marginTop8"
+                android:layout_marginEnd="@dimen/marginEnd5"
+                android:contentDescription="@string/image"
+                android:src="@drawable/ic_challenge_time"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_challenge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin5"
+                android:text="Sport"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size14"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/iv_challenge"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/view_reminder_sport"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height2"
+        android:layout_marginStart="@dimen/marginStart10"
+        android:layout_marginEnd="@dimen/marginEnd10"
+        android:background="@color/grey"
+        app:layout_constraintTop_toBottomOf="@id/challenge_card"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="5dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
