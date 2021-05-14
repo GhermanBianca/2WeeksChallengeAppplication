@@ -6,7 +6,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
 
     <application
         android:icon="@drawable/ic_challenge"
@@ -18,15 +18,14 @@
 
         <receiver
             android:name=".utils.DeviceBootReceiver"
-            android:enabled="false" >
+            android:enabled="false">
             <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-        <activity android:name=".activities.DrinkWaterActivity"/>
-        <receiver
-            android:name=".utils.NotificationReciever">
-        </receiver>
+        <activity android:name=".activities.DrinkWaterActivity" />
+        <receiver android:name=".utils.NotificationReciever" />
+
         <activity android:name=".activities.BaseActivity" />
         <activity
             android:name=".activities.SignInActivity"

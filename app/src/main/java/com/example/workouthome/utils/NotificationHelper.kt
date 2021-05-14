@@ -1,6 +1,5 @@
 package com.example.workouthome.utils
 
-import android.R
 import android.annotation.TargetApi
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -11,7 +10,6 @@ import android.content.Intent
 import android.os.Build
 import androidx.core.app.NotificationCompat
 import com.example.workouthome.activities.DrinkWaterActivity
-
 
 class NotificationHelper(base: Context?) : ContextWrapper(base) {
     private var notificationManager: NotificationManager? = null
@@ -38,7 +36,7 @@ class NotificationHelper(base: Context?) : ContextWrapper(base) {
         return NotificationCompat.Builder(applicationContext, channelID)
             .setContentTitle("Alarm!")
             .setContentText("Your AlarmManager is working.")
-            .setSmallIcon(R.drawable.ic_delete)
+            .setSmallIcon(android.R.drawable.ic_delete)
             .setContentIntent(pendingIntent)
     }
 
