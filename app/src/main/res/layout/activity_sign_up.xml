@@ -172,7 +172,7 @@
             android:gravity="center"
             android:paddingTop="@dimen/padding10"
             android:paddingBottom="@dimen/padding10"
-            android:text="@string/create_prof"
+            android:text="@string/create_profile"
             android:textColor="@android:color/black"
             android:textSize="@dimen/size18"
             android:textStyle="bold" />
