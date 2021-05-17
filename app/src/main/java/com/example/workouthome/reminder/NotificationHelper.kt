@@ -1,5 +1,6 @@
 package com.example.workouthome.reminder
 
+import android.annotation.SuppressLint
 import android.annotation.TargetApi
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -7,13 +8,17 @@ import android.app.PendingIntent
 import android.content.Context
 import android.content.ContextWrapper
 import android.content.Intent
+import android.graphics.Color
 import android.os.Build
+import android.widget.RemoteViews
 import androidx.core.app.NotificationCompat
 import com.example.workouthome.R
 import com.example.workouthome.activities.DrinkWaterActivity
 
 class NotificationHelper(base: Context?) : ContextWrapper(base) {
     private var notificationManager: NotificationManager? = null
+    @SuppressLint("RemoteViewLayout")
+    val notificationLayoutExpanded = RemoteViews(packageName, R.layout.backround_notification)
     val manager: NotificationManager?
         get() {
             if (notificationManager == null) {
@@ -38,6 +43,8 @@ class NotificationHelper(base: Context?) : ContextWrapper(base) {
             .setContentTitle("Este timpul să te hidratezi!")
             .setSmallIcon(R.drawable.ic_water)
             .setContentIntent(pendingIntent)
+            .setAutoCancel(true)
+            .setContent(notificationLayoutExpanded)
     }
 
     companion object {

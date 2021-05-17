@@ -2,7 +2,6 @@ package com.example.workouthome.activities
 
 import android.os.Build
 import android.os.Bundle
-import android.view.View
 import android.view.WindowInsets
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
@@ -15,6 +14,7 @@ class DrinkWaterActivity : AppCompatActivity() {
     private var isChecked = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_drink_water)
 
@@ -29,7 +29,8 @@ class DrinkWaterActivity : AppCompatActivity() {
             )
         }
         setupActionBar()
-        var checkAnim = findViewById<LottieAnimationView>(R.id.checkbox_water)
+
+        val checkAnim = findViewById<LottieAnimationView>(R.id.checkbox_water)
         checkAnim.setMinFrame(20)
         checkAnim.setMaxFrame(50)
 

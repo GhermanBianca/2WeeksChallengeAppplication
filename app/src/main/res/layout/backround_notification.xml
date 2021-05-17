@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/lightblue"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding3">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding3">
+
+        <ImageView
+            android:layout_width="@dimen/width50"
+            android:layout_height="@dimen/height40"
+            android:src="@drawable/drink_water" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginStart5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/drink_water_time"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/water_benefit"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="@dimen/width100"
+            android:layout_height="@dimen/height30"
+            android:layout_marginStart="@dimen/marginStart5"
+            android:layout_marginTop="@dimen/marginTop5"
+            android:background="@drawable/shape_button_notification"
+            android:textAllCaps="true"
+            android:text="@string/drink"
+            android:textColor="@color/darkBlue"
+            android:textSize="@dimen/size15"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
