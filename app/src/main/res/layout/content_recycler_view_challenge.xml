@@ -14,60 +14,71 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center">
 
-        <TextView
-            android:id="@+id/challenge_number_day_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/marginStart32"
-            android:layout_marginTop="15dp"
-            android:gravity="center"
-            android:maxLines="1"
-            android:text="@string/day_name"
-            android:textColor="@color/darkgrey"
-            android:textSize="@dimen/size10"
-            android:textStyle="bold"
+        <LinearLayout
+            android:id="@+id/full_linear_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
 
-        <TextView
-            android:id="@+id/challenge_number_day_number"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/marginStart5"
-            android:layout_marginTop="15dp"
-            android:gravity="center"
-            android:maxLines="1"
-            android:text="@string/one"
-            android:textColor="@color/darkgrey"
-            android:textSize="@dimen/size10"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@id/challenge_number_day_tv"
-            app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:id="@+id/day_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="2dp"
+                android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/description_challenge"
-            android:layout_width="@dimen/width90"
-            android:layout_height="60dp"
-            android:layout_marginStart="@dimen/marginStart5"
-            android:layout_marginEnd="@dimen/marginEnd5"
-            android:layout_marginBottom="@dimen/marginBottom10"
-            android:gravity="center"
-            android:lines="3"
-            android:text="@string/buttocks_thighs_abs"
-            android:textColor="@color/black"
-            android:textSize="@dimen/size13"
-            app:layout_constraintTop_toBottomOf="@id/challenge_number_day_tv"
-            app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/challenge_number_day_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|end"
+                    android:text="@string/day_name"
+                    android:textColor="@color/darkgrey"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/challenge_number_day_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/one"
+                    android:textColor="@color/darkgrey"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/description_challenge"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lines="3"
+                android:text="@string/buttock_thigs"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/day_linear_layout"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        </LinearLayout>
+
 
         <ImageView
             android:id="@+id/image_challenge"
             android:layout_width="@dimen/width100"
             android:layout_height="@dimen/height100"
-            android:layout_marginStart="@dimen/marginStart2"
-            android:layout_marginEnd="@dimen/marginEnd5"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="2dp"
             android:contentDescription="@string/image"
             android:src="@drawable/fesieri"
-            app:layout_constraintStart_toEndOf="@id/description_challenge"
+            app:layout_constraintStart_toEndOf="@id/full_linear_layout"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
