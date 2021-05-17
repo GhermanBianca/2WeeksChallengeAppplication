@@ -23,7 +23,11 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-        <activity android:name=".activities.DrinkWaterActivity" />
+        <activity
+            android:name=".activities.DrinkWaterActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/WorkoutHome.NoActionBar"/>
+
         <receiver android:name=".reminder.NotificationReciever" />
 
         <activity android:name=".activities.BaseActivity" />
