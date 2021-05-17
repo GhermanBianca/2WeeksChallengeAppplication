@@ -2,7 +2,6 @@
     <string name="app_name">Workout Home</string>
     <string name="register">Sign up to get started!</string>
     <string name="create_profile">SIGN UP</string>
-    <string name="create_prof">Create</string>
     <string name="sign_in">Log in</string>
     <string name="please_wait">Please wait&#8230;</string>
     <string name="please_click_back_again_to_exit">Please press again to exit the application</string>
@@ -10,7 +9,6 @@
     <string name="hint_email">Email</string>
     <string name="hint_password">Password</string>
     <string name="hint_name">Full name</string>
-    <string name="conect">Sign in</string>
     <string name="complete_field">Complete all the fields to customize the profile!</string>
 
     <string name="nav_my_profile">My profile</string>
@@ -62,19 +60,6 @@
          Strict diets bring immediate results, but then the fattening process will follow.</string>
 
     <string name="day_name">Day \u0020</string>
-    <string name="day_two">Day 2</string>
-    <string name="day_three">Day 3</string>
-    <string name="day_four">Day 4</string>
-    <string name="day_five">Day 5</string>
-    <string name="day_six">Day 6</string>
-    <string name="day_seven">Day 7</string>
-    <string name="day_eight">Day 8</string>
-    <string name="day_nine">Day 9</string>
-    <string name="day_ten">Day 10</string>
-    <string name="day_eleven">Day 11</string>
-    <string name="day_twelve">Day 12</string>
-    <string name="day_thirteen">Day 13</string>
-    <string name="day_fourteen">Day 14</string>
     <string name="one">1</string>
 
 
@@ -508,7 +493,6 @@
     <string name="english" >English</string>
     <string name="choose_language">Choose Language</string>
 
-    <string name="buttocks_thighs_abs">Buttocks &amp; Thighs &amp; Abs</string>
     <string name="fullbody">Full body</string>
     <string name="buttocks_abs">Buttocks &amp; Abs </string>
     <string name="cardio">Cardio</string>

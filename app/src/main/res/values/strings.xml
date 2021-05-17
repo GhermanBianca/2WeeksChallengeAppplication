@@ -2,7 +2,6 @@
     <string name="app_name">Fitness Acasă</string>
     <string name="register">Înregistrează-te pentru a începe!</string>
     <string name="create_profile">Înregistrare</string>
-    <string name="create_prof">Crează</string>
     <string name="sign_in">Conectare</string>
     <string name="please_wait">Te rog, așteaptă&#8230;</string>
     <string name="please_click_back_again_to_exit">Te rog să apeși din nou pentru a părăsi aplicația.</string>
@@ -10,7 +9,6 @@
     <string name="hint_email">Email</string>
     <string name="hint_password">Parolă</string>
     <string name="hint_name">Nume complet</string>
-    <string name="conect">Conectează-te</string>
     <string name="complete_field">Completează câmpurile pentru a personaliza profilul!</string>
 
     <string name="nav_my_profile">Profilul Meu</string>
@@ -61,19 +59,6 @@
         Dietele stricte aduc rezultate imediate, însă ulterior va urma procesul de îngrășare.</string>
 
     <string name="day_name">Ziua \u0020</string>
-    <string name="day_two">Ziua 2</string>
-    <string name="day_three">Ziua 3</string>
-    <string name="day_four">Ziua 4</string>
-    <string name="day_five">Ziua 5</string>
-    <string name="day_six">Ziua 6</string>
-    <string name="day_seven">Ziua 7</string>
-    <string name="day_eight">Ziua 8</string>
-    <string name="day_nine">Ziua 9</string>
-    <string name="day_ten">Ziua 10</string>
-    <string name="day_eleven">Ziua 11</string>
-    <string name="day_twelve">Ziua 12</string>
-    <string name="day_thirteen">Ziua 13</string>
-    <string name="day_fourteen">Ziua 14</string>
     <string name="one">1</string>
 
     <string name="text_advice_name">Nutriție</string>
@@ -505,7 +490,6 @@
     <string name="english">English</string>
     <string name="choose_language">Selectează limba</string>
 
-    <string name="buttocks_thighs_abs">Fese &amp; Coapse &amp; Abdomen</string>
     <string name="fullbody">Complet</string>
     <string name="buttocks_abs">Fese &amp; Abdomen </string>
     <string name="cardio">Cardio</string>
