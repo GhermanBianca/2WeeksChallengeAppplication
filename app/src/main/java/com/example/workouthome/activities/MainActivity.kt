@@ -69,7 +69,6 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
         appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.challengeFragment,
-                R.id.exercisesFragment,
                 R.id.adviceFragment,
                 R.id.nutritionFragment
             ),

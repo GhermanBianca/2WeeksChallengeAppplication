@@ -7,11 +7,6 @@
         android:icon="@drawable/ic_challange"/>
 
     <item
-        android:id="@+id/exercisesFragment"
-        android:title="@string/exercices"
-        android:icon="@drawable/ic_workout"/>
-
-    <item
         android:id="@+id/adviceFragment"
         android:title="@string/advices"
         android:icon="@drawable/ic_advice"/>
