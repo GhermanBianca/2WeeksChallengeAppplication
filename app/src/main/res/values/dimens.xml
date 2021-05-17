@@ -25,6 +25,7 @@
     <dimen name="marginTop500">500dp</dimen>
 
     <dimen name="marginStart2">2dp</dimen>
+    <dimen name="marginStart3">3dp</dimen>
     <dimen name="marginStart5">5dp</dimen>
     <dimen name="marginStart10">10dp</dimen>
     <dimen name="marginStart16">16dp</dimen>
@@ -32,6 +33,7 @@
     <dimen name="marginStart32">32dp</dimen>
     <dimen name="marginStart70">70dp</dimen>
 
+    <dimen name="marginEnd2">2dp</dimen>
     <dimen name="marginEnd5">5dp</dimen>
     <dimen name="marginEnd10">10dp</dimen>
     <dimen name="marginEnd11">11dp</dimen>

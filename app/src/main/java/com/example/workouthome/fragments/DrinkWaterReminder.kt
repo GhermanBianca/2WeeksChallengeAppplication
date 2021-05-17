@@ -14,7 +14,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.workouthome.R
 import com.example.workouthome.databinding.FragmentDrinkWaterReminderBinding
-import com.example.workouthome.utils.NotificationReciever
+import com.example.workouthome.reminder.NotificationReciever
 
 class DrinkWaterReminder : Fragment(R.layout.fragment_drink_water_reminder) {
 

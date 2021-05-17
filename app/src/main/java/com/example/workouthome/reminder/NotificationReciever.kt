@@ -1,4 +1,4 @@
-package com.example.workouthome.utils
+package com.example.workouthome.reminder
 
 import android.content.BroadcastReceiver
 import android.content.Context

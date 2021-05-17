@@ -17,14 +17,14 @@
         tools:ignore="AllowBackup">
 
         <receiver
-            android:name=".utils.DeviceBootReceiver"
+            android:name=".reminder.DeviceBootReceiver"
             android:enabled="false">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
         <activity android:name=".activities.DrinkWaterActivity" />
-        <receiver android:name=".utils.NotificationReciever" />
+        <receiver android:name=".reminder.NotificationReciever" />
 
         <activity android:name=".activities.BaseActivity" />
         <activity

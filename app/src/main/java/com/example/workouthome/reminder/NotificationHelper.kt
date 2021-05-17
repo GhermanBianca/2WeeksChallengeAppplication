@@ -1,4 +1,4 @@
-package com.example.workouthome.utils
+package com.example.workouthome.reminder
 
 import android.annotation.TargetApi
 import android.app.NotificationChannel
@@ -9,6 +9,7 @@ import android.content.ContextWrapper
 import android.content.Intent
 import android.os.Build
 import androidx.core.app.NotificationCompat
+import com.example.workouthome.R
 import com.example.workouthome.activities.DrinkWaterActivity
 
 class NotificationHelper(base: Context?) : ContextWrapper(base) {
@@ -34,9 +35,8 @@ class NotificationHelper(base: Context?) : ContextWrapper(base) {
             PendingIntent.FLAG_ONE_SHOT
         )
         return NotificationCompat.Builder(applicationContext, channelID)
-            .setContentTitle("Alarm!")
-            .setContentText("Your AlarmManager is working.")
-            .setSmallIcon(android.R.drawable.ic_delete)
+            .setContentTitle("Este timpul să te hidratezi!")
+            .setSmallIcon(R.drawable.ic_water)
             .setContentIntent(pendingIntent)
     }
 
