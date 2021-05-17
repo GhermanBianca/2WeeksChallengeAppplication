@@ -54,7 +54,7 @@ class ChallengeFragment : Fragment(R.layout.fragment_challenge) {
         challengeArrayList.add(ChallengeItem(resources.getString(R.string.yoga), R.drawable.yoga))
         challengeArrayList.add(ChallengeItem(resources.getString(R.string.relax), R.drawable.relax))
         challengeArrayList.add(ChallengeItem(resources.getString(R.string.fullbody), R.drawable.full_body))
-        challengeArrayList.add(ChallengeItem(resources.getString(R.string.buttocks_thighs_abs), R.drawable.buttock_twigh))
+        challengeArrayList.add(ChallengeItem(resources.getString(R.string.buttock_thigs), R.drawable.buttock_twigh))
         challengeArrayList.add(ChallengeItem(resources.getString(R.string.cardio), R.drawable.cardio_fight))
         challengeArrayList.add(ChallengeItem(resources.getString(R.string.fullbody), R.drawable.full_body))
         challengeArrayList.add(ChallengeItem(resources.getString(R.string.buttock_thigs), R.drawable.buttock_twigh))
