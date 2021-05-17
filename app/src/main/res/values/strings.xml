@@ -60,7 +60,7 @@
         Dacă 80% din alimentația ta este sănătoasă, în procentul rămas îți poți satisface poftele. De aceea este recomandată o alimentație echilibrată, pentru a avea rezultate pe termen lung.
         Dietele stricte aduc rezultate imediate, însă ulterior va urma procesul de îngrășare.</string>
 
-    <string name="day_name">Ziua </string>
+    <string name="day_name">Ziua \u0020</string>
     <string name="day_two">Ziua 2</string>
     <string name="day_three">Ziua 3</string>
     <string name="day_four">Ziua 4</string>
