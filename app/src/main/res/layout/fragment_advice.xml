@@ -10,10 +10,10 @@
 
     <ImageView
         android:id="@+id/image_advice"
-        android:layout_width="320dp"
+        android:layout_width="@dimen/width320"
         android:layout_height="@dimen/height210"
         android:layout_marginStart="@dimen/marginStart10"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/marginTop10"
         android:layout_marginEnd="@dimen/marginEnd10"
         android:contentDescription="@string/image"
         android:src="@drawable/health_advice"
