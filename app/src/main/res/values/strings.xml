@@ -4,7 +4,6 @@
     <string name="create_profile">Înregistrare</string>
     <string name="sign_in">Conectare</string>
     <string name="please_wait">Te rog, așteaptă&#8230;</string>
-    <string name="please_click_back_again_to_exit">Te rog să apeși din nou pentru a părăsi aplicația.</string>
     <string name="complete">Completează câmpurile pentru a intra în cont!</string>
     <string name="hint_email">Email</string>
     <string name="hint_password">Parolă</string>
@@ -13,17 +12,12 @@
 
     <string name="nav_my_profile">Profilul Meu</string>
     <string name="nav_sign_out">Deconectare</string>
-    <string name="start">start</string>
-    <string name="close">închide</string>
-    <string name="image_contentDescription">imagine</string>
-    <string name="title_activity_profile">Activitatea Profilului</string>
 
     <string name="about_me">Despre mine</string>
     <string name="alert">Alertă</string>
     <string name="history">Istoric</string>
     <string name="settings">Setări</string>
     <string name="point">.</string>
-    <string name="slash">/</string>
     <string name="cm"> cm</string>
     <string name="kg"> kg</string>
 
@@ -41,7 +35,6 @@
     <string name="male">Masculin</string>
 
     <string name="challenges">Provocări</string>
-    <string name="exercices">Exerciții</string>
     <string name="advices">Sfaturi</string>
     <string name="nutritions">Nutriție</string>
     <string name="various">Diverse</string>
@@ -60,8 +53,6 @@
 
     <string name="day_name">Ziua \u0020</string>
     <string name="one">1</string>
-
-    <string name="text_advice_name">Nutriție</string>
 
     <string name="breakfast_name">Mic dejun</string>
     <string name="snack_name">Gustare</string>
@@ -480,13 +471,12 @@
     <string name="various_advice_title_seven">Lipsă de energie"</string>
     <string name="various_advice_content_seven">Dacă te simți fără energie încearcă să consumi: magneziu, spirulină, colagen sau vitamina C + Zinc."</string>
 
-    <string name="test">Ziua 1 - Fesieri și Abdomen</string>
     <string name="all_challenges">Toate provocările</string>
 
     <string name="language_option">Opțiunea limbii</string>
     <string name="general_settings">Setări generale</string>
     <string name="selected_language">Implicit</string>
-    <string name="romanian" translatable="false">Română</string>
+    <string name="romanian">Română</string>
     <string name="english">English</string>
     <string name="choose_language">Selectează limba</string>
 
@@ -501,7 +491,5 @@
     <string name="drink_water_time">Este timpul pentru hidratare!"</string>
     <string name="water_benefit">Apa te ajută în pierderea caloriilor!"</string>
     <string name="drink">Hidratare</string>
-
-
 
 </resources>
