@@ -18,18 +18,18 @@
             android:id="@+id/full_linear_layout"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            android:gravity="center_horizontal"
             android:orientation="vertical"
-            android:gravity="center_horizontal">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
                 android:id="@+id/day_linear_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:layout_marginTop="@dimen/marginTop12"
                 android:layout_marginEnd="@dimen/marginEnd2"
+                android:gravity="center"
                 android:orientation="horizontal">
 
                 <TextView
@@ -47,8 +47,8 @@
                     android:id="@+id/challenge_number_day_number"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
                     android:layout_weight="1"
+                    android:gravity="center_vertical"
                     android:text="@string/one"
                     android:textColor="@color/darkgrey"
                     android:textSize="@dimen/size13"
@@ -64,8 +64,8 @@
                 android:text="@string/buttock_thigs"
                 android:textColor="@color/black"
                 android:textSize="@dimen/size15"
-                app:layout_constraintTop_toBottomOf="@id/day_linear_layout"
-                app:layout_constraintStart_toStartOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/day_linear_layout" />
 
         </LinearLayout>
 
@@ -73,8 +73,8 @@
             android:id="@+id/image_challenge"
             android:layout_width="@dimen/width100"
             android:layout_height="@dimen/height100"
-            android:layout_marginEnd="@dimen/marginEnd4"
             android:layout_marginStart="@dimen/marginStart2"
+            android:layout_marginEnd="@dimen/marginEnd4"
             android:contentDescription="@string/image"
             android:src="@drawable/buttock"
             app:layout_constraintStart_toEndOf="@id/full_linear_layout"
