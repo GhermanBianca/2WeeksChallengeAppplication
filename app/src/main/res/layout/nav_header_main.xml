@@ -34,6 +34,6 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="@dimen/nav_divider_height"
-        android:background="@color/colorAccent" />
+        android:layout_height="@dimen/height1"
+        android:background="@color/medium_green" />
 </LinearLayout>
