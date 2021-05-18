@@ -37,33 +37,35 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:fontFamily="@font/bold"
                     android:gravity="center_vertical|end"
                     android:text="@string/day_name"
                     android:textColor="@color/darkgrey"
-                    android:textSize="@dimen/size13"
-                    android:textStyle="bold" />
+                    android:textSize="@dimen/size13" />
 
                 <TextView
                     android:id="@+id/challenge_number_day_number"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:fontFamily="@font/bold"
                     android:gravity="center_vertical"
                     android:text="@string/one"
                     android:textColor="@color/darkgrey"
-                    android:textSize="@dimen/size13"
-                    android:textStyle="bold" />
+                    android:textSize="@dimen/size13" />
             </LinearLayout>
 
             <TextView
                 android:id="@+id/description_challenge"
                 android:layout_width="@dimen/width95"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/all"
                 android:gravity="center"
                 android:lines="3"
                 android:text="@string/buttock_thigs"
                 android:textColor="@color/black"
                 android:textSize="@dimen/size15"
+                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/day_linear_layout" />
 
