@@ -19,6 +19,7 @@
     <dimen name="marginTop50">50dp</dimen>
     <dimen name="marginTop60">60dp</dimen>
     <dimen name="marginTop70">70dp</dimen>
+    <dimen name="marginTop85">85dp</dimen>
     <dimen name="marginTop90">90dp</dimen>
     <dimen name="marginTop100">100dp</dimen>
     <dimen name="marginTop190">190dp</dimen>
