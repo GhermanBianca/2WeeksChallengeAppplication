@@ -13,10 +13,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin10"
+        android:fontFamily="@font/bold"
         android:text="@string/general_settings"
         android:textAllCaps="true"
         android:textColor="@color/lightgreen"
-        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -50,6 +50,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin5"
+                android:fontFamily="@font/all"
                 android:text="@string/language_option"
                 android:textColor="@color/white"
                 android:textSize="@dimen/size14"
@@ -62,9 +63,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/marginTop5"
+                android:fontFamily="@font/all"
                 android:text="@string/selected_language"
                 android:textColor="@color/lightgreen"
-                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@id/tv_select_language"
                 app:layout_constraintTop_toBottomOf="@id/tv_select_language" />
 
