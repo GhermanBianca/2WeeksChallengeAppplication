@@ -1,24 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#66C1B9</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="colorAccent">#F18888</color>
     <color name="darkPink">#90549A</color>
-
     <color name="darkBlue">#1D3970</color>
     <color name="snackbar_error_color">#7EF72400</color>
-    <color name="orange">#F49507</color>
     <color name="transparent">#4A000000</color>
     <color name="grey">#4AB1A9A9</color>
     <color name="darkgreen">#01403A</color>
     <color name="darkgrey">#6C7171</color>
-
-
     <color name="red">#EC1B0C</color>
     <color name="yellow">#F6DE06</color>
     <color name="brown">#5E3A06</color>
@@ -29,7 +22,5 @@
     <color name="lightgreen">#C3C0C0</color>
     <color name="lightblue">#59BFED</color>
     <color name="medium_green">#11786F</color>
-
-
 
 </resources>
