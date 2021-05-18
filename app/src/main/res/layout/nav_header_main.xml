@@ -30,6 +30,7 @@
         android:layout_marginBottom="@dimen/marginBottom10"
         android:textColor="@android:color/white"
         android:textSize="@dimen/size18"
+        android:fontFamily="@font/all"
         tools:text="Username" />
 
     <View
