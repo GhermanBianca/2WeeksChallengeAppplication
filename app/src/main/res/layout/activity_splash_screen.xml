@@ -17,9 +17,9 @@
         android:layout_width="@dimen/width200"
         android:layout_height="@dimen/height100"
         android:layout_gravity="bottom"
+        android:contentDescription="@string/image"
         android:paddingStart="@dimen/margin10"
         android:src="@drawable/stop_start"
-        android:contentDescription="@string/image"
         tools:ignore="RtlSymmetry" />
 
 </FrameLayout>
