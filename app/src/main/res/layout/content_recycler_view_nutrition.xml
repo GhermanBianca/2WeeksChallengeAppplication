@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="110dp"
     android:layout_height="@dimen/height60"
-    app:cardCornerRadius="@dimen/cornerRadius8"
     android:layout_marginTop="15dp"
+    app:cardCornerRadius="@dimen/cornerRadius8"
     app:cardPreventCornerOverlap="true"
     app:cardUseCompatPadding="true">
 
@@ -16,25 +16,25 @@
 
         <TextView
             android:id="@+id/number_day_tv"
-            android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_vertical|end"
             android:text="@string/day_name"
             android:textColor="@color/black"
-            android:textSize="@dimen/size20" />
+            android:textSize="@dimen/size20"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/number_day_number"
-            android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center_vertical"
             android:text="@string/one"
             android:textColor="@color/black"
-            android:textSize="@dimen/size20" />
+            android:textSize="@dimen/size20"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
