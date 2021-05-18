@@ -46,7 +46,6 @@
             android:textSize="@dimen/size20"
             android:textStyle="bold" />
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -75,8 +74,8 @@
                         android:textCursorDrawable="@null"
                         android:textSize="@dimen/size18" />
 
-
                 </com.google.android.material.textfield.TextInputLayout>
+
             </LinearLayout>
 
             <LinearLayout
@@ -103,6 +102,7 @@
                         android:textSize="@dimen/size18" />
 
                 </com.google.android.material.textfield.TextInputLayout>
+
             </LinearLayout>
 
             <LinearLayout
@@ -128,6 +128,7 @@
                         android:textCursorDrawable="@null"
                         android:textSize="@dimen/size18" />
                 </com.google.android.material.textfield.TextInputLayout>
+
             </LinearLayout>
 
             <LinearLayout
@@ -153,18 +154,18 @@
                         android:textCursorDrawable="@null"
                         android:textSize="@dimen/size18" />
                 </com.google.android.material.textfield.TextInputLayout>
+
             </LinearLayout>
 
         </LinearLayout>
 
-
         <Button
             android:id="@+id/btn_create_sign_up"
-            android:layout_width="200dp"
+            android:layout_width="@dimen/width200"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="@dimen/marginStart20"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="@dimen/marginTop60"
             android:layout_marginEnd="@dimen/marginEnd20"
             android:background="@drawable/shape_button_create_profile"
             android:foreground="?attr/selectableItemBackground"
@@ -176,4 +177,5 @@
             android:textSize="@dimen/size18"
             android:textStyle="bold" />
     </LinearLayout>
+
 </LinearLayout>
