@@ -34,7 +34,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:background="@color/darkgreen"
-            app:menu="@menu/drawer_bottom_nav_menu" />
+            app:menu="@menu/drawer_bottom_nav_menu"
+            android:theme="@style/Style_Bold"/>
     </RelativeLayout>
 
     <com.google.android.material.navigation.NavigationView
