@@ -23,6 +23,7 @@
             android:text="@string/nutritions"
             android:textColor="@color/black"
             android:textSize="@dimen/size20"
+            android:gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
