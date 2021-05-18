@@ -15,8 +15,8 @@
         <ImageView
             android:layout_width="@dimen/width50"
             android:layout_height="@dimen/height40"
-            android:src="@drawable/drink_water"
-            android:contentDescription="@string/image" />
+            android:contentDescription="@string/image"
+            android:src="@drawable/drink_water" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -28,6 +28,7 @@
                 android:id="@+id/text1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/all"
                 android:text="@string/drink_water_time"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
@@ -36,6 +37,7 @@
                 android:id="@+id/text2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/all"
                 android:text="@string/water_benefit"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
@@ -47,6 +49,7 @@
             android:layout_marginStart="@dimen/marginStart5"
             android:layout_marginTop="@dimen/marginTop5"
             android:background="@drawable/shape_button_notification"
+            android:fontFamily="@font/bold"
             android:text="@string/drink"
             android:textAllCaps="true"
             android:textColor="@color/darkBlue"
