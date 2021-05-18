@@ -47,7 +47,7 @@ class AdviceFragment : Fragment(R.layout.fragment_advice) {
         val arrayList: ArrayList<AdviceItem> = ArrayList()
 
         arrayList.add(AdviceItem(getString(R.string.sport), R.drawable.fitness_advice))
-        arrayList.add(AdviceItem(getString(R.string.nutritions), R.drawable.nutrition_advice))
+        arrayList.add(AdviceItem(getString(R.string.nutritions), R.drawable.health_food))
         arrayList.add(AdviceItem(getString(R.string.various), R.drawable.divers_advice))
 
         return arrayList
