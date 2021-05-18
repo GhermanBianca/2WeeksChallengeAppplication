@@ -40,8 +40,8 @@
             android:layout_marginTop="@dimen/marginTop25"
             android:text="@string/lunch_name"
             android:textColor="@color/black"
+            android:fontFamily="@font/bold"
             android:textSize="@dimen/size15"
-            android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@id/meals_image"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -65,6 +65,7 @@
             android:layout_marginTop="@dimen/marginTop15"
             android:layout_marginBottom="@dimen/marginBottom20"
             android:maxLines="3"
+            android:fontFamily="@font/all"
             android:text="@string/lunch_dayone_level_one"
             android:textColor="@color/black"
             android:textSize="@dimen/size15"
