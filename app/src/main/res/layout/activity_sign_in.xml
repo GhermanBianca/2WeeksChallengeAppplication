@@ -17,9 +17,9 @@
             android:id="@+id/tv_title_sign_in"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:fontFamily="@font/bold"
             android:gravity="center_vertical"
             android:text="@string/sign_in"
-            android:fontFamily="@font/bold"
             android:textAllCaps="true"
             android:textColor="@color/black"
             android:textSize="@dimen/size20"
@@ -41,8 +41,8 @@
             android:layout_marginStart="@dimen/marginStart10"
             android:layout_marginTop="90dp"
             android:layout_marginEnd="@dimen/marginEnd10"
-            android:gravity="center"
             android:fontFamily="@font/bold"
+            android:gravity="center"
             android:text="@string/complete"
             android:textColor="@color/black"
             android:textSize="@dimen/size20"
@@ -68,9 +68,9 @@
                     android:id="@+id/et_email_sign_in"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/all"
                     android:hint="@string/hint_email"
                     android:inputType="textEmailAddress"
-                    android:fontFamily="@font/all"
                     android:textCursorDrawable="@null"
                     android:textSize="@dimen/size18" />
 
@@ -90,9 +90,9 @@
                     android:id="@+id/et_password_sign_in"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/all"
                     android:hint="@string/hint_password"
                     android:inputType="textPassword"
-                    android:fontFamily="@font/all"
                     android:textCursorDrawable="@null"
                     android:textSize="@dimen/size18" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -106,6 +106,7 @@
                 android:layout_marginTop="@dimen/marginTop50"
                 android:layout_marginEnd="@dimen/marginEnd20"
                 android:background="@drawable/shape_button_create_profile"
+                android:fontFamily="@font/bold"
                 android:foreground="?attr/selectableItemBackground"
                 android:gravity="center"
                 android:paddingTop="@dimen/padding10"
@@ -113,7 +114,6 @@
                 android:text="@string/sign_in"
                 android:textColor="@color/white"
                 android:textSize="@dimen/size18"
-                android:fontFamily="@font/bold"
                 android:textStyle="bold" />
         </LinearLayout>
 
