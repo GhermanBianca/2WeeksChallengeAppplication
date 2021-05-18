@@ -48,10 +48,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/abril"
+                    android:fontFamily="@font/title"
                     android:text="@string/about_me"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/size16" />
+                    android:textSize="@dimen/size20" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -85,10 +85,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/abril"
+                    android:fontFamily="@font/title"
                     android:text="@string/alert"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/size16" />
+                    android:textSize="@dimen/size20" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -122,10 +122,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/abril"
+                    android:fontFamily="@font/title"
                     android:text="@string/history"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/size16" />
+                    android:textSize="@dimen/size20" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -159,10 +159,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/abril"
+                    android:fontFamily="@font/title"
                     android:text="@string/settings"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/size16" />
+                    android:textSize="@dimen/size20" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </GridLayout>

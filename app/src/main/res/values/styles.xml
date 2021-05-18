@@ -2,13 +2,11 @@
 <resources>
 
     <style name="WorkoutHome" parent="Theme.MaterialComponents.Light.DarkActionBar.Bridge">
-        <item name="android:fontFamily">@font/abril</item>
     </style>
 
     <style name="WorkoutHome.NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge" >
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <item name="android:fontFamily">@font/abril</item>
     </style>
 
     <style name="WorkoutHome.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
