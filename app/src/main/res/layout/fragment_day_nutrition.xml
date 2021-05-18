@@ -18,7 +18,9 @@
         app:cnb_menuResource="@menu/top_menu_nutrition"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:theme="@style/Style_Title"
+        />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/day_nutrition_rv"

@@ -23,5 +23,9 @@
         <item name="fontFamily">@font/bold</item>
     </style>
 
+    <style name="Style_Title">
+        <item name="fontFamily">@font/title</item>
+    </style>
+
 
 </resources>
