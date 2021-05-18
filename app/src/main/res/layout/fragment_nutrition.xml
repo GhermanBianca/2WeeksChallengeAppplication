@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/image_nutrition"
-        android:layout_width="@dimen/width350"
-        android:layout_height="@dimen/height210"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
         android:layout_marginStart="@dimen/marginStart10"
         android:layout_marginTop="@dimen/marginTop20"
         android:layout_marginEnd="@dimen/marginEnd10"
