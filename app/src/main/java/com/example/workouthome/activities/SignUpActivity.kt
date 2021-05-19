@@ -3,7 +3,6 @@ package com.example.workouthome.activities
 import android.os.Build
 import android.os.Bundle
 import android.text.TextUtils
-import android.util.Log
 import android.view.WindowInsets
 import android.view.WindowManager
 import android.widget.Toast
@@ -17,9 +16,7 @@ import kotlinx.android.synthetic.main.activity_sign_up.*
 
 @Suppress("DEPRECATION")
 class SignUpActivity : BaseActivity() {
-    companion object {
-        private const val TAG = "SignUpActivity"
-    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
