@@ -1,4 +1,6 @@
 package com.example.workouthome.roomdb
 
-class NotificationDB {
+import androidx.room.RoomDatabase
+
+abstract class NotificationDB : RoomDatabase(){
 }
