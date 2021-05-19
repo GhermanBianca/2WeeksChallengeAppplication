@@ -27,6 +27,7 @@
     <dimen name="marginStart10">10dp</dimen>
     <dimen name="marginStart16">16dp</dimen>
     <dimen name="marginStart20">20dp</dimen>
+    <dimen name="marginStart60">60dp</dimen>
     <dimen name="marginStart70">70dp</dimen>
     <dimen name="marginStart80">80dp</dimen>
     <dimen name="marginStart90">90dp</dimen>

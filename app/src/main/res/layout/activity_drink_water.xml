@@ -44,7 +44,7 @@
         android:id="@+id/checkbox_water"
         android:layout_width="@dimen/width150"
         android:layout_height="@dimen/height150"
-        android:layout_marginStart="@dimen/marginStart80"
+        android:layout_marginStart="@dimen/marginStart60"
         android:layout_marginTop="@dimen/marginTop100"
         app:layout_constraintStart_toStartOf="@id/lottie_drink_water"
         app:layout_constraintTop_toBottomOf="@id/lottie_drink_water"
