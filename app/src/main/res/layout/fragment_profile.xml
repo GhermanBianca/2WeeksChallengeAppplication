@@ -86,9 +86,9 @@
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/title"
-                    android:text="@string/alert"
                     android:gravity="center"
                     android:lines="2"
+                    android:text="@string/alert"
                     android:textColor="@color/black"
                     android:textSize="@dimen/size20" />
             </LinearLayout>
