@@ -45,18 +45,27 @@ class DrinkWaterReminder : Fragment(R.layout.fragment_drink_water_reminder) {
     fun startAlarm() {
         val alarmManager = context?.getSystemService(ALARM_SERVICE) as AlarmManager
         val intent = Intent(
-            context?.applicationContext, NotificationReciever::class.java)
+            context?.applicationContext, NotificationReciever::class.java
+        )
         val pendingIntent = PendingIntent.getBroadcast(context, 1, intent, 0)
-        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), 3000, pendingIntent)
-        Toast.makeText(context, getString(R.string.toast_start_notification), Toast.LENGTH_SHORT).show()
+        alarmManager.setRepeating(
+            AlarmManager.RTC_WAKEUP,
+            System.currentTimeMillis(),
+            3000,
+            pendingIntent
+        )
+        Toast.makeText(context, getString(R.string.toast_start_notification), Toast.LENGTH_SHORT)
+            .show()
     }
 
     private fun cancelAlarm() {
         val alarmManager = context?.getSystemService(ALARM_SERVICE) as AlarmManager
         val intent = Intent(
-            context?.applicationContext, NotificationReciever::class.java)
+            context?.applicationContext, NotificationReciever::class.java
+        )
         val pendingIntent = PendingIntent.getBroadcast(context, 1, intent, 0)
         alarmManager.cancel(pendingIntent)
-        Toast.makeText(context, getString(R.string.toast_stop_notification), Toast.LENGTH_SHORT).show()
+        Toast.makeText(context, getString(R.string.toast_stop_notification), Toast.LENGTH_SHORT)
+            .show()
     }
 }
