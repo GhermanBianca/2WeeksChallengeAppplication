@@ -1,44 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.DrinkWaterReminder">
 
     <Button
         android:id="@+id/btn_start_alarm"
-        android:layout_width="150dp"
+        android:layout_width="@dimen/width100"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginStart="@dimen/marginStart160"
+        android:layout_marginTop="@dimen/marginTop50"
         android:background="@drawable/shape_button_water_reminder"
         android:foreground="?attr/selectableItemBackground"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="Start Alarm"
-        android:textColor="@android:color/black"
+        android:text="@string/start"
+        android:textColor="@color/white"
         android:textSize="@dimen/size18"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_notification"
+        android:layout_width="@dimen/width240"
+        android:layout_height="@dimen/height240"
+        android:layout_marginStart="@dimen/marginStart90"
+        android:layout_marginTop="@dimen/marginTop80"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_start_alarm"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/notification" />
 
     <Button
         android:id="@+id/btn_stop_alarm"
-        android:layout_width="150dp"
+        android:layout_width="@dimen/width100"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginStart="@dimen/marginStart160"
+        android:layout_marginTop="@dimen/marginTop80"
         android:background="@drawable/shape_button_water_reminder"
         android:foreground="?attr/selectableItemBackground"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toEndOf="@id/btn_start_alarm"
-        android:text="Stop Alarm"
-        android:textColor="@android:color/black"
+        android:text="@string/stop"
+        android:textColor="@color/white"
         android:textSize="@dimen/size18"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lottie_notification" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

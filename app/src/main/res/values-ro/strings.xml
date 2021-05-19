@@ -33,6 +33,9 @@
     <string name="cancel">ANULARE</string>
     <string name="update">Modificare</string>
 
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+
     <string name="female">Feminin</string>
     <string name="male">Masculin</string>
 
