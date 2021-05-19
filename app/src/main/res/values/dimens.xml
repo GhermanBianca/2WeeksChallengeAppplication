@@ -45,6 +45,7 @@
     <dimen name="width50">50dp</dimen>
     <dimen name="width95">95dp</dimen>
     <dimen name="width100">100dp</dimen>
+    <dimen name="width110">110dp</dimen>
     <dimen name="width150">100dp</dimen>
     <dimen name="width200">200dp</dimen>
     <dimen name="width240">240dp</dimen>
