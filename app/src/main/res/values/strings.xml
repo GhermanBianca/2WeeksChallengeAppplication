@@ -40,6 +40,13 @@
     <string name="toast_start_notification">Tocmai ai activat primirea notificării!</string>
     <string name="toast_stop_notification">Tocmai ai anulat primirea notificării!</string>
 
+    <string name="failed_sign_up">Înregistrare eșuată!</string>
+    <string name="success_sign_up">Te-ai înregistrat cu success!</string>
+    <string name="enter_name">Te rog să introduci numele</string>
+    <string name="enter_email">Te rog să introduci email-ul</string>
+    <string name="enter_password">Te rog să introduci parola</string>
+    <string name="please_confirm_password">Te rog să confirmi parola</string>
+
     <string name="female">Feminin</string>
     <string name="male">Masculin</string>
 

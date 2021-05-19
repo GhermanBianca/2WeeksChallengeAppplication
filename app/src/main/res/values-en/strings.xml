@@ -40,6 +40,14 @@
     <string name="drink_water_reminder">It is time to hydrate!</string>
     <string name="water_benefits">Drinking water increases calorie burning.</string>
 
+    <string name="failed_sign_up">Sign up failed!</string>
+    <string name="success_sign_up">You signed up successfully!</string>
+    <string name="enter_name">Please enter the name</string>
+    <string name="enter_email">Please enter the email</string>
+    <string name="enter_password">Please enter the password</string>
+    <string name="please_confirm_password">Please confirm the password</string>
+
+
     <string name="female">Female</string>
     <string name="male">Male</string>
 

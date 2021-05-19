@@ -50,7 +50,6 @@ class SignUpActivity : BaseActivity() {
 
         btn_create_sign_up.setOnClickListener {
             registerUser()
-            Log.e(TAG, "You pressed sign up button in Sign Up Activity!")
         }
     }
 
@@ -62,23 +61,19 @@ class SignUpActivity : BaseActivity() {
     ): Boolean {
         return when {
             TextUtils.isEmpty(name) -> {
-                showErrorSnackBar("Te rog să introduci numele")
-                Log.e(TAG, "Please enter name")
+                showErrorSnackBar(resources.getString(R.string.enter_name))
                 false
             }
             TextUtils.isEmpty(email) -> {
-                showErrorSnackBar("Te rog să introduci email-ul")
-                Log.e(TAG, "Please enter email")
+                showErrorSnackBar(resources.getString(R.string.enter_email))
                 false
             }
             TextUtils.isEmpty(password) -> {
-                showErrorSnackBar("Te rog să introduci parola")
-                Log.e(TAG, "Please enter pasword")
+                showErrorSnackBar(resources.getString(R.string.enter_password))
                 false
             }
             TextUtils.isEmpty(confirmPasswod) -> {
-                showErrorSnackBar("Te rog să confirmi parola")
-                Log.e(TAG, "Please confirm pasword")
+                showErrorSnackBar(resources.getString(R.string.please_confirm_password))
                 false
             }
             else -> {
@@ -105,10 +100,9 @@ class SignUpActivity : BaseActivity() {
                     } else {
                         Toast.makeText(
                             this@SignUpActivity,
-                            "Înregistrare eșuată!",
+                            resources.getString(R.string.failed_sign_up),
                             Toast.LENGTH_SHORT
                         ).show()
-                        Log.e(TAG, "Registration failed in SignUp!")
                     }
                 }
         }
@@ -117,13 +111,11 @@ class SignUpActivity : BaseActivity() {
     fun userRegisteredSuccess() {
         Toast.makeText(
             this@SignUpActivity,
-            "Te-ai înregistrat cu succes.",
+            resources.getString(R.string.success_sign_up),
             Toast.LENGTH_SHORT
         ).show()
         UiUtils.hideProgressDialog()
-        Log.e(TAG, "The please wait dialog was closed")
         FirebaseAuth.getInstance().signOut()
         finish()
-        Log.e(TAG, "Sign Up activity was closed")
     }
 }
