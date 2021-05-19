@@ -87,13 +87,11 @@ class FirestoreClass {
             .update(userHashMap)
             .addOnSuccessListener {
                 Log.i(TAG, "Profile Data updated success!")
-               // Toast.makeText(fragment.context, "Profilul a fost modificat cu success!", Toast.LENGTH_SHORT).show()
                 fragment.profileUpdateSuccess()
 
             }.addOnFailureListener { e ->
                 hideProgressDialog()
                 Log.e(TAG, "Error when updating the profile!", e)
-                //Toast.makeText(fragment.context, "A ap[rut o eroare în momentul modificării profilului!", Toast.LENGTH_SHORT).show()
             }
     }
 }
