@@ -37,6 +37,7 @@
     <string name="space">\u0020</string>
     <string name="end_watching">Thanks for watching!</string>
     <string name="error_occurred">An error occurred!</string>
+    <string name="error_confirm_password">Passwords do not match!</string>
 
     <string name="toast_start_notification">You just activated receiving the notification!</string>
     <string name="toast_stop_notification">You just canceled receiving the notification!</string>

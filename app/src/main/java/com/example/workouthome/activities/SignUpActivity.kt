@@ -73,6 +73,10 @@ class SignUpActivity : BaseActivity() {
                 showErrorSnackBar(resources.getString(R.string.please_confirm_password))
                 false
             }
+            password != confirmPasswod -> {
+                showErrorSnackBar(resources.getString(R.string.error_confirm_password))
+                false
+            }
             else -> {
                 return true
             }
