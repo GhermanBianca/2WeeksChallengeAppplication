@@ -35,7 +35,7 @@ class NotificationHelper(base: Context?) : ContextWrapper(base) {
     fun getChannelNotification(): NotificationCompat.Builder? {
         val intent = Intent(this, DrinkWaterActivity::class.java)
         val pendingIntent = PendingIntent.getActivity(
-            this, 0 /* Request code */, intent,
+            this, 0 , intent,
             PendingIntent.FLAG_ONE_SHOT
         )
         return NotificationCompat.Builder(applicationContext, channelID)
