@@ -23,6 +23,8 @@
     <string name="cm"> cm</string>
     <string name="kg"> kg</string>
 
+    <string name="space">\u0020</string>
+
     <string name="drink_water_reminder">Este timpul să te hidratezi!</string>
     <string name="water_benefits">Apa crește arderea caloriilor.</string>
 

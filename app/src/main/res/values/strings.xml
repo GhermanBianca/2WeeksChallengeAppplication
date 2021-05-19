@@ -71,6 +71,9 @@
     <string name="day_name">Ziua \u0020</string>
     <string name="one">1</string>
 
+    <string name="space">\u0020</string>
+
+
     <string name="breakfast_name">Mic dejun</string>
     <string name="snack_name">Gustare</string>
     <string name="lunch_name">Prânz</string>

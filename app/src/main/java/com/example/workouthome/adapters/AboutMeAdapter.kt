@@ -36,7 +36,7 @@ class AboutMeAdapter(private val dataSet: List<String>, private val activity: Ac
             )
 
             view.setOnClickListener {
-                val position: Int = adapterPosition
+                @Suppress("DEPRECATION") val position: Int = adapterPosition
                 showDialog(position)
             }
         }
@@ -97,7 +97,7 @@ class AboutMeAdapter(private val dataSet: List<String>, private val activity: Ac
                         activity.getString((R.string.save)).toUpperCase(Locale.ROOT)
                     ) { _, _ ->
                         aboutMeValue.text =
-                            firstNumberPicker.value.toString() + "." + secondNumberPicker.value.toString() + " " + activity.getString(
+                            firstNumberPicker.value.toString() + R.string.point + secondNumberPicker.value.toString() + R.string.space + activity.getString(
                                 (R.string.kg)
                             ).toUpperCase(Locale.ROOT)
                     }
@@ -135,7 +135,7 @@ class AboutMeAdapter(private val dataSet: List<String>, private val activity: Ac
                     d.setPositiveButton(activity.getString((R.string.save)).toUpperCase(Locale.ROOT))
                     { _, _ ->
                         aboutMeValue.text =
-                            firstNumberPicker.value.toString() + "." + secondNumberPicker.value.toString() + " " + activity.getString((R.string.kg)).toUpperCase(
+                            firstNumberPicker.value.toString() + R.string.point + secondNumberPicker.value.toString() + R.string.space + activity.getString((R.string.kg)).toUpperCase(
                                 Locale.ROOT
                             )
                     }
