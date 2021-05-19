@@ -99,11 +99,7 @@ class SignUpActivity : BaseActivity() {
                         val user = User(firebaseUser.uid, name, registeredEmail)
                         FirestoreClass().registerUser(this, user)
                     } else {
-                        Toast.makeText(
-                            this@SignUpActivity,
-                            resources.getString(R.string.failed_sign_up),
-                            Toast.LENGTH_SHORT
-                        ).show()
+                        showErrorSnackBar(resources.getString(R.string.failed_sign_up))
                     }
                 }
         }
