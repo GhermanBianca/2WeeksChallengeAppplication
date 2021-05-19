@@ -91,7 +91,7 @@ class SignInActivity : BaseActivity() {
                     } else {
                         Log.e(TAG, "signInWithEmail:failure", task.exception)
                         Toast.makeText(
-                            baseContext, "Authentication failed.",
+                            baseContext, resources.getString(R.string.failed_sign_in),
                             Toast.LENGTH_SHORT
                         ).show()
                     }
