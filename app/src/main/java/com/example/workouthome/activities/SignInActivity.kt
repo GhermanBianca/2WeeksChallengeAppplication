@@ -62,13 +62,11 @@ class SignInActivity : BaseActivity() {
     private fun validateForm(email: String, password: String): Boolean {
         return when {
             TextUtils.isEmpty(email) -> {
-                showErrorSnackBar("Te rog să introduci email-ul")
-                Log.e(TAG, "Please enter email")
+                showErrorSnackBar(resources.getString(R.string.enter_email))
                 false
             }
             TextUtils.isEmpty(password) -> {
-                showErrorSnackBar("Te rog să introduci parola")
-                Log.e(TAG, "Please enter password")
+                showErrorSnackBar(resources.getString(R.string.enter_password))
                 false
             }
             else -> {
@@ -104,7 +102,6 @@ class SignInActivity : BaseActivity() {
     fun signInSuccess() {
         hideProgressDialog()
         startActivity(Intent(this, MainActivity::class.java))
-        Log.e(TAG, "The Main Activity was shown")
         finish()
     }
 }

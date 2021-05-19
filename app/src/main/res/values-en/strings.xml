@@ -41,6 +41,7 @@
     <string name="water_benefits">Drinking water increases calorie burning.</string>
 
     <string name="failed_sign_up">Sign up failed!</string>
+    <string name="failed_sign_in">Sign in failed!</string>
     <string name="success_sign_up">You signed up successfully!</string>
     <string name="enter_name">Please enter the name</string>
     <string name="enter_email">Please enter the email</string>

@@ -41,6 +41,7 @@
     <string name="toast_stop_notification">Tocmai ai anulat primirea notificării!</string>
 
     <string name="failed_sign_up">Înregistrare eșuată!</string>
+    <string name="failed_sign_in">Autentificare eșuată!</string>
     <string name="success_sign_up">Te-ai înregistrat cu success!</string>
     <string name="enter_name">Te rog să introduci numele</string>
     <string name="enter_email">Te rog să introduci email-ul</string>

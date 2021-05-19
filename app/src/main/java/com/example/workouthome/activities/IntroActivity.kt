@@ -18,7 +18,6 @@ class IntroActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_intro)
-        Log.e(TAG, "You are in Intro Activity now!")
 
         // for show app full screen
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
