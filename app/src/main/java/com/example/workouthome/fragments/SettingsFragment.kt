@@ -15,7 +15,6 @@ import com.example.workouthome.databinding.FragmentSettingsBinding
 import com.example.workouthome.utils.Constants
 import java.util.*
 
-
 @Suppress("DEPRECATION")
 class SettingsFragment : Fragment(R.layout.fragment_settings) {
 
