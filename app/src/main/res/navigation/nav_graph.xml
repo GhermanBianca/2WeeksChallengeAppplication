@@ -9,7 +9,7 @@
         android:id="@+id/challengeFragment"
         android:name="com.example.workouthome.fragments.ChallengeFragment"
         android:label="@string/challenges"
-        tools:layout="@layout/fragment_challenge" >
+        tools:layout="@layout/fragment_challenge">
         <action
             android:id="@+id/action_challengeFragment_to_dayChallengeFragment"
             app:destination="@id/dayChallengeFragment" />
@@ -70,8 +70,8 @@
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
         <action
-            android:id="@+id/action_profileFragment_to_alarmFragment"
-            app:destination="@id/alarmFragment"
+            android:id="@+id/action_profileFragment_to_drinkWaterReminder"
+            app:destination="@id/drinkWaterReminder"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
@@ -106,19 +106,6 @@
         <argument
             android:name="challengeBUndle"
             app:argType="string" />
-    </fragment>
-    <fragment
-        android:id="@+id/alarmFragment"
-        android:name="com.example.workouthome.fragments.ReminderFragment"
-        android:label="Alarma"
-        tools:layout="@layout/fragment_reminder" >
-        <action
-            android:id="@+id/action_alarmFragment_to_drinkWaterReminder"
-            app:destination="@id/drinkWaterReminder"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/drinkWaterReminder"

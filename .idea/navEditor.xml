@@ -53,18 +53,6 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="alarmFragment">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="1117" />
-                            <option name="y" value="322" />
-                          </Point>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
                   <entry key="challengeFragment">
                     <value>
                       <LayoutPositions>
@@ -115,20 +103,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="1411" />
-                            <option name="y" value="178" />
-                          </Point>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                  <entry key="exercisesFragment">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="256" />
-                            <option name="y" value="12" />
+                            <option name="x" value="1122" />
+                            <option name="y" value="326" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -167,11 +143,6 @@
                         <option name="myPositions">
                           <map>
                             <entry key="action_profileFragment_to_aboutMeFragment">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                            <entry key="action_profileFragment_to_alarmFragment">
                               <value>
                                 <LayoutPositions />
                               </value>

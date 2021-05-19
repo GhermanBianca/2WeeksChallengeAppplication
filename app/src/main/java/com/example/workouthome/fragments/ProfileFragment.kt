@@ -4,12 +4,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.workouthome.R
 import com.example.workouthome.databinding.FragmentProfileBinding
-import kotlinx.android.synthetic.main.fragment_profile.*
 
 class ProfileFragment : Fragment(R.layout.fragment_profile) {
 
@@ -40,8 +38,9 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
             findNavController().navigate(action)
         }
 
+        // click on reminder
         _binding?.cardAlert?.setOnClickListener {
-            val action = ProfileFragmentDirections.actionProfileFragmentToAlarmFragment()
+            val action = ProfileFragmentDirections.actionProfileFragmentToDrinkWaterReminder()
             findNavController().navigate(action)
         }
 
