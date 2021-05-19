@@ -51,7 +51,7 @@ class DrinkWaterReminder : Fragment(R.layout.fragment_drink_water_reminder) {
         alarmManager.setRepeating(
             AlarmManager.RTC_WAKEUP,
             System.currentTimeMillis(),
-            3000,
+            1000 * 60 * 15,
             pendingIntent
         )
         Toast.makeText(context, getString(R.string.toast_start_notification), Toast.LENGTH_SHORT)

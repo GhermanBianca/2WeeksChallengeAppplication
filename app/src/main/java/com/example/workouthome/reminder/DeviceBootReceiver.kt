@@ -14,7 +14,7 @@ class DeviceBootReceiver : BroadcastReceiver() {
             val alarmIntent = Intent(context, NotificationReciever::class.java)
             val pendingIntent = PendingIntent.getBroadcast(context, 0, alarmIntent, 0)
             val manager = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
-            val interval = 3000
+            val interval = 1000 * 60 * 15
             manager.setInexactRepeating(
                 AlarmManager.RTC_WAKEUP,
                 System.currentTimeMillis(),
