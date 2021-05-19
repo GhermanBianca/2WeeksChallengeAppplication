@@ -34,6 +34,9 @@
     <string name="start">Start</string>
     <string name="stop">Stop</string>
 
+    <string name="drink_water_reminder">It is time to hydrate!</string>
+    <string name="water_benefits">Drinking water increases calorie burning.</string>
+
     <string name="female">Female</string>
     <string name="male">Male</string>
 
@@ -493,8 +496,6 @@
     <string name="buttock_thigs">Buttocks &amp; Thighs</string>
 
     <string name="water_reminder">Drink Water Reminder</string>
-    <string name="drink_water_time">It is  time to drink water! "</string>
-    <string name="water_benefit">Water helps you lose calories!"</string>
     <string name="drink">Drink</string>
 
 </resources>

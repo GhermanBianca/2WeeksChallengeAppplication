@@ -8,7 +8,6 @@ import android.app.PendingIntent
 import android.content.Context
 import android.content.ContextWrapper
 import android.content.Intent
-import android.graphics.Color
 import android.os.Build
 import android.widget.RemoteViews
 import androidx.core.app.NotificationCompat
@@ -40,7 +39,7 @@ class NotificationHelper(base: Context?) : ContextWrapper(base) {
             PendingIntent.FLAG_ONE_SHOT
         )
         return NotificationCompat.Builder(applicationContext, channelID)
-            .setContentTitle("Este timpul să te hidratezi!")
+            .setContentTitle(getString(R.string.drink_water_reminder))
             .setSmallIcon(R.drawable.ic_water)
             .setContentIntent(pendingIntent)
             .setAutoCancel(true)

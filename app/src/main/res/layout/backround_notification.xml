@@ -29,7 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/all"
-                android:text="@string/drink_water_time"
+                android:text="@string/drink_water_reminder"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 
@@ -38,7 +38,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/all"
-                android:text="@string/water_benefit"
+                android:text="@string/water_benefits"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -46,13 +46,13 @@
         <Button
             android:layout_width="@dimen/width100"
             android:layout_height="@dimen/height30"
-            android:layout_marginStart="@dimen/marginStart5"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="@dimen/marginTop5"
             android:background="@drawable/shape_button_notification"
             android:fontFamily="@font/bold"
             android:text="@string/drink"
             android:textAllCaps="true"
-            android:textColor="@color/darkBlue"
+            android:textColor="@color/white"
             android:textSize="@dimen/size15"
             android:textStyle="bold" />
     </LinearLayout>

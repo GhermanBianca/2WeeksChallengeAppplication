@@ -23,6 +23,9 @@
     <string name="cm"> cm</string>
     <string name="kg"> kg</string>
 
+    <string name="drink_water_reminder">Este timpul să te hidratezi!</string>
+    <string name="water_benefits">Apa crește arderea caloriilor.</string>
+
     <string name="height">Înălțime</string>
     <string name="weight">Greutate</string>
     <string name="desired_weight">Greutate dorită</string>
@@ -495,8 +498,6 @@
     <string name="buttock_thigs">Fese &amp; coapse</string>
 
     <string name="water_reminder">Memento Hidratare</string>
-    <string name="drink_water_time">Este timpul pentru hidratare!"</string>
-    <string name="water_benefit">Apa te ajută în pierderea caloriilor!"</string>
     <string name="drink">Hidratare</string>
 
 </resources>
