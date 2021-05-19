@@ -24,6 +24,8 @@
     <string name="kg"> kg</string>
 
     <string name="space">\u0020</string>
+    <string name="end_watching">Mulțumesc pentru vizionare!</string>
+    <string name="error_occurred">A apărut o eroare!</string>
 
     <string name="drink_water_reminder">Este timpul să te hidratezi!</string>
     <string name="water_benefits">Apa crește arderea caloriilor.</string>

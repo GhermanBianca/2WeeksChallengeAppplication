@@ -58,11 +58,11 @@ class DayChallengeFragment : Fragment(R.layout.fragment_day_challenge) {
         videoView.requestFocus()
 
         videoView.setOnCompletionListener {
-            Toast.makeText(requireActivity(), "Thanks for watching", Toast.LENGTH_LONG).show()
+            Toast.makeText(requireActivity(), R.string.end_watching, Toast.LENGTH_LONG).show()
         }
 
         videoView.setOnErrorListener { _, _, _ ->
-            Toast.makeText(requireActivity(), "An error occured", Toast.LENGTH_LONG).show()
+            Toast.makeText(requireActivity(), R.string.error_occurred, Toast.LENGTH_LONG).show()
             false
         }
 

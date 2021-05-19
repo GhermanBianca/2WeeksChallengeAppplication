@@ -72,6 +72,8 @@
     <string name="one">1</string>
 
     <string name="space">\u0020</string>
+    <string name="end_watching">Mulțumesc pentru vizionare!</string>
+    <string name="error_occurred">A apărut o eroare!</string>
 
 
     <string name="breakfast_name">Mic dejun</string>
