@@ -48,7 +48,7 @@ class DrinkWaterReminder : Fragment(R.layout.fragment_drink_water_reminder) {
             context?.applicationContext, NotificationReciever::class.java)
         val pendingIntent = PendingIntent.getBroadcast(context, 1, intent, 0)
         alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), 3000, pendingIntent)
-        Log.d("ME", "Alarm started")
+        Toast.makeText(context, getString(R.string.toast_start_notification), Toast.LENGTH_SHORT).show()
     }
 
     private fun cancelAlarm() {
@@ -57,6 +57,6 @@ class DrinkWaterReminder : Fragment(R.layout.fragment_drink_water_reminder) {
             context?.applicationContext, NotificationReciever::class.java)
         val pendingIntent = PendingIntent.getBroadcast(context, 1, intent, 0)
         alarmManager.cancel(pendingIntent)
-        Toast.makeText(context, "Alarm Canceled", Toast.LENGTH_SHORT).show()
+        Toast.makeText(context, getString(R.string.toast_stop_notification), Toast.LENGTH_SHORT).show()
     }
 }

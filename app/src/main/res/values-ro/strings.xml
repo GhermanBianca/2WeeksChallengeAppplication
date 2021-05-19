@@ -26,6 +26,9 @@
     <string name="drink_water_reminder">Este timpul să te hidratezi!</string>
     <string name="water_benefits">Apa crește arderea caloriilor.</string>
 
+    <string name="toast_start_notification">Tocmai ai activat primirea notificării!</string>
+    <string name="toast_stop_notification">Tocmai ai anulat primirea notificării!</string>
+
     <string name="height">Înălțime</string>
     <string name="weight">Greutate</string>
     <string name="desired_weight">Greutate dorită</string>

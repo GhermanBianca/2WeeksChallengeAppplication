@@ -34,6 +34,9 @@
     <string name="start">Start</string>
     <string name="stop">Stop</string>
 
+    <string name="toast_start_notification">You just activated receiving the notification!</string>
+    <string name="toast_stop_notification">You just canceled receiving the notification!</string>
+
     <string name="drink_water_reminder">It is time to hydrate!</string>
     <string name="water_benefits">Drinking water increases calorie burning.</string>
 
