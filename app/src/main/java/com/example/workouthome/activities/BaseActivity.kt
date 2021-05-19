@@ -1,18 +1,13 @@
 package com.example.workouthome.activities
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.example.workouthome.R
 import com.google.android.material.snackbar.Snackbar
 
 @Suppress("DEPRECATION")
 open class BaseActivity : AppCompatActivity() {
-
-    companion object {
-        private const val TAG = "BaseActivity"
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,7 +16,6 @@ open class BaseActivity : AppCompatActivity() {
 
     // show a snackBar if you don't complete all fiels
     fun showErrorSnackBar(message: String) {
-        Log.e(TAG, "You don't complete every fields!")
         val snackBar = Snackbar.make(
             findViewById(android.R.id.content),
             message, Snackbar.LENGTH_LONG
