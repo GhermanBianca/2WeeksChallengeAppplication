@@ -5,7 +5,6 @@ import android.app.PendingIntent
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import android.widget.Toast
 
 class DeviceBootReceiver : BroadcastReceiver() {
 
@@ -21,7 +20,6 @@ class DeviceBootReceiver : BroadcastReceiver() {
                 interval.toLong(),
                 pendingIntent
             )
-            Toast.makeText(context, "Alarm Set", Toast.LENGTH_SHORT).show()
         }
     }
 }
