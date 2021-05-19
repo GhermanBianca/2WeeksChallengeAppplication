@@ -16,7 +16,7 @@
 
         <TextView
             android:id="@+id/advice_type"
-            android:layout_width="@dimen/width100"
+            android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/marginStart10"
             android:fontFamily="@font/all"
