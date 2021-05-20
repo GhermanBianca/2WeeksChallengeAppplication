@@ -43,7 +43,7 @@ class DrinkWaterReminder : Fragment(R.layout.fragment_drink_water_reminder) {
             cancelAlarm()
         }
 
-        val db = context?.let { Room.databaseBuilder(it.getApplicationContext(), NotificationDB::class.java, "NotificationDB").build() }
+        val db = context?.let { Room.databaseBuilder(it?.getApplicationContext(), NotificationDB::class.java, "NotificationDB").build() }
         Thread {
             val notification = NotificationEntity()
             notification.userEmail = "bia@yahoo.com"
