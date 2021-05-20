@@ -1,4 +1,4 @@
-package com.example.workouthome.roomdb
+package com.example.workouthome.dao
 
 import androidx.room.Dao
 import androidx.room.Insert

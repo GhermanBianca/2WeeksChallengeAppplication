@@ -4,6 +4,7 @@ import androidx.room.EntityInsertionAdapter;
 import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteStatement;
 
+import com.example.workouthome.dao.NotificationDAO;
 import com.example.workouthome.model.NotificationEntity;
 
 import java.lang.Override;
