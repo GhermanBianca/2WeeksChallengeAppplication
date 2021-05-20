@@ -44,12 +44,13 @@ class DrinkWaterReminder : Fragment(R.layout.fragment_drink_water_reminder) {
         }
 
         val db = context?.let { Room.databaseBuilder(it.getApplicationContext(), NotificationDB::class.java, "NotificationDB").build() }
+        Thread {
+            val notification = NotificationEntity()
+            notification.userEmail = "bia@yahoo.com"
+            notification.wasActivated = true
 
-        val notification = NotificationEntity()
-        notification.userEmail = "bia@yahoo.com"
-        notification.wasActivated = true
-
-        db?.notificationDAO()?.saveNotification(notification)
+            db?.notificationDAO()?.saveNotification(notification)
+        }.start()
     }
 
     @SuppressLint("ShortAlarm")
