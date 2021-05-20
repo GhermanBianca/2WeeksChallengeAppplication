@@ -33,6 +33,7 @@
 
     <string name="add_notification">Add</string>
     <string name="delete_notification">Delete</string>
+    <string name="add_notification_description">The alarm is activated! You will receive a notification every 15 minutes that will remind you to drink water !</string>
 
     <string name="space">\u0020</string>
     <string name="end_watching">Thanks for watching!</string>

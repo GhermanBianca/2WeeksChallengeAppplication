@@ -37,10 +37,12 @@ class DrinkWaterReminder : Fragment(R.layout.fragment_drink_water_reminder) {
 
         _binding?.btnStartAlarm?.setOnClickListener {
             startAlarm()
+            _binding?.descriptionStatusTv?.text = getString(R.string.add_notification_description)
         }
 
         _binding?.btnStopAlarm?.setOnClickListener {
             cancelAlarm()
+            _binding?.descriptionStatusTv?.text = ""
         }
 
         val db = context?.let { Room.databaseBuilder(it?.getApplicationContext(), NotificationDB::class.java, "NotificationDB").build() }
