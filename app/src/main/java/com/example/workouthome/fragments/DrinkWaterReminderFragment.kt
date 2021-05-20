@@ -17,7 +17,7 @@ import com.example.workouthome.R
 import com.example.workouthome.databinding.FragmentDrinkWaterReminderBinding
 import com.example.workouthome.reminder.NotificationReciever
 import com.example.workouthome.roomdb.NotificationDB
-import com.example.workouthome.roomdb.NotificationEntity
+import com.example.workouthome.model.NotificationEntity
 
 class DrinkWaterReminderFragment : Fragment(R.layout.fragment_drink_water_reminder) {
 
