@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.workouthome.R
-import com.example.workouthome.modules.AdviceTypeItem
+import com.example.workouthome.model.AdviceTypeItem
 import kotlinx.android.synthetic.main.content_recycler_view_advice_type.view.*
 
 class AdviceTypeAdapter(var activity: FragmentActivity?, var arrayList: ArrayList<AdviceTypeItem>) : RecyclerView.Adapter<AdviceTypeAdapter.AdviceTypeViewHolder>() {

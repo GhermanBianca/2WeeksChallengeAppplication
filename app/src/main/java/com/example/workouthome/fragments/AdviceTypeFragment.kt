@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.workouthome.R
 import com.example.workouthome.adapters.AdviceTypeAdapter
 import com.example.workouthome.databinding.FragmentAdviceTypeBinding
-import com.example.workouthome.modules.AdviceTypeItem
+import com.example.workouthome.model.AdviceTypeItem
 import com.example.workouthome.utils.Constants.DESCRIPTION_IMAGE
 import com.example.workouthome.utils.Constants.DESCRIPTION_TYPE
 import com.example.workouthome.viewmodel.AdviceTypeViewModel

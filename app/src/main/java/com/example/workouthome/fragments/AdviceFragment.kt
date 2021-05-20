@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.workouthome.R
 import com.example.workouthome.adapters.AdviceAdapter
 import com.example.workouthome.databinding.FragmentAdviceBinding
-import com.example.workouthome.modules.AdviceItem
+import com.example.workouthome.model.AdviceItem
 import kotlinx.android.synthetic.main.fragment_advice.*
 
 class AdviceFragment : Fragment(R.layout.fragment_advice) {

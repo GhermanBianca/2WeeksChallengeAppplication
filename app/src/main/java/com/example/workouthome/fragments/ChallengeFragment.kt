@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.workouthome.R
 import com.example.workouthome.adapters.ChallengeAdapter
 import com.example.workouthome.databinding.FragmentChallengeBinding
-import com.example.workouthome.modules.ChallengeItem
+import com.example.workouthome.model.ChallengeItem
 
 class ChallengeFragment : Fragment(R.layout.fragment_challenge) {
 

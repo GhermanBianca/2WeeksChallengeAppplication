@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.workouthome.R
-import com.example.workouthome.modules.DayNutritionItem
+import com.example.workouthome.model.DayNutritionItem
 import kotlinx.android.synthetic.main.content_recycler_view_day_nutrition.view.*
 
 class DayNutritionAdapter(var activity: FragmentActivity?, var arrayList: ArrayList<DayNutritionItem>) : RecyclerView.Adapter<DayNutritionAdapter.DayNutritionViewHolder>() {

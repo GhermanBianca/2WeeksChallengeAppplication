@@ -17,7 +17,7 @@ import com.bumptech.glide.Glide
 import com.example.workouthome.R
 import com.example.workouthome.firebase.FirestoreClass
 import com.example.workouthome.fragments.AboutMeFragment
-import com.example.workouthome.modules.User
+import com.example.workouthome.model.User
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.nav_header_main.*

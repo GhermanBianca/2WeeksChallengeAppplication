@@ -8,7 +8,7 @@ import android.view.WindowManager
 import android.widget.Toast
 import com.example.workouthome.R
 import com.example.workouthome.firebase.FirestoreClass
-import com.example.workouthome.modules.User
+import com.example.workouthome.model.User
 import com.example.workouthome.utils.UiUtils
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser

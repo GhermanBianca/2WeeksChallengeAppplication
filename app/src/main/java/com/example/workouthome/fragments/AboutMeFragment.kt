@@ -22,7 +22,7 @@ import com.example.workouthome.R
 import com.example.workouthome.adapters.AboutMeAdapter
 import com.example.workouthome.databinding.FragmentAboutMeBinding
 import com.example.workouthome.firebase.FirestoreClass
-import com.example.workouthome.modules.User
+import com.example.workouthome.model.User
 import com.example.workouthome.utils.Constants
 import com.example.workouthome.utils.UiUtils.hideProgressDialog
 import com.example.workouthome.utils.UiUtils.showProgressDialog

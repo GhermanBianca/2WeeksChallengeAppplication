@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.workouthome.R
 import com.example.workouthome.adapters.DayNutritionAdapter
 import com.example.workouthome.databinding.FragmentDayNutritionBinding
-import com.example.workouthome.modules.DayNutritionItem
+import com.example.workouthome.model.DayNutritionItem
 import com.example.workouthome.utils.Constants.DAY_NUMBER
 import com.example.workouthome.viewmodel.NutritionTypeViewModel
 

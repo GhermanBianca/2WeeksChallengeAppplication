@@ -1,4 +1,4 @@
-package com.example.workouthome.modules
+package com.example.workouthome.model
 
 import android.os.Parcel
 import android.os.Parcelable

@@ -10,7 +10,7 @@ import androidx.fragment.app.FragmentActivity
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.example.workouthome.R
-import com.example.workouthome.modules.ChallengeItem
+import com.example.workouthome.model.ChallengeItem
 import com.example.workouthome.utils.Constants
 import kotlinx.android.synthetic.main.content_recycler_view_challenge.view.*
 

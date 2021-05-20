@@ -8,7 +8,7 @@ import com.example.workouthome.activities.SignInActivity
 import com.example.workouthome.activities.SignUpActivity
 import com.example.workouthome.firebase.FirebaseUtils.Companion.getCurrentUserId
 import com.example.workouthome.fragments.AboutMeFragment
-import com.example.workouthome.modules.User
+import com.example.workouthome.model.User
 import com.example.workouthome.utils.Constants
 import com.example.workouthome.utils.UiUtils.hideProgressDialog
 import com.google.firebase.firestore.FirebaseFirestore

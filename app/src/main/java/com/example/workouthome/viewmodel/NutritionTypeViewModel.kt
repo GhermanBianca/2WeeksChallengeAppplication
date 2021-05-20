@@ -2,7 +2,7 @@ package com.example.workouthome.viewmodel
 
 import androidx.fragment.app.FragmentActivity
 import com.example.workouthome.R
-import com.example.workouthome.modules.DayNutritionItem
+import com.example.workouthome.model.DayNutritionItem
 
 // for set nutrition list depending on day and level
 class NutritionTypeViewModel(private val fragmentActivity: FragmentActivity?) {
