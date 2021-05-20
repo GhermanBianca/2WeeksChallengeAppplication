@@ -31,8 +31,8 @@
     <string name="cancel">Anulare</string>
     <string name="update">Modificare</string>
 
-    <string name="start">Start</string>
-    <string name="stop">Stop</string>
+    <string name="add_notification">Adăugare</string>
+    <string name="delete_notification">Ștergere</string>
 
     <string name="drink_water_reminder">Este timpul să te hidratezi!</string>
     <string name="water_benefits">Apa crește arderea caloriilor.</string>

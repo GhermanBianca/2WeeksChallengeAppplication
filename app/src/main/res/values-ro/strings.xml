@@ -54,8 +54,8 @@
     <string name="cancel">ANULARE</string>
     <string name="update">Modificare</string>
 
-    <string name="start">Start</string>
-    <string name="stop">Stop</string>
+    <string name="add_notification">Adăugare</string>
+    <string name="delete_notification">Ștergere</string>
 
     <string name="female">Feminin</string>
     <string name="male">Masculin</string>

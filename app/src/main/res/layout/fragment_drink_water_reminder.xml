@@ -9,19 +9,35 @@
 
     <Button
         android:id="@+id/btn_start_alarm"
-        android:layout_width="@dimen/width100"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginStart="@dimen/marginStart160"
         android:layout_marginTop="@dimen/marginTop50"
+        android:layout_marginStart="50dp"
         android:background="@drawable/shape_button_water_reminder"
         android:foreground="?attr/selectableItemBackground"
         android:gravity="center"
-        android:text="@string/start"
+        android:text="@string/add_notification"
         android:textColor="@color/white"
         android:textSize="@dimen/size18"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_stop_alarm"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/marginTop50"
+        android:layout_marginStart="50dp"
+        android:background="@drawable/shape_button_water_reminder"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/delete_notification"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size18"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/btn_start_alarm"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.airbnb.lottie.LottieAnimationView
@@ -36,20 +52,21 @@
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/notification" />
 
-    <Button
-        android:id="@+id/btn_stop_alarm"
-        android:layout_width="@dimen/width100"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginStart="@dimen/marginStart160"
-        android:layout_marginTop="@dimen/marginTop80"
-        android:background="@drawable/shape_button_water_reminder"
-        android:foreground="?attr/selectableItemBackground"
-        android:text="@string/stop"
-        android:textColor="@color/white"
-        android:textSize="@dimen/size18"
-        android:textStyle="bold"
+    <TextView
+        android:id="@+id/description_status_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Alarma este activata! Vei primi o notificare
+la fiecare 15 minute care iti va aduce aminte sa bei apa!"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/lottie_notification" />
+        app:layout_constraintTop_toBottomOf="@id/lottie_notification"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:lines="2"
+        android:textColor="@color/white"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -31,8 +31,8 @@
     <string name="cancel">Cancel</string>
     <string name="update">Update</string>
 
-    <string name="start">Start</string>
-    <string name="stop">Stop</string>
+    <string name="add_notification">Add</string>
+    <string name="delete_notification">Delete</string>
 
     <string name="space">\u0020</string>
     <string name="end_watching">Thanks for watching!</string>
