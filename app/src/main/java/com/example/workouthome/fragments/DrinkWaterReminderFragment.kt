@@ -19,7 +19,11 @@ import com.example.workouthome.reminder.NotificationReciever
 import com.example.workouthome.roomdb.NotificationDB
 import com.example.workouthome.roomdb.NotificationEntity
 
-class DrinkWaterReminder : Fragment(R.layout.fragment_drink_water_reminder) {
+class DrinkWaterReminderFragment : Fragment(R.layout.fragment_drink_water_reminder) {
+
+    companion object {
+        private const val TAG = "DrinkWaterReminderFragment"
+    }
 
     private var _binding: FragmentDrinkWaterReminderBinding? = null
     private val binding get() = _binding!!
@@ -45,13 +49,24 @@ class DrinkWaterReminder : Fragment(R.layout.fragment_drink_water_reminder) {
             _binding?.descriptionStatusTv?.text = ""
         }
 
-        val db = context?.let { Room.databaseBuilder(it?.getApplicationContext(), NotificationDB::class.java, "NotificationDB").build() }
+
+        val db = context?.let { Room.databaseBuilder(it.applicationContext, NotificationDB::class.java, "NotificationDB").build() }
         Thread {
             val notification = NotificationEntity()
             notification.userEmail = "bia@yahoo.com"
             notification.wasActivated = true
 
+            Log.d(TAG, " db $db" )
+            Log.d(TAG, " db db?.notificationDAO() ${db?.notificationDAO()} " )
+
+
             db?.notificationDAO()?.saveNotification(notification)
+
+           /* db?.notificationDAO()?.readNotification()?.forEach {
+                Log.i(TAG, "User email is ${it.userEmail}")
+                Log.i(TAG, "Notification Status ${it.wasActivated}")
+            }*/
+
         }.start()
     }
 

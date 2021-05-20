@@ -11,6 +11,6 @@ interface NotificationDAO {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun saveNotification( notification : NotificationEntity)
 
-   /* @Query( "select * from NotificationEntity")
-    fun readNotification() : List<NotificationEntity>*/
+//    @Query( "select * from NotificationEntity")
+//    fun readNotification() : List<NotificationEntity>
 }

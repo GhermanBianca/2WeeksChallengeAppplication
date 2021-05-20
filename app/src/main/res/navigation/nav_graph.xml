@@ -109,7 +109,7 @@
     </fragment>
     <fragment
         android:id="@+id/drinkWaterReminder"
-        android:name="com.example.workouthome.fragments.DrinkWaterReminder"
+        android:name="com.example.workouthome.fragments.DrinkWaterReminderFragment"
         android:label="Water Reminder"
         tools:layout="@layout/fragment_drink_water_reminder" />
 </navigation>
