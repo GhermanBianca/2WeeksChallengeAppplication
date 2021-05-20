@@ -12,9 +12,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.room.Room
 import com.example.workouthome.R
 import com.example.workouthome.databinding.FragmentDrinkWaterReminderBinding
 import com.example.workouthome.reminder.NotificationReciever
+import com.example.workouthome.roomdb.NotificationDB
+import com.example.workouthome.roomdb.NotificationEntity
 
 class DrinkWaterReminder : Fragment(R.layout.fragment_drink_water_reminder) {
 
@@ -39,6 +42,14 @@ class DrinkWaterReminder : Fragment(R.layout.fragment_drink_water_reminder) {
         _binding?.btnStopAlarm?.setOnClickListener {
             cancelAlarm()
         }
+
+        val db = context?.let { Room.databaseBuilder(it.getApplicationContext(), NotificationDB::class.java, "NotificationDB").build() }
+
+        val notification = NotificationEntity()
+        notification.userEmail = "bia@yahoo.com"
+        notification.wasActivated = true
+
+        db?.notificationDAO()?.saveNotification(notification)
     }
 
     @SuppressLint("ShortAlarm")
