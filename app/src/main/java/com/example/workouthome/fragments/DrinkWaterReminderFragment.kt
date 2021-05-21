@@ -14,6 +14,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.workouthome.R
 import com.example.workouthome.databinding.FragmentDrinkWaterReminderBinding
+import com.example.workouthome.firebase.FirebaseUtils
 import com.example.workouthome.model.NotificationEntity
 import com.example.workouthome.model.NotificationViewModel
 import com.example.workouthome.reminder.NotificationReciever
@@ -27,6 +28,7 @@ class DrinkWaterReminderFragment : Fragment(R.layout.fragment_drink_water_remind
     private var _binding: FragmentDrinkWaterReminderBinding? = null
     private val binding get() = _binding!!
     private lateinit var mNotificationViewModel: NotificationViewModel
+    private var wasActivated = false
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -43,24 +45,25 @@ class DrinkWaterReminderFragment : Fragment(R.layout.fragment_drink_water_remind
         _binding?.btnStartAlarm?.setOnClickListener {
             startAlarm()
             _binding?.descriptionStatusTv?.text = getString(R.string.add_notification_description)
+            wasActivated = true
             insertDataToDatabase()
         }
 
         _binding?.btnStopAlarm?.setOnClickListener {
             cancelAlarm()
             _binding?.descriptionStatusTv?.text = ""
+            wasActivated = false
         }
     }
 
     private fun insertDataToDatabase() {
-        val email = "bia@yahoo.com"
+        val email = FirebaseUtils.getCurrentUserId()
         val notificationDescription = _binding?.descriptionStatusTv?.text.toString()
-        val notification = NotificationEntity(0, email, notificationDescription)
+        val status = wasActivated
+        val notification = NotificationEntity(0, email, status, notificationDescription)
         mNotificationViewModel.insertNotification(notification)
         Toast.makeText(requireContext(), "Successfully added!", Toast.LENGTH_LONG).show()
     }
-
-
 
     @SuppressLint("ShortAlarm")
     fun startAlarm() {

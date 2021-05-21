@@ -8,6 +8,7 @@ data class NotificationEntity (
 
     @PrimaryKey(autoGenerate = true)
     val id: Int,
-    val userEmail: String,
+    val userId: String,
+    val wasActivated: Boolean,
     val notificationDescription: String
 )
