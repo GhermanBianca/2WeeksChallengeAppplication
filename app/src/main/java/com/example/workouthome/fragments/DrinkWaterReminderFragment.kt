@@ -6,18 +6,17 @@ import android.app.PendingIntent
 import android.content.Context.ALARM_SERVICE
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.room.Room
+import androidx.lifecycle.ViewModelProvider
 import com.example.workouthome.R
 import com.example.workouthome.databinding.FragmentDrinkWaterReminderBinding
-import com.example.workouthome.reminder.NotificationReciever
-import com.example.workouthome.roomdb.NotificationDB
 import com.example.workouthome.model.NotificationEntity
+import com.example.workouthome.model.NotificationViewModel
+import com.example.workouthome.reminder.NotificationReciever
 
 class DrinkWaterReminderFragment : Fragment(R.layout.fragment_drink_water_reminder) {
 
@@ -27,6 +26,7 @@ class DrinkWaterReminderFragment : Fragment(R.layout.fragment_drink_water_remind
 
     private var _binding: FragmentDrinkWaterReminderBinding? = null
     private val binding get() = _binding!!
+    private lateinit var mNotificationViewModel: NotificationViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -38,37 +38,29 @@ class DrinkWaterReminderFragment : Fragment(R.layout.fragment_drink_water_remind
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        mNotificationViewModel = ViewModelProvider(this).get(NotificationViewModel::class.java)
 
         _binding?.btnStartAlarm?.setOnClickListener {
             startAlarm()
             _binding?.descriptionStatusTv?.text = getString(R.string.add_notification_description)
+            insertDataToDatabase()
         }
 
         _binding?.btnStopAlarm?.setOnClickListener {
             cancelAlarm()
             _binding?.descriptionStatusTv?.text = ""
         }
-
-
-        val db = context?.let { Room.databaseBuilder(it.applicationContext, NotificationDB::class.java, "NotificationDB").build() }
-        Thread {
-            val notification = NotificationEntity()
-            notification.userEmail = "bia@yahoo.com"
-            notification.wasActivated = true
-
-            Log.d(TAG, " db $db" )
-            Log.d(TAG, " db db?.notificationDAO() ${db?.notificationDAO()} " )
-
-
-            db?.notificationDAO()?.saveNotification(notification)
-
-           /* db?.notificationDAO()?.readNotification()?.forEach {
-                Log.i(TAG, "User email is ${it.userEmail}")
-                Log.i(TAG, "Notification Status ${it.wasActivated}")
-            }*/
-
-        }.start()
     }
+
+    private fun insertDataToDatabase() {
+        val email = "bia@yahoo.com"
+        val notificationDescription = _binding?.descriptionStatusTv?.text.toString()
+        val notification = NotificationEntity(0, email, notificationDescription)
+        mNotificationViewModel.insertNotification(notification)
+        Toast.makeText(requireContext(), "Successfully added!", Toast.LENGTH_LONG).show()
+    }
+
+
 
     @SuppressLint("ShortAlarm")
     fun startAlarm() {

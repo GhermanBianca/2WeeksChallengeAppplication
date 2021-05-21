@@ -1,16 +1,19 @@
 package com.example.workouthome.dao
 
+import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
+import androidx.room.Query
 import com.example.workouthome.model.NotificationEntity
 
 @Dao
 interface NotificationDAO {
 
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun saveNotification( notification : NotificationEntity)
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
+    suspend fun insertNotification( notification : NotificationEntity)
 
-//    @Query( "select * from NotificationEntity")
-//    fun readNotification() : List<NotificationEntity>
+    @Query("SELECT * FROM notification_table ORDER BY id ASC")
+    fun getAllData() : LiveData<List<NotificationEntity>>
+
 }

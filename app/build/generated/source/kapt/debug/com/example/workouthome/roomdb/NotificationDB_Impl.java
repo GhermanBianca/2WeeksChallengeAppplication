@@ -3,20 +3,30 @@ package com.example.workouthome.roomdb;
 import androidx.room.DatabaseConfiguration;
 import androidx.room.InvalidationTracker;
 import androidx.room.RoomOpenHelper;
+import androidx.room.RoomOpenHelper.Delegate;
+import androidx.room.RoomOpenHelper.ValidationResult;
+import androidx.room.util.DBUtil;
 import androidx.room.util.TableInfo;
+import androidx.room.util.TableInfo.Column;
+import androidx.room.util.TableInfo.ForeignKey;
+import androidx.room.util.TableInfo.Index;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 import androidx.sqlite.db.SupportSQLiteOpenHelper;
-
+import androidx.sqlite.db.SupportSQLiteOpenHelper.Callback;
+import androidx.sqlite.db.SupportSQLiteOpenHelper.Configuration;
 import com.example.workouthome.dao.NotificationDAO;
-
-import java.lang.IllegalStateException;
+import com.example.workouthome.dao.NotificationDAO_Impl;
+import java.lang.Class;
 import java.lang.Override;
 import java.lang.String;
 import java.lang.SuppressWarnings;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
-@SuppressWarnings("unchecked")
+@SuppressWarnings({"unchecked", "deprecation"})
 public final class NotificationDB_Impl extends NotificationDB {
   private volatile NotificationDAO _notificationDAO;
 
@@ -25,14 +35,19 @@ public final class NotificationDB_Impl extends NotificationDB {
     final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(1) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `NotificationEntity` (`userEmail` TEXT NOT NULL, `NOTIFICATION_STATUS` INTEGER NOT NULL, PRIMARY KEY(`userEmail`))");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `notification_table` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `userEmail` TEXT NOT NULL, `notificationDescription` TEXT NOT NULL)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"959bb9c927ad371fa8fc0441927d5e7e\")");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '615303237b33d292ba857e34e8ac557c')");
       }
 
       @Override
       public void dropAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("DROP TABLE IF EXISTS `NotificationEntity`");
+        _db.execSQL("DROP TABLE IF EXISTS `notification_table`");
+        if (mCallbacks != null) {
+          for (int _i = 0, _size = mCallbacks.size(); _i < _size; _i++) {
+            mCallbacks.get(_i).onDestructiveMigration(_db);
+          }
+        }
       }
 
       @Override
@@ -56,21 +71,32 @@ public final class NotificationDB_Impl extends NotificationDB {
       }
 
       @Override
-      protected void validateMigration(SupportSQLiteDatabase _db) {
-        final HashMap<String, TableInfo.Column> _columnsNotificationEntity = new HashMap<String, TableInfo.Column>(2);
-        _columnsNotificationEntity.put("userEmail", new TableInfo.Column("userEmail", "TEXT", true, 1));
-        _columnsNotificationEntity.put("NOTIFICATION_STATUS", new TableInfo.Column("NOTIFICATION_STATUS", "INTEGER", true, 0));
-        final HashSet<TableInfo.ForeignKey> _foreignKeysNotificationEntity = new HashSet<TableInfo.ForeignKey>(0);
-        final HashSet<TableInfo.Index> _indicesNotificationEntity = new HashSet<TableInfo.Index>(0);
-        final TableInfo _infoNotificationEntity = new TableInfo("NotificationEntity", _columnsNotificationEntity, _foreignKeysNotificationEntity, _indicesNotificationEntity);
-        final TableInfo _existingNotificationEntity = TableInfo.read(_db, "NotificationEntity");
-        if (! _infoNotificationEntity.equals(_existingNotificationEntity)) {
-          throw new IllegalStateException("Migration didn't properly handle NotificationEntity(com.example.workouthome.model.NotificationEntity).\n"
-                  + " Expected:\n" + _infoNotificationEntity + "\n"
-                  + " Found:\n" + _existingNotificationEntity);
-        }
+      public void onPreMigrate(SupportSQLiteDatabase _db) {
+        DBUtil.dropFtsSyncTriggers(_db);
       }
-    }, "959bb9c927ad371fa8fc0441927d5e7e", "304587f9859203660918890e0828dd83");
+
+      @Override
+      public void onPostMigrate(SupportSQLiteDatabase _db) {
+      }
+
+      @Override
+      protected RoomOpenHelper.ValidationResult onValidateSchema(SupportSQLiteDatabase _db) {
+        final HashMap<String, TableInfo.Column> _columnsNotificationTable = new HashMap<String, TableInfo.Column>(3);
+        _columnsNotificationTable.put("id", new TableInfo.Column("id", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsNotificationTable.put("userEmail", new TableInfo.Column("userEmail", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsNotificationTable.put("notificationDescription", new TableInfo.Column("notificationDescription", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysNotificationTable = new HashSet<TableInfo.ForeignKey>(0);
+        final HashSet<TableInfo.Index> _indicesNotificationTable = new HashSet<TableInfo.Index>(0);
+        final TableInfo _infoNotificationTable = new TableInfo("notification_table", _columnsNotificationTable, _foreignKeysNotificationTable, _indicesNotificationTable);
+        final TableInfo _existingNotificationTable = TableInfo.read(_db, "notification_table");
+        if (! _infoNotificationTable.equals(_existingNotificationTable)) {
+          return new RoomOpenHelper.ValidationResult(false, "notification_table(com.example.workouthome.model.NotificationEntity).\n"
+                  + " Expected:\n" + _infoNotificationTable + "\n"
+                  + " Found:\n" + _existingNotificationTable);
+        }
+        return new RoomOpenHelper.ValidationResult(true, null);
+      }
+    }, "615303237b33d292ba857e34e8ac557c", "87d06105b97ec6f07eb22ef2b08c3240");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)
@@ -81,7 +107,9 @@ public final class NotificationDB_Impl extends NotificationDB {
 
   @Override
   protected InvalidationTracker createInvalidationTracker() {
-    return new InvalidationTracker(this, "NotificationEntity");
+    final HashMap<String, String> _shadowTablesMap = new HashMap<String, String>(0);
+    HashMap<String, Set<String>> _viewTables = new HashMap<String, Set<String>>(0);
+    return new InvalidationTracker(this, _shadowTablesMap, _viewTables, "notification_table");
   }
 
   @Override
@@ -90,7 +118,7 @@ public final class NotificationDB_Impl extends NotificationDB {
     final SupportSQLiteDatabase _db = super.getOpenHelper().getWritableDatabase();
     try {
       super.beginTransaction();
-      _db.execSQL("DELETE FROM `NotificationEntity`");
+      _db.execSQL("DELETE FROM `notification_table`");
       super.setTransactionSuccessful();
     } finally {
       super.endTransaction();
@@ -99,6 +127,13 @@ public final class NotificationDB_Impl extends NotificationDB {
         _db.execSQL("VACUUM");
       }
     }
+  }
+
+  @Override
+  protected Map<Class<?>, List<Class<?>>> getRequiredTypeConverters() {
+    final HashMap<Class<?>, List<Class<?>>> _typeConvertersMap = new HashMap<Class<?>, List<Class<?>>>();
+    _typeConvertersMap.put(NotificationDAO.class, NotificationDAO_Impl.getRequiredConverters());
+    return _typeConvertersMap;
   }
 
   @Override
