@@ -1,7 +1,6 @@
 package com.example.workouthome.model
 
 import android.app.Application
-import android.app.Notification
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
