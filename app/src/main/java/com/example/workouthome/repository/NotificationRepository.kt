@@ -1,6 +1,5 @@
 package com.example.workouthome.repository
 
-import android.app.Notification
 import androidx.lifecycle.LiveData
 import com.example.workouthome.dao.NotificationDAO
 import com.example.workouthome.model.NotificationEntity
