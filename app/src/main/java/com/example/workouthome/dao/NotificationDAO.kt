@@ -13,7 +13,7 @@ interface NotificationDAO {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertNotification( notification : NotificationEntity)
 
-    @Query("SELECT * FROM notification_table ORDER BY id ASC")
+    @Query("SELECT * FROM notification_table")
     fun getAllData() : LiveData<List<NotificationEntity>>
 
 }
