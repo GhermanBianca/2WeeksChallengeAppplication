@@ -35,9 +35,9 @@ public final class NotificationDB_Impl extends NotificationDB {
     final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(1) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `notification_table` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `userId` TEXT NOT NULL, `wasActivated` INTEGER NOT NULL, `notificationDescription` TEXT NOT NULL)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `notification_table` (`userId` TEXT NOT NULL, `wasActivated` INTEGER NOT NULL, `notificationDescription` TEXT NOT NULL, PRIMARY KEY(`userId`))");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'f9fd20d06cb24993c74aeab54c646630')");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '41c5f765131ade0c4f20be49e2580597')");
       }
 
       @Override
@@ -81,9 +81,8 @@ public final class NotificationDB_Impl extends NotificationDB {
 
       @Override
       protected RoomOpenHelper.ValidationResult onValidateSchema(SupportSQLiteDatabase _db) {
-        final HashMap<String, TableInfo.Column> _columnsNotificationTable = new HashMap<String, TableInfo.Column>(4);
-        _columnsNotificationTable.put("id", new TableInfo.Column("id", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsNotificationTable.put("userId", new TableInfo.Column("userId", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        final HashMap<String, TableInfo.Column> _columnsNotificationTable = new HashMap<String, TableInfo.Column>(3);
+        _columnsNotificationTable.put("userId", new TableInfo.Column("userId", "TEXT", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsNotificationTable.put("wasActivated", new TableInfo.Column("wasActivated", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsNotificationTable.put("notificationDescription", new TableInfo.Column("notificationDescription", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysNotificationTable = new HashSet<TableInfo.ForeignKey>(0);
@@ -97,7 +96,7 @@ public final class NotificationDB_Impl extends NotificationDB {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "f9fd20d06cb24993c74aeab54c646630", "236a28ac2b04f43f4ef6de84ff498100");
+    }, "41c5f765131ade0c4f20be49e2580597", "9a3606e2ca932170a4b19904b6b859d0");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

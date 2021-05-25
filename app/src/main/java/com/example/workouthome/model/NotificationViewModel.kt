@@ -9,8 +9,8 @@ import com.example.workouthome.roomdb.NotificationDB
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class NotificationViewModel(application: Application): AndroidViewModel(application) {
-    private val getAllData : LiveData<List<NotificationEntity>>
+class NotificationViewModel(application: Application) : AndroidViewModel(application) {
+    private val getAllData: LiveData<List<NotificationEntity>>
     private val repository: NotificationRepository
 
     init {
@@ -19,9 +19,13 @@ class NotificationViewModel(application: Application): AndroidViewModel(applicat
         getAllData = repository.getAllData
     }
 
-    fun insertNotification(notification : NotificationEntity) {
+    fun checkData(): LiveData<List<NotificationEntity>> {
+        return repository.getAllData()
+    }
+
+    fun insertOrUpdate(notification: NotificationEntity) {
         viewModelScope.launch(Dispatchers.IO) {
-            repository.insertNotification(notification)
+            repository.insertOrUpdate(notification)
         }
     }
 }

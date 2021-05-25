@@ -8,8 +8,11 @@ class NotificationRepository(private val notificationDao: NotificationDAO) {
 
     val getAllData: LiveData<List<NotificationEntity>> = notificationDao.getAllData()
 
-    suspend fun insertNotification(notification: NotificationEntity) {
-        notificationDao.insertNotification(notification)
+    fun getAllData() : LiveData<List<NotificationEntity>> {
+        return notificationDao.getAllData()
     }
 
+    suspend fun insertOrUpdate(notification: NotificationEntity) {
+        notificationDao.insertOrUpdate(notification)
+    }
 }

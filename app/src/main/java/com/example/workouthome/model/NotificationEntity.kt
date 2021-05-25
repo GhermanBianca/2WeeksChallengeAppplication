@@ -6,8 +6,7 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "notification_table")
 data class NotificationEntity (
 
-    @PrimaryKey(autoGenerate = true)
-    val id: Int,
+    @PrimaryKey
     val userId: String,
     val wasActivated: Boolean,
     val notificationDescription: String
