@@ -45,13 +45,15 @@ class DrinkWaterReminderFragment : Fragment(R.layout.fragment_drink_water_remind
 
         Log.d(TAG, "Before click on btnStartAlarm: $wasActivated ")
 
+        val currentId = FirebaseUtils.getCurrentUserId()
+
+
         _binding?.btnStartAlarm?.setOnClickListener {
             startAlarm()
             _binding?.descriptionStatusTv?.text = getString(R.string.add_notification_description)
             wasActivated = true
             Log.d(TAG, "btnStartAlarm: $wasActivated ")
 
-            val currentId = FirebaseUtils.getCurrentUserId()
             Log.d(TAG, "btnStartAlarm Current user : $currentId")
 
             val notificationEntity = NotificationEntity(currentId, wasActivated, getString(R.string.add_notification_description))
@@ -74,32 +76,33 @@ class DrinkWaterReminderFragment : Fragment(R.layout.fragment_drink_water_remind
             insertOrUpdate(notificationEntity)
         }
 
-        /*_binding?.btnGetInfoAlarm?.setOnClickListener {
-            Log.d(TAG, "btnGetInfoAlarm clicked ")
-
-            checkDataBase()
-
-        }*/
-
-        checkDataBase()
+        getDataFromDatabase(currentId)
     }
 
     private fun insertOrUpdate(currentUser: NotificationEntity ){
         mNotificationViewModel.insertOrUpdate(currentUser)
     }
 
-    private fun checkDataBase() {
+    private fun getDataFromDatabase(currentId: String) {
 
-        mNotificationViewModel.checkData().observe(viewLifecycleOwner, {
+        mNotificationViewModel.getAllData().observe(viewLifecycleOwner, {
             Log.d(TAG, "List from database  -> $it")
-            val firstItemDescription = it[0].notificationDescription
 
-            Log.d(TAG, "firstItemDescription -> $firstItemDescription")
+            if(it.isEmpty()) {
+                Log.d(TAG, "List is empty")
 
-            val wasActivated = it[0].wasActivated
+                return@observe
+            }
 
-            if (wasActivated) {
-                _binding?.descriptionStatusTv?.text = firstItemDescription
+            it.forEach {
+                if(it.userId.equals(currentId)) {
+                    val firstItemDescription = it.notificationDescription
+                    Log.d(TAG, "firstItemDescription -> $firstItemDescription")
+                    val wasActivated = it.wasActivated
+                    if (wasActivated) {
+                        _binding?.descriptionStatusTv?.text = firstItemDescription
+                    }
+                }
             }
         })
     }

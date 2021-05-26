@@ -10,16 +10,14 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class NotificationViewModel(application: Application) : AndroidViewModel(application) {
-    private val getAllData: LiveData<List<NotificationEntity>>
     private val repository: NotificationRepository
 
     init {
         val notificationDao = NotificationDB.getDatabase(application).notificationDAO()
         repository = NotificationRepository(notificationDao)
-        getAllData = repository.getAllData
     }
 
-    fun checkData(): LiveData<List<NotificationEntity>> {
+    fun getAllData(): LiveData<List<NotificationEntity>> {
         return repository.getAllData()
     }
 
