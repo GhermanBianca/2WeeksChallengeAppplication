@@ -147,6 +147,11 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
+                            <entry key="action_profileFragment_to_drinkWaterReminder">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_profileFragment_to_settingsFragment">
                               <value>
                                 <LayoutPositions />
@@ -162,9 +167,18 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="1117" />
-                            <option name="y" value="994" />
+                            <option name="x" value="989" />
+                            <option name="y" value="1073" />
                           </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_settingsFragment_to_splashScreenActivity">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
                         </option>
                       </LayoutPositions>
                     </value>
@@ -176,6 +190,18 @@
                           <Point>
                             <option name="x" value="500" />
                             <option name="y" value="12" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="splashScreenActivity">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="697" />
+                            <option name="y" value="914" />
                           </Point>
                         </option>
                       </LayoutPositions>

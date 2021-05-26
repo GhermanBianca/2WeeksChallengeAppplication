@@ -98,7 +98,15 @@
         android:id="@+id/settingsFragment"
         android:name="com.example.workouthome.fragments.SettingsFragment"
         android:label="@string/settings"
-        tools:layout="@layout/fragment_settings" />
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_splashScreenActivity"
+            app:destination="@id/splashScreenActivity"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
     <fragment
         android:id="@+id/dayChallengeFragment"
         android:name="com.example.workouthome.fragments.DayChallengeFragment"
@@ -112,4 +120,9 @@
         android:name="com.example.workouthome.fragments.DrinkWaterReminderFragment"
         android:label="Water Reminder"
         tools:layout="@layout/fragment_drink_water_reminder" />
+    <activity
+        android:id="@+id/splashScreenActivity"
+        android:name="com.example.workouthome.activities.SplashScreenActivity"
+        android:label="activity_splash_screen"
+        tools:layout="@layout/activity_splash_screen" />
 </navigation>

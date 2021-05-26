@@ -2,15 +2,19 @@ package com.example.workouthome.fragments
 
 import android.app.AlertDialog
 import android.content.Context
+import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.app.ActivityCompat.recreate
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
+import androidx.navigation.fragment.findNavController
 import com.example.workouthome.R
+import com.example.workouthome.activities.MainActivity
 import com.example.workouthome.databinding.FragmentSettingsBinding
 import com.example.workouthome.utils.Constants
 import java.util.*
@@ -69,12 +73,19 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
 
             insertIntoSharedPrefs(which)
 
+            Log.d("abab", "showChangeLanguage which == $which"  )
+
+
             if (which == 0) {
                 setLocale(requireActivity(), "ro")
-                recreate(requireActivity())
+                val action = SettingsFragmentDirections.actionSettingsFragmentToSplashScreenActivity()
+                findNavController().navigate(action)
+                //recreate(requireActivity())
             } else if (which == 1) {
                 setLocale(requireActivity(), "en")
-                recreate(requireActivity())
+                val action = SettingsFragmentDirections.actionSettingsFragmentToSplashScreenActivity()
+                findNavController().navigate(action)
+                // recreate(requireActivity())
             }
 
             dialog.dismiss()
