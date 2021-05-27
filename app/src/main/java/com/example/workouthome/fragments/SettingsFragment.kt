@@ -8,6 +8,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.app.ActivityCompat.recreate
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.navigation.fragment.findNavController
@@ -17,6 +18,10 @@ import java.util.*
 
 @Suppress("DEPRECATION")
 class SettingsFragment : Fragment(R.layout.fragment_settings) {
+
+    companion object {
+        private val WHICH = "which"
+    }
 
     private var _binding: FragmentSettingsBinding? = null
     private val binding get() = _binding!!
@@ -43,7 +48,7 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
     private fun insertIntoSharedPrefs(which: Int) {
         val sharedPref = activity?.getPreferences(Context.MODE_PRIVATE) ?: return
         with(sharedPref.edit()) {
-            putInt(R.string.which.toString(), which)
+            putInt(WHICH, which)
             apply()
         }
     }
@@ -73,12 +78,10 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
 
             if (which == 0) {
                 setLocale(requireActivity(), "ro")
-                val action = SettingsFragmentDirections.actionSettingsFragmentToSplashScreenActivity()
-                findNavController().navigate(action)
+                recreate(requireActivity())
             } else if (which == 1) {
                 setLocale(requireActivity(), "en")
-                val action = SettingsFragmentDirections.actionSettingsFragmentToSplashScreenActivity()
-                findNavController().navigate(action)
+                recreate(requireActivity())
             }
 
             dialog.dismiss()
