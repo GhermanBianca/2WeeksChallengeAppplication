@@ -515,5 +515,7 @@
 
     <string name="water_reminder">Drink Water Reminder</string>
     <string name="drink">Drink</string>
+    <string name="which">which</string>
+
 
 </resources>

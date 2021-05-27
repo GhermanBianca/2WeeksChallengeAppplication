@@ -513,5 +513,7 @@
 
     <string name="water_reminder">Memento Hidratare</string>
     <string name="drink">Hidratare</string>
+    <string name="which">which</string>
+
 
 </resources>

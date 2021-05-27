@@ -43,7 +43,7 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
     private fun insertIntoSharedPrefs(which: Int) {
         val sharedPref = activity?.getPreferences(Context.MODE_PRIVATE) ?: return
         with(sharedPref.edit()) {
-            putInt("which", which)
+            putInt(R.string.which.toString(), which)
             apply()
         }
     }
