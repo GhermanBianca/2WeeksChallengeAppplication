@@ -2,7 +2,6 @@ package com.example.workouthome.activities
 
 import android.content.Context
 import android.os.Bundle
-import android.preference.PreferenceManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.example.workouthome.R
@@ -16,7 +15,6 @@ open class BaseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_base)
-
     }
 
     // show a snackBar if you don't complete all fiels
@@ -38,5 +36,4 @@ open class BaseActivity : AppCompatActivity() {
         val context: Context = ContextWrapper.wrap(newBase, locale)
         super.attachBaseContext(context)
     }
-
 }
