@@ -11,21 +11,25 @@ import android.view.ViewGroup
 import androidx.core.app.ActivityCompat.recreate
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
-import androidx.navigation.fragment.findNavController
 import com.example.workouthome.R
 import com.example.workouthome.databinding.FragmentSettingsBinding
+import com.example.workouthome.utils.SharedPref.insertIntoSharedPrefs
 import java.util.*
 
 @Suppress("DEPRECATION")
 class SettingsFragment : Fragment(R.layout.fragment_settings) {
 
     companion object {
-        private val WHICH = "which"
+        private const val WHICH = "which"
+        private const val RO = "ro"
+        private const val EN = "en"
+        private const val ROMANIAN = "Română"
+        private const val ENGLISH = "English"
     }
 
     private var _binding: FragmentSettingsBinding? = null
     private val binding get() = _binding!!
-    val listLanguages = arrayOf("Română", "English")
+    val listLanguages = arrayOf(ROMANIAN, ENGLISH)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -45,17 +49,9 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
         }
     }
 
-    private fun insertIntoSharedPrefs(which: Int) {
-        val sharedPref = activity?.getPreferences(Context.MODE_PRIVATE) ?: return
-        with(sharedPref.edit()) {
-            putInt(WHICH, which)
-            apply()
-        }
-    }
-
     private fun retrieveFromSharedPrefs(): Int? {
         val sharedPref = activity?.getPreferences(Context.MODE_PRIVATE)
-        val savedWhich = sharedPref?.getInt("which", 0)
+        val savedWhich = sharedPref?.getInt(WHICH, 0)
 
         if (savedWhich == 0) {
             _binding?.selectedLanguage?.text = resources.getString(R.string.romanian)
@@ -72,15 +68,15 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
         mBuilder.setTitle(resources.getString(R.string.choose_language))
         mBuilder.setSingleChoiceItems(listLanguages, -1) { dialog, which ->
 
-            insertIntoSharedPrefs(which)
+            insertIntoSharedPrefs(which, requireActivity())
 
             Log.d("abab", "showChangeLanguage which == $which"  )
 
             if (which == 0) {
-                setLocale(requireActivity(), "ro")
+                setLocale(requireActivity(), RO)
                 recreate(requireActivity())
             } else if (which == 1) {
-                setLocale(requireActivity(), "en")
+                setLocale(requireActivity(), EN)
                 recreate(requireActivity())
             }
 
