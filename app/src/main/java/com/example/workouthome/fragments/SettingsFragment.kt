@@ -8,9 +8,9 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.app.ActivityCompat.recreate
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
+import androidx.navigation.fragment.findNavController
 import com.example.workouthome.R
 import com.example.workouthome.databinding.FragmentSettingsBinding
 import com.example.workouthome.utils.SharedPref.insertIntoSharedPrefs
@@ -29,7 +29,7 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
 
     private var _binding: FragmentSettingsBinding? = null
     private val binding get() = _binding!!
-    val listLanguages = arrayOf(ROMANIAN, ENGLISH)
+    private val listLanguages = arrayOf(ROMANIAN, ENGLISH)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -74,10 +74,12 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
 
             if (which == 0) {
                 setLocale(requireActivity(), RO)
-                recreate(requireActivity())
+                val action = SettingsFragmentDirections.actionSettingsFragmentToSplashScreenActivity()
+                findNavController().navigate(action)
             } else if (which == 1) {
                 setLocale(requireActivity(), EN)
-                recreate(requireActivity())
+                val action = SettingsFragmentDirections.actionSettingsFragmentToSplashScreenActivity()
+                findNavController().navigate(action)
             }
 
             dialog.dismiss()
@@ -93,5 +95,10 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
         val config: Configuration = activity.resources.configuration
         config.setLocale(locale)
         resources.updateConfiguration(config, resources.displayMetrics)
+    }
+
+    override fun onDestroy() {
+        Log.d("abab", "SettingsFragment onDestroy")
+        super.onDestroy()
     }
 }
