@@ -19,4 +19,22 @@ class ChallengeViewModel {
         }
         return videoPath
     }
+
+    fun setChallengeDescription(dayNumber: Int) : String {
+        var description = ""
+        when (dayNumber) {
+            1 -> {
+                description = "aaa"
+            }
+            2 -> {
+                description = "bbb"
+
+            }
+            3 -> {
+                description = "ccc"
+
+            }
+        }
+        return description
+    }
 }

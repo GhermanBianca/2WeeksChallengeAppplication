@@ -46,8 +46,10 @@ class DayChallengeFragment : Fragment(R.layout.fragment_day_challenge) {
         val challengeViewModel = activity?.let { ChallengeViewModel() }
         super.onViewCreated(view, savedInstanceState)
         val path = challengeViewModel?.setChallengeVideo(dayNumber)
+        val description = challengeViewModel?.setChallengeDescription(dayNumber)
         Log.d("onViewCreated", "path $path")
         setVideo(path!!)
+        _binding?.exercicesDescription?.text = description
     }
 
     private fun setVideo (path: String) {
