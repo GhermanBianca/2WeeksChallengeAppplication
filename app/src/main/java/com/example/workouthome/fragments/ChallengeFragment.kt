@@ -10,11 +10,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.workouthome.R
 import com.example.workouthome.adapters.ChallengeAdapter
 import com.example.workouthome.databinding.FragmentChallengeBinding
-import com.example.workouthome.model.ChallengeItem
+import com.example.workouthome.model.DayChallengeItem
 
 class ChallengeFragment : Fragment(R.layout.fragment_challenge) {
 
-    private var challengeItem: ArrayList<ChallengeItem>? = null
+    private var dayChallengeItem: ArrayList<DayChallengeItem>? = null
     private var challengeAdapter : ChallengeAdapter? = null
     private var gridLayoutManagerNutrition: GridLayoutManager? = null
 
@@ -37,30 +37,30 @@ class ChallengeFragment : Fragment(R.layout.fragment_challenge) {
         _binding?.challengeRv?.layoutManager = gridLayoutManagerNutrition
         _binding?.challengeRv?.setHasFixedSize(true)
 
-        challengeItem = ArrayList()
-        challengeItem = setChallengeList()
-        challengeAdapter = ChallengeAdapter(activity, challengeItem!!)
+        dayChallengeItem = ArrayList()
+        dayChallengeItem = setChallengeList()
+        challengeAdapter = ChallengeAdapter(activity, dayChallengeItem!!)
         _binding?.challengeRv?.adapter = challengeAdapter
     }
 
-    private fun setChallengeList() : ArrayList<ChallengeItem> {
-        val challengeArrayList: ArrayList<ChallengeItem> = ArrayList()
+    private fun setChallengeList() : ArrayList<DayChallengeItem> {
+        val dayChallengeArrayList: ArrayList<DayChallengeItem> = ArrayList()
 
-        challengeArrayList.add(ChallengeItem(resources.getString(R.string.fullbody), R.drawable.full_body))
-        challengeArrayList.add(ChallengeItem(resources.getString(R.string.buttocks_abs), R.drawable.buttock))
-        challengeArrayList.add(ChallengeItem(resources.getString(R.string.cardio), R.drawable.cardio_fight))
-        challengeArrayList.add(ChallengeItem(resources.getString(R.string.fullbody), R.drawable.full_body))
-        challengeArrayList.add(ChallengeItem(resources.getString(R.string.buttock_thigs), R.drawable.buttock_twigh))
-        challengeArrayList.add(ChallengeItem(resources.getString(R.string.yoga), R.drawable.yoga))
-        challengeArrayList.add(ChallengeItem(resources.getString(R.string.relax), R.drawable.relax))
-        challengeArrayList.add(ChallengeItem(resources.getString(R.string.fullbody), R.drawable.full_body))
-        challengeArrayList.add(ChallengeItem(resources.getString(R.string.buttock_thigs), R.drawable.buttock_twigh))
-        challengeArrayList.add(ChallengeItem(resources.getString(R.string.cardio), R.drawable.cardio_fight))
-        challengeArrayList.add(ChallengeItem(resources.getString(R.string.fullbody), R.drawable.full_body))
-        challengeArrayList.add(ChallengeItem(resources.getString(R.string.buttock_thigs), R.drawable.buttock_twigh))
-        challengeArrayList.add(ChallengeItem(resources.getString(R.string.yoga), R.drawable.yoga))
-        challengeArrayList.add(ChallengeItem(resources.getString(R.string.relax), R.drawable.relax))
+        dayChallengeArrayList.add(DayChallengeItem(resources.getString(R.string.fullbody), R.drawable.full_body))
+        dayChallengeArrayList.add(DayChallengeItem(resources.getString(R.string.buttocks_abs), R.drawable.buttock))
+        dayChallengeArrayList.add(DayChallengeItem(resources.getString(R.string.cardio), R.drawable.cardio_fight))
+        dayChallengeArrayList.add(DayChallengeItem(resources.getString(R.string.fullbody), R.drawable.full_body))
+        dayChallengeArrayList.add(DayChallengeItem(resources.getString(R.string.buttock_thigs), R.drawable.buttock_twigh))
+        dayChallengeArrayList.add(DayChallengeItem(resources.getString(R.string.yoga), R.drawable.yoga))
+        dayChallengeArrayList.add(DayChallengeItem(resources.getString(R.string.relax), R.drawable.relax))
+        dayChallengeArrayList.add(DayChallengeItem(resources.getString(R.string.fullbody), R.drawable.full_body))
+        dayChallengeArrayList.add(DayChallengeItem(resources.getString(R.string.buttock_thigs), R.drawable.buttock_twigh))
+        dayChallengeArrayList.add(DayChallengeItem(resources.getString(R.string.cardio), R.drawable.cardio_fight))
+        dayChallengeArrayList.add(DayChallengeItem(resources.getString(R.string.fullbody), R.drawable.full_body))
+        dayChallengeArrayList.add(DayChallengeItem(resources.getString(R.string.buttock_thigs), R.drawable.buttock_twigh))
+        dayChallengeArrayList.add(DayChallengeItem(resources.getString(R.string.yoga), R.drawable.yoga))
+        dayChallengeArrayList.add(DayChallengeItem(resources.getString(R.string.relax), R.drawable.relax))
 
-        return challengeArrayList
+        return dayChallengeArrayList
     }
 }

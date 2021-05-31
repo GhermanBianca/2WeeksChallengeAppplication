@@ -10,11 +10,11 @@ import androidx.fragment.app.FragmentActivity
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.example.workouthome.R
-import com.example.workouthome.model.ChallengeItem
+import com.example.workouthome.model.DayChallengeItem
 import com.example.workouthome.utils.Constants
 import kotlinx.android.synthetic.main.content_recycler_view_challenge.view.*
 
-class ChallengeAdapter(var activity: FragmentActivity?, var arrayList: ArrayList<ChallengeItem>) : RecyclerView.Adapter<ChallengeAdapter.ChallengeViewHolder>() {
+class ChallengeAdapter(var activity: FragmentActivity?, var arrayList: ArrayList<DayChallengeItem>) : RecyclerView.Adapter<ChallengeAdapter.ChallengeViewHolder>() {
     class ChallengeViewHolder(view: View) : RecyclerView.ViewHolder(view){
         var dayNumber : TextView = view.challenge_number_day_number
         var descriptionChallenge: TextView = view.description_challenge
@@ -27,11 +27,11 @@ class ChallengeAdapter(var activity: FragmentActivity?, var arrayList: ArrayList
     }
 
     override fun onBindViewHolder(viewHolder: ChallengeViewHolder, position: Int) {
-        val challengeItem: ChallengeItem = arrayList[position]
+        val dayChallengeItem: DayChallengeItem = arrayList[position]
 
         viewHolder.dayNumber.text = (position + 1).toString()
-        viewHolder.descriptionChallenge.text = challengeItem.description_challenge
-        viewHolder.iconsChallenge.setImageResource(challengeItem.icons_challenge)
+        viewHolder.descriptionChallenge.text = dayChallengeItem.description_challenge
+        viewHolder.iconsChallenge.setImageResource(dayChallengeItem.icons_challenge)
 
         viewHolder.itemView.setOnClickListener{
             val bundle = bundleOf(Constants.CHALLENGE_DAY_NUMBER to (position + 1))
