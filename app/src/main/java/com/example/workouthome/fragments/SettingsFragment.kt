@@ -19,15 +19,6 @@ import java.util.*
 @Suppress("DEPRECATION")
 class SettingsFragment : Fragment(R.layout.fragment_settings) {
 
-    companion object {
-        private const val WHICH = "which"
-        private const val ON_PAUSE = "on_pause"
-        private const val RO = "ro"
-        private const val EN = "en"
-        private const val ROMANIAN = "Română"
-        private const val ENGLISH = "English"
-    }
-
     private var _binding: FragmentSettingsBinding? = null
     private val binding get() = _binding!!
     private val listLanguages = arrayOf(ROMANIAN, ENGLISH)
@@ -48,7 +39,7 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
 
         val result: Int
 
-        val settings = context?.getSharedPreferences("restore_values", Context.MODE_PRIVATE)
+        val settings = context?.getSharedPreferences(RESTORE_VALUES, Context.MODE_PRIVATE)
         result = settings?.getInt(ON_PAUSE, -1)!!
 
         Log.d("abab","on view Created result $result")
@@ -58,7 +49,7 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
             setDefaultLanguage(languageCode)
             _binding?.selectedLanguage?.text = languageCode.capitalize(Locale.ROOT)
 
-            val settings1 = context?.getSharedPreferences("restore_values", Context.MODE_PRIVATE)
+            val settings1 = context?.getSharedPreferences(RESTORE_VALUES, Context.MODE_PRIVATE)
             val e = settings1!!.edit()
             e.clear()
             e.putInt(ON_PAUSE, -1)
@@ -133,5 +124,15 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
     override fun onDestroy() {
         Log.d("abab", "SettingsFragment onDestroy")
         super.onDestroy()
+    }
+
+    companion object {
+        private const val WHICH = "which"
+        private const val ON_PAUSE = "on_pause"
+        private const val RO = "ro"
+        private const val EN = "en"
+        private const val ROMANIAN = "Română"
+        private const val ENGLISH = "English"
+        private const val RESTORE_VALUES = "restore_values"
     }
 }

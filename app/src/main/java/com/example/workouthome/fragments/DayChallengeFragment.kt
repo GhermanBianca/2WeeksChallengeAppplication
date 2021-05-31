@@ -29,9 +29,10 @@ class DayChallengeFragment : Fragment(R.layout.fragment_day_challenge) {
 
         arguments?.apply {
             dayNumber = this.getInt(Constants.CHALLENGE_DAY_NUMBER)
-            Log.d("DayChallengeFragment", "onCreate dayNumber $dayNumber" )
+            Log.d("DayChallengeFragment", "onCreate dayNumber $dayNumber")
         }
     }
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -47,13 +48,11 @@ class DayChallengeFragment : Fragment(R.layout.fragment_day_challenge) {
         super.onViewCreated(view, savedInstanceState)
         val path = challengeViewModel?.setChallengeVideo(dayNumber)
         val description = challengeViewModel?.setChallengeDescription(dayNumber)
-        Log.d("onViewCreated", "path $path")
         setVideo(path!!)
         _binding?.exercicesDescription?.text = description
     }
 
-    private fun setVideo (path: String) {
-        Log.d("DayChallengeFragment", "videoPath $path")
+    private fun setVideo(path: String) {
         val uri = Uri.parse(path)
 
         videoView.setVideoURI(uri)

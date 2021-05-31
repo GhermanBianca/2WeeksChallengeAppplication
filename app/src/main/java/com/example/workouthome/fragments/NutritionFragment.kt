@@ -16,8 +16,7 @@ class NutritionFragment : Fragment(R.layout.fragment_nutrition) {
     private var daysList: ArrayList<Int>? = null
     private var gridLayoutManagerNutrition: GridLayoutManager? = null
     private var nutritionAdapter: NutritionAdapter? = null
-
-    private  var _binding: FragmentNutritionBinding? = null
+    private var _binding: FragmentNutritionBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -32,7 +31,8 @@ class NutritionFragment : Fragment(R.layout.fragment_nutrition) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        gridLayoutManagerNutrition = GridLayoutManager(requireContext(), 3, LinearLayoutManager.VERTICAL, false)
+        gridLayoutManagerNutrition =
+            GridLayoutManager(requireContext(), 3, LinearLayoutManager.VERTICAL, false)
         _binding?.nutritionRv?.layoutManager = gridLayoutManagerNutrition
         _binding?.nutritionRv?.setHasFixedSize(true)
         daysList = setDayList()
@@ -42,7 +42,7 @@ class NutritionFragment : Fragment(R.layout.fragment_nutrition) {
     }
 
     private fun setDayList(): ArrayList<Int> {
-        val arrayList :ArrayList<Int> = ArrayList()
+        val arrayList: ArrayList<Int> = ArrayList()
 
         for (i in 1..14) {
             arrayList.add(i)

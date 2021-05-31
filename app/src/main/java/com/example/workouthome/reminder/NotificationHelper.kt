@@ -16,6 +16,7 @@ import com.example.workouthome.activities.DrinkWaterActivity
 
 class NotificationHelper(base: Context?) : ContextWrapper(base) {
     private var notificationManager: NotificationManager? = null
+
     @SuppressLint("RemoteViewLayout")
     val notificationLayoutExpanded = RemoteViews(packageName, R.layout.backround_notification)
     val manager: NotificationManager?
@@ -26,16 +27,18 @@ class NotificationHelper(base: Context?) : ContextWrapper(base) {
             }
             return notificationManager
         }
+
     @TargetApi(Build.VERSION_CODES.O)
     private fun createChannel() {
-        val channel = NotificationChannel(channelID, channelName, NotificationManager.IMPORTANCE_HIGH)
+        val channel =
+            NotificationChannel(channelID, channelName, NotificationManager.IMPORTANCE_HIGH)
         manager!!.createNotificationChannel(channel)
     }
 
-    fun getChannelNotification(): NotificationCompat.Builder? {
+    fun getChannelNotification(): NotificationCompat.Builder {
         val intent = Intent(this, DrinkWaterActivity::class.java)
         val pendingIntent = PendingIntent.getActivity(
-            this, 0 , intent,
+            this, 0, intent,
             PendingIntent.FLAG_ONE_SHOT
         )
         return NotificationCompat.Builder(applicationContext, channelID)
@@ -46,16 +49,17 @@ class NotificationHelper(base: Context?) : ContextWrapper(base) {
             .setContent(notificationLayoutExpanded)
     }
 
-    companion object {
-        const val channelID = "channelID"
-        const val channelName = "Channel Name"
-    }
-
     init {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             createChannel()
         }
     }
+
+    companion object {
+        const val channelID = "channelID"
+        const val channelName = "Channel Name"
+    }
+
 }
 
 

@@ -25,24 +25,6 @@ import kotlinx.android.synthetic.main.nav_header_main.*
 @Suppress("DEPRECATION")
 class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedListener {
 
-    companion object {
-        const val MY_PROFILE_REQUEST_CODE: Int = 11
-        private const val TAG = "MainActivity"
-
-        // for update image and username in navigation_view from left
-        fun updateNavigationUserDetails(mainActivity: MainActivity, user: User) {
-            Log.d(TAG, "updateNavigationUserDetails")
-            Glide
-                .with(mainActivity)
-                .load(user.image)
-                .centerCrop()
-                .placeholder(R.drawable.ic_user)
-                .into(mainActivity.iv_user_image)
-
-            mainActivity.tv_username.text = user.name
-        }
-    }
-
     private lateinit var navController: NavController
     private lateinit var appBarConfiguration: AppBarConfiguration
 
@@ -123,5 +105,23 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
         }
         drawer_layout.closeDrawer(GravityCompat.START)
         return true
+    }
+
+    companion object {
+        const val MY_PROFILE_REQUEST_CODE: Int = 11
+        private const val TAG = "MainActivity"
+
+        // for update image and username in navigation_view from left
+        fun updateNavigationUserDetails(mainActivity: MainActivity, user: User) {
+            Log.d(TAG, "updateNavigationUserDetails")
+            Glide
+                .with(mainActivity)
+                .load(user.image)
+                .centerCrop()
+                .placeholder(R.drawable.ic_user)
+                .into(mainActivity.iv_user_image)
+
+            mainActivity.tv_username.text = user.name
+        }
     }
 }

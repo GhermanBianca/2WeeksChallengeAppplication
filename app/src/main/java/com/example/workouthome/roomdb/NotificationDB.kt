@@ -7,18 +7,18 @@ import androidx.room.RoomDatabase
 import com.example.workouthome.dao.NotificationDAO
 import com.example.workouthome.model.NotificationEntity
 
-@Database (entities = [(NotificationEntity::class)], version = 1, exportSchema = false)
-abstract class NotificationDB : RoomDatabase(){
+@Database(entities = [(NotificationEntity::class)], version = 1, exportSchema = false)
+abstract class NotificationDB : RoomDatabase() {
 
-    abstract fun notificationDAO() : NotificationDAO
+    abstract fun notificationDAO(): NotificationDAO
 
-    companion object{
+    companion object {
         @Volatile
         private var INSTANCE: NotificationDB? = null
 
-        fun getDatabase(context: Context) : NotificationDB {
+        fun getDatabase(context: Context): NotificationDB {
             val tempInstance = INSTANCE
-            if(tempInstance != null) {
+            if (tempInstance != null) {
                 return tempInstance
             }
             synchronized(this) {
@@ -30,7 +30,6 @@ abstract class NotificationDB : RoomDatabase(){
                 INSTANCE = instance
                 return instance
             }
-
         }
     }
 }

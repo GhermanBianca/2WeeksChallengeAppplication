@@ -7,7 +7,7 @@ object SharedPref {
 
     private const val WHICH = "which"
 
-    fun insertIntoSharedPrefs(which: Int, activity: FragmentActivity ){
+    fun insertIntoSharedPrefs(which: Int, activity: FragmentActivity) {
         val sharedPref = activity.getPreferences(Context.MODE_PRIVATE) ?: return
         with(sharedPref.edit()) {
             putInt(WHICH, which)

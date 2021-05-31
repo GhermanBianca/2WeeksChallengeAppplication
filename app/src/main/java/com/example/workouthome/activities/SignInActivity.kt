@@ -17,9 +17,6 @@ import kotlinx.android.synthetic.main.activity_sign_in.*
 
 @Suppress("DEPRECATION")
 class SignInActivity : BaseActivity() {
-    companion object {
-        private const val TAG = "SignInActivity"
-    }
 
     private lateinit var auth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -103,5 +100,9 @@ class SignInActivity : BaseActivity() {
         hideProgressDialog()
         startActivity(Intent(this, MainActivity::class.java))
         finish()
+    }
+
+    companion object {
+        private const val TAG = "SignInActivity"
     }
 }

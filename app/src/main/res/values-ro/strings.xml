@@ -11,6 +11,9 @@
     <string name="hint_name">Nume complet</string>
     <string name="complete_field">Completează câmpurile pentru a personaliza profilul!</string>
 
+    <string name="title_water_reminder">Alertă Hidratare</string>
+
+
     <string name="nav_my_profile">Profilul Meu</string>
     <string name="nav_sign_out">Deconectare</string>
 
@@ -56,7 +59,7 @@
 
     <string name="add_notification">Adăugare</string>
     <string name="delete_notification">Ștergere</string>
-    <string name="add_notification_description">Alarma este activată! Vei primi o notificare la fiecare 15 minute care iți va aduce aminte să bei apă!</string>
+    <string name="add_notification_description">Alarma este activată! Vei primi o notificare la fiecare 15 minute care iți va reaminti să bei apă!</string>
 
     <string name="female">Feminin</string>
     <string name="male">Masculin</string>

@@ -34,12 +34,6 @@ import java.io.IOException
 
 class AboutMeFragment : Fragment(R.layout.fragment_about_me) {
 
-    companion object {
-        private const val READ_STORAGE_PERMISSION_CODE = 1
-        private const val PICK_IMAGE_REQUEST_CODE = 2
-        private const val TAG = "AboutMeFragment"
-    }
-
     private  var _binding: FragmentAboutMeBinding? = null
     private val binding get() = _binding!!
 
@@ -111,6 +105,7 @@ class AboutMeFragment : Fragment(R.layout.fragment_about_me) {
     }
 
     // for request permission
+    @Suppress("DEPRECATION")
     override fun onRequestPermissionsResult(
         requestCode: Int,
         permissions: Array<out String>,
@@ -127,12 +122,14 @@ class AboutMeFragment : Fragment(R.layout.fragment_about_me) {
     }
 
     // start the screen for choose image from gallery
+    @Suppress("DEPRECATION")
     private fun showImageChooser() {
         val galleryIntent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
         startActivityForResult(galleryIntent, PICK_IMAGE_REQUEST_CODE)
     }
 
     // put the selected image from gallery in about me screen
+    @Suppress("DEPRECATION")
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (resultCode == Activity.RESULT_OK && requestCode == PICK_IMAGE_REQUEST_CODE && data!!.data != null) {
@@ -275,5 +272,11 @@ class AboutMeFragment : Fragment(R.layout.fragment_about_me) {
     private fun getFileExtension(uri: Uri?): String? {
         val resolver = requireActivity().contentResolver
         return MimeTypeMap.getSingleton().getExtensionFromMimeType(resolver.getType(uri!!))
+    }
+
+    companion object {
+        private const val READ_STORAGE_PERMISSION_CODE = 1
+        private const val PICK_IMAGE_REQUEST_CODE = 2
+        private const val TAG = "AboutMeFragment"
     }
 }

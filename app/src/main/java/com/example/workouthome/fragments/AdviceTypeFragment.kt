@@ -20,8 +20,7 @@ class AdviceTypeFragment : Fragment(R.layout.fragment_advice_type) {
     private var adviceTypeAdapter: AdviceTypeAdapter? = null
     private var activityType: String? = null
     private var activityImage: Int? = null
-
-    private  var _binding: FragmentAdviceTypeBinding? = null
+    private var _binding: FragmentAdviceTypeBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {

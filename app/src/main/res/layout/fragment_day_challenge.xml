@@ -13,8 +13,8 @@
         android:layout_margin="10dp"
         android:soundEffectsEnabled="true"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="39dp"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="39dp" />
 
     <TextView
         android:id="@+id/exercices_description"
@@ -22,15 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:fontFamily="@font/all"
-        android:text="Pentru încălzire vom realiza mișcări care să cuprindă toate grupele musculare, începând de la gât, până la glezne. Vă rog în timpul acesteia să țineți genunchii flexați. \n
-La majoritatea exercițiilor fesele și abdomenul trebuie ținute încordate
-La semiflotări coatele merg în diagonală, fesele sunt bine încordate iar corpul este paralel cu solul. \n
-Flotările se pot face și din picioare pentru avansați. \n
-La genoflexiuni, picioarele sunt la nivelul umerilor, puțin deschise pe exterior, primele coboară fesele și presiunea nu se lasă pe genunchi. \n
-Inspiram pe nas, respirăm pe gură. \n
-Facem pauze pentru apă 20-30 secunde.\n
-La fandări, când cobori, nu pui toată presiunea pe spate.
-"
+        android:text=""
         app:layout_constraintStart_toStartOf="@id/videoView"
         app:layout_constraintTop_toBottomOf="@id/videoView" />
 

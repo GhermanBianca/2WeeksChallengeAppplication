@@ -33,7 +33,7 @@ open class BaseActivity : AppCompatActivity() {
     // set default language
     override fun attachBaseContext(newBase: Context?) {
 
-        val locale = Locale("ro")
+        val locale = Locale(RO)
         Locale.setDefault(locale)
         val context: Context = ContextWrapper.wrap(newBase, locale)
         super.attachBaseContext(context)
@@ -49,7 +49,7 @@ open class BaseActivity : AppCompatActivity() {
     }
 
     open fun saveCollection() {
-        val settings = applicationContext.getSharedPreferences("restore_values", Context.MODE_PRIVATE)
+        val settings = applicationContext.getSharedPreferences(RESTORE_VALUES, Context.MODE_PRIVATE)
         val e = settings.edit()
         e.clear()
         e.putInt(ON_PAUSE, 0)
@@ -58,5 +58,7 @@ open class BaseActivity : AppCompatActivity() {
 
     companion object {
         private const val ON_PAUSE = "on_pause"
+        private const val RO = "ro"
+        private const val RESTORE_VALUES = "restore_values"
     }
 }

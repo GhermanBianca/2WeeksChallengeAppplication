@@ -16,8 +16,7 @@ class AdviceFragment : Fragment(R.layout.fragment_advice) {
 
     private var adviceItem: ArrayList<AdviceItem>? = null
     private var adviceAdapter: AdviceAdapter? = null
-
-    private  var _binding: FragmentAdviceBinding? = null
+    private var _binding: FragmentAdviceBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(

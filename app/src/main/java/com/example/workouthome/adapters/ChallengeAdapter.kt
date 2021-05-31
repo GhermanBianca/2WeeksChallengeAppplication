@@ -15,6 +15,7 @@ import com.example.workouthome.utils.Constants
 import kotlinx.android.synthetic.main.content_recycler_view_challenge.view.*
 
 class ChallengeAdapter(var activity: FragmentActivity?, var arrayList: ArrayList<DayChallengeItem>) : RecyclerView.Adapter<ChallengeAdapter.ChallengeViewHolder>() {
+
     class ChallengeViewHolder(view: View) : RecyclerView.ViewHolder(view){
         var dayNumber : TextView = view.challenge_number_day_number
         var descriptionChallenge: TextView = view.description_challenge

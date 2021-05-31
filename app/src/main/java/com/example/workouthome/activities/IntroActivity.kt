@@ -11,10 +11,6 @@ import kotlinx.android.synthetic.main.activity_intro.*
 @Suppress("DEPRECATION")
 class IntroActivity : BaseActivity() {
 
-    companion object {
-        private const val TAG = "IntroActivity"
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_intro)
@@ -40,5 +36,9 @@ class IntroActivity : BaseActivity() {
             startActivity(Intent(this, SignInActivity::class.java))
             Log.e(TAG, "You pressed sign in button!")
         }
+    }
+
+    companion object {
+        private const val TAG = "IntroActivity"
     }
 }

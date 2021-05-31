@@ -22,10 +22,6 @@ import com.example.workouthome.reminder.NotificationReciever
 
 class DrinkWaterReminderFragment : Fragment(R.layout.fragment_drink_water_reminder) {
 
-    companion object {
-        private const val TAG = "DrinkWaterReminderFragment"
-    }
-
     private var _binding: FragmentDrinkWaterReminderBinding? = null
     private val binding get() = _binding!!
     private lateinit var mNotificationViewModel: NotificationViewModel
@@ -56,7 +52,11 @@ class DrinkWaterReminderFragment : Fragment(R.layout.fragment_drink_water_remind
 
             Log.d(TAG, "btnStartAlarm Current user : $currentId")
 
-            val notificationEntity = NotificationEntity(currentId, wasActivated, getString(R.string.add_notification_description))
+            val notificationEntity = NotificationEntity(
+                currentId,
+                wasActivated,
+                getString(R.string.add_notification_description)
+            )
 
             insertOrUpdate(notificationEntity)
         }
@@ -67,7 +67,7 @@ class DrinkWaterReminderFragment : Fragment(R.layout.fragment_drink_water_remind
             wasActivated = false
             Log.d(TAG, "btnStopAlarm: $wasActivated ")
 
-            val currentId = FirebaseUtils.getCurrentUserId()
+            @Suppress("NAME_SHADOWING") val currentId = FirebaseUtils.getCurrentUserId()
             Log.d(TAG, "btnStopAlarm Current user : $currentId")
 
 
@@ -79,23 +79,23 @@ class DrinkWaterReminderFragment : Fragment(R.layout.fragment_drink_water_remind
         getDataFromDatabase(currentId)
     }
 
-    private fun insertOrUpdate(currentUser: NotificationEntity ){
+    private fun insertOrUpdate(currentUser: NotificationEntity) {
         mNotificationViewModel.insertOrUpdate(currentUser)
     }
 
     private fun getDataFromDatabase(currentId: String) {
 
-        mNotificationViewModel.getAllData().observe(viewLifecycleOwner, {
+        mNotificationViewModel.getAllData().observe(viewLifecycleOwner, { it ->
             Log.d(TAG, "List from database  -> $it")
 
-            if(it.isEmpty()) {
+            if (it.isEmpty()) {
                 Log.d(TAG, "List is empty")
 
                 return@observe
             }
 
             it.forEach {
-                if(it.userId.equals(currentId)) {
+                if (it.userId == currentId) {
                     val firstItemDescription = it.notificationDescription
                     Log.d(TAG, "firstItemDescription -> $firstItemDescription")
                     val wasActivated = it.wasActivated
@@ -131,5 +131,9 @@ class DrinkWaterReminderFragment : Fragment(R.layout.fragment_drink_water_remind
         alarmManager.cancel(pendingIntent)
         Toast.makeText(context, getString(R.string.toast_stop_notification), Toast.LENGTH_SHORT)
             .show()
+    }
+
+    companion object {
+        private const val TAG = "DrinkWaterReminderFragment"
     }
 }

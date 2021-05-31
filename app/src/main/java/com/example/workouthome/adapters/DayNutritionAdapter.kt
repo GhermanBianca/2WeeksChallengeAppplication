@@ -12,6 +12,7 @@ import com.example.workouthome.model.DayNutritionItem
 import kotlinx.android.synthetic.main.content_recycler_view_day_nutrition.view.*
 
 class DayNutritionAdapter(var activity: FragmentActivity?, var arrayList: ArrayList<DayNutritionItem>) : RecyclerView.Adapter<DayNutritionAdapter.DayNutritionViewHolder>() {
+
     class DayNutritionViewHolder(view: View): RecyclerView.ViewHolder(view) {
         var mealIcon: ImageView = view.meals_image
         var mealName: TextView = view.meals_name

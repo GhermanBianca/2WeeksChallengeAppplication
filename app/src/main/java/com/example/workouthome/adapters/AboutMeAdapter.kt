@@ -17,14 +17,6 @@ import java.util.*
 class AboutMeAdapter(private val dataSet: List<String>, private val activity: Activity) :
     RecyclerView.Adapter<AboutMeAdapter.AboutMeViewHolder>() {
 
-    companion object {
-        const val MAX300 = 300
-        const val MAX9 = 9
-        const val MIN15 = 15
-        const val MIN21 = 21
-        const val MIN0 = 0
-    }
-
     // logic for details profile from about me
     inner class AboutMeViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val aboutMeName: TextView = view.findViewById(R.id.about_me_name)
@@ -217,4 +209,12 @@ class AboutMeAdapter(private val dataSet: List<String>, private val activity: Ac
     }
 
     override fun getItemCount() = dataSet.size
+
+    companion object {
+        const val MAX300 = 300
+        const val MAX9 = 9
+        const val MIN15 = 15
+        const val MIN21 = 21
+        const val MIN0 = 0
+    }
 }

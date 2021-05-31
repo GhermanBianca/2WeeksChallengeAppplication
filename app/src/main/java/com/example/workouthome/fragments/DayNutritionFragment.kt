@@ -19,7 +19,6 @@ class DayNutritionFragment : Fragment(R.layout.fragment_day_nutrition) {
     private var nutritionList: ArrayList<DayNutritionItem> = ArrayList()
     private var dayNutritionAdapter: DayNutritionAdapter? = null
     private var dayNumber: Int = 0
-
     private  var _binding: FragmentDayNutritionBinding? = null
     private val binding get() = _binding!!
 

@@ -4,23 +4,27 @@ import com.example.workouthome.R
 
 class ChallengeViewModel {
     // set path for every video
-    fun setChallengeVideo(dayNumber: Int) : String {
+    fun setChallengeVideo(dayNumber: Int): String {
         var videoPath = ""
         when (dayNumber) {
             1 -> {
-                videoPath = "android.resource://" + "com.example.workouthome" + "/" + R.raw.test_android
+                videoPath =
+                    "android.resource://" + "com.example.workouthome" + "/" + R.raw.test_android
             }
             2 -> {
-                videoPath = "android.resource://" + "com.example.workouthome" + "/" + R.raw.test_android
+                videoPath =
+                    "android.resource://" + "com.example.workouthome" + "/" + R.raw.test_android
             }
             3 -> {
-                videoPath = "android.resource://" + "com.example.workouthome" + "/" + R.raw.test_android
+                videoPath =
+                    "android.resource://" + "com.example.workouthome" + "/" + R.raw.test_android
             }
         }
         return videoPath
     }
 
-    fun setChallengeDescription(dayNumber: Int) : String {
+    // set description for every video
+    fun setChallengeDescription(dayNumber: Int): String {
         var description = ""
         when (dayNumber) {
             1 -> {

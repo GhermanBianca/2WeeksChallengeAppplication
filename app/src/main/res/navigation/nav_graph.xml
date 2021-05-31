@@ -118,7 +118,7 @@
     <fragment
         android:id="@+id/drinkWaterReminder"
         android:name="com.example.workouthome.fragments.DrinkWaterReminderFragment"
-        android:label="Water Reminder"
+        android:label="@string/title_water_reminder"
         tools:layout="@layout/fragment_drink_water_reminder" />
     <activity
         android:id="@+id/splashScreenActivity"

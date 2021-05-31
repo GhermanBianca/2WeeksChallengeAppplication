@@ -21,6 +21,8 @@
     <string name="cm"> cm</string>
     <string name="kg"> kg</string>
 
+    <string name="title_water_reminder">Alertă Hidratare</string>
+
     <string name="height">Înălțime</string>
     <string name="weight">Greutate</string>
     <string name="desired_weight">Greutate dorită</string>
@@ -33,7 +35,7 @@
 
     <string name="add_notification">Adăugare</string>
     <string name="delete_notification">Ștergere</string>
-    <string name="add_notification_description">Alarma este activată! Vei primi o notificare la fiecare 15 minute care iți va aduce aminte să bei apă!</string>
+    <string name="add_notification_description">Alarma este activată! Vei primi o notificare la fiecare 15 minute care iți va reaminti să bei apă!</string>
 
     <string name="drink_water_reminder">Este timpul să te hidratezi!</string>
     <string name="water_benefits">Apa crește arderea caloriilor.</string>

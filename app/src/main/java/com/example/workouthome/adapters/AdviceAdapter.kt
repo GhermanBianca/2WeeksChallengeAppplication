@@ -17,6 +17,7 @@ import kotlinx.android.synthetic.main.content_recycler_view_advice.view.*
 
 class AdviceAdapter(var activity: FragmentActivity?, var arrayList: ArrayList<AdviceItem>) :
     RecyclerView.Adapter<AdviceAdapter.AdviceViewHolder>() {
+
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int

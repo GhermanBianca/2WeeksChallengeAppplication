@@ -43,6 +43,5 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
             val action = ProfileFragmentDirections.actionProfileFragmentToDrinkWaterReminder()
             findNavController().navigate(action)
         }
-
     }
 }

@@ -3,8 +3,8 @@ package com.example.workouthome.model
 import android.os.Parcel
 import android.os.Parcelable
 
-data class User (
-    val id: String  = "",
+data class User(
+    val id: String = "",
     val name: String = "",
     val email: String = "",
     val image: String = "",
@@ -14,7 +14,7 @@ data class User (
     val dateOfBirth: String = "",
     val desiredWeight: String = "",
     val fcmToken: String = ""
-    ) : Parcelable {
+) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString()!!,
         parcel.readString()!!,
@@ -28,7 +28,7 @@ data class User (
         parcel.readString()!!
     )
 
-    override fun writeToParcel(dest: Parcel?, flags: Int) = with(dest){
+    override fun writeToParcel(dest: Parcel?, flags: Int) = with(dest) {
         this!!.writeString(id)
         writeString(name)
         writeString(email)
