@@ -2,12 +2,14 @@ package com.example.workouthome.activities
 
 import android.content.Context
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.example.workouthome.R
 import com.example.workouthome.utils.ContextWrapper
 import com.google.android.material.snackbar.Snackbar
 import java.util.*
+
 
 @Suppress("DEPRECATION")
 open class BaseActivity : AppCompatActivity() {
@@ -35,5 +37,26 @@ open class BaseActivity : AppCompatActivity() {
         Locale.setDefault(locale)
         val context: Context = ContextWrapper.wrap(newBase, locale)
         super.attachBaseContext(context)
+    }
+
+    override fun onPause() {
+
+        Log.d("abab", " onPause Base Activity" )
+
+        saveCollection()
+
+        super.onPause()
+    }
+
+    open fun saveCollection() {
+        val settings = applicationContext.getSharedPreferences("restore_values", Context.MODE_PRIVATE)
+        val e = settings.edit()
+        e.clear()
+        e.putInt(ON_PAUSE, 0)
+        e.apply()
+    }
+
+    companion object {
+        private const val ON_PAUSE = "on_pause"
     }
 }

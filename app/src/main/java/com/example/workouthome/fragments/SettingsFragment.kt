@@ -21,6 +21,7 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
 
     companion object {
         private const val WHICH = "which"
+        private const val ON_PAUSE = "on_pause"
         private const val RO = "ro"
         private const val EN = "en"
         private const val ROMANIAN = "Română"
@@ -36,17 +37,49 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentSettingsBinding.inflate(inflater, container, false)
+        Log.d("abab", "SettingsFragment onCreateView")
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        retrieveFromSharedPrefs()
+        Log.d("abab", "SettingsFragment onViewCreated")
+
+        val result: Int
+
+        val settings = context?.getSharedPreferences("restore_values", Context.MODE_PRIVATE)
+        result = settings?.getInt(ON_PAUSE, -1)!!
+
+        Log.d("abab","on view Created result $result")
+
+        if (result == 0) {
+            val languageCode = Locale.getDefault().displayLanguage
+            setDefaultLanguage(languageCode)
+            _binding?.selectedLanguage?.text = languageCode.capitalize(Locale.ROOT)
+
+            val settings1 = context?.getSharedPreferences("restore_values", Context.MODE_PRIVATE)
+            val e = settings1!!.edit()
+            e.clear()
+            e.putInt(ON_PAUSE, -1)
+            e.apply()
+
+        } else {
+            retrieveFromSharedPrefs()
+        }
 
         _binding?.cardChangeLanguage?.setOnClickListener {
             showChangeLanguage()
         }
+    }
+
+    private fun setDefaultLanguage(languageCode: String) {
+
+        val locale = Locale(languageCode)
+        Locale.setDefault(locale)
+        val config: Configuration? = activity?.resources?.configuration
+        config?.setLocale(locale)
+        resources.updateConfiguration(config, resources.displayMetrics)
     }
 
     private fun retrieveFromSharedPrefs(): Int? {
