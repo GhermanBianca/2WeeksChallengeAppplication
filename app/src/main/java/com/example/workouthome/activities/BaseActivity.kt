@@ -10,7 +10,6 @@ import com.example.workouthome.utils.ContextWrapper
 import com.google.android.material.snackbar.Snackbar
 import java.util.*
 
-
 @Suppress("DEPRECATION")
 open class BaseActivity : AppCompatActivity() {
 
