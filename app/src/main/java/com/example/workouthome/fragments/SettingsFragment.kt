@@ -65,7 +65,6 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
     }
 
     private fun setDefaultLanguage(languageCode: String) {
-
         val locale = Locale(languageCode)
         Locale.setDefault(locale)
         val config: Configuration? = activity?.resources?.configuration
@@ -115,6 +114,7 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
 
     private fun setLocale(activity: FragmentActivity, languageCode: String) {
         val locale = Locale(languageCode)
+        Log.d("abab", "actual language $locale")
         Locale.setDefault(locale)
         val config: Configuration = activity.resources.configuration
         config.setLocale(locale)
