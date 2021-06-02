@@ -35,6 +35,18 @@ class ChallengeViewModel {
                 videoPath =
                     "android.resource://" + "com.example.workouthome" + "/" + R.raw.test_android
             }
+            8 -> {
+                videoPath =
+                    "android.resource://" + "com.example.workouthome" + "/" + R.raw.test_android
+            }
+            9 -> {
+                videoPath =
+                    "android.resource://" + "com.example.workouthome" + "/" + R.raw.test_android
+            }
+            10 -> {
+                videoPath =
+                    "android.resource://" + "com.example.workouthome" + "/" + R.raw.test_android
+            }
         }
         return videoPath
     }
@@ -88,7 +100,7 @@ class ChallengeViewModel {
                         "Yoga poate reduce inflamațiile din corp și poate îmbunătăți sănătatea inimii. \n"
             }
             7 -> {
-                description = ""
+                description = "Relaaaaxxxxx"
             }
 
             8 -> {
