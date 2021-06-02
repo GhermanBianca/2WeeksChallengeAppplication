@@ -1,13 +1,11 @@
 package com.example.workouthome.activities
 
 import android.content.Context
-import android.content.res.Configuration
 import android.content.res.Resources
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import androidx.fragment.app.FragmentActivity
 import com.example.workouthome.R
 import com.example.workouthome.utils.ContextWrapper
 import com.google.android.material.snackbar.Snackbar
@@ -34,18 +32,15 @@ open class BaseActivity : AppCompatActivity() {
 
     // set device language
     override fun attachBaseContext(newBase: Context?) {
-        val locale = Locale(Resources.getSystem().getConfiguration().locale.getLanguage())
+        val locale = Locale(Resources.getSystem().configuration.locale.getLanguage())
         Locale.setDefault(locale)
         val context: Context = ContextWrapper.wrap(newBase, locale)
         super.attachBaseContext(context)
     }
 
     override fun onPause() {
-
         Log.d("abab", " onPause Base Activity" )
-
         saveCollection()
-
         super.onPause()
     }
 
@@ -53,12 +48,12 @@ open class BaseActivity : AppCompatActivity() {
         val settings = applicationContext.getSharedPreferences(RESTORE_VALUES, Context.MODE_PRIVATE)
         val e = settings.edit()
         e.clear()
-        e.putInt(ON_PAUSE, 0)
+        e.putInt(ON_PAUSE_VALUES, 0)
         e.apply()
     }
 
     companion object {
-        private const val ON_PAUSE = "on_pause"
+        private const val ON_PAUSE_VALUES = "on_pause_values"
         private const val RESTORE_VALUES = "restore_values"
     }
 }
