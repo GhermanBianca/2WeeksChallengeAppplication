@@ -27,8 +27,11 @@ class ChallengeViewModel {
                 videoPath =
                     "android.resource://" + "com.example.workouthome" + "/" + R.raw.test_android
             }
-
             6 -> {
+                videoPath =
+                    "android.resource://" + "com.example.workouthome" + "/" + R.raw.test_android
+            }
+            7 -> {
                 videoPath =
                     "android.resource://" + "com.example.workouthome" + "/" + R.raw.test_android
             }
@@ -71,7 +74,7 @@ class ChallengeViewModel {
                         "Ține mereu abdomenul încordat!"
             }
             5 -> {
-                description = "La exercițiul din minutul 03.44 ține vârfurile puțin în diagonală, spatele drept, fesele mult în spate și fă pași laterali cu lovitură. \n " +
+                description = "La exercițiul din minutul 3 ține vârfurile puțin în diagonală, spatele drept, fesele mult în spate și fă pași laterali cu lovitură. \n " +
                         "La exercițiile de fight ține abdomenul încordat și pumnul strâns.\n" +
                         "La fandări, unghiul trebuie să fie de 90 de grade, spatele să nu fie cocoșat, ci în forma lui naturală perpendiculară, iar la ridicare încordează fesele. \n" +
                         "Dacă nu ai benzi de fese poți face fără, dar îți recomand să îți cumperi pentru rezultate garantate. \n" +
@@ -83,8 +86,24 @@ class ChallengeViewModel {
                         "Yoga reduce stresul și anxietatea, implicit efectele fizice ale stresului asupra organismului. \n" +
                         "Yoga îmbunătățește flexibilitatea și echilibrul, dar crește și puterea mușchilor. \n" +
                         "Yoga poate reduce inflamațiile din corp și poate îmbunătăți sănătatea inimii. \n"
+            }
+            7 -> {
+                description = ""
+            }
 
-
+            8 -> {
+                description = ""
+            }
+            9 -> {
+                description = ""
+            }
+            10 -> {
+                description = "La exercițiile pe care le consider cu o dificultate mai ridicată întotdeauna vei avea și o variantă mai ușoară. \n" +
+                        "La exercițiul de la minutul 21 varianta ușoară este din genunchi. \n" +
+                        "La exercițiile pentru fesieri, cele la sol, dacă nu ai benzi poți să pui sticle de apă pe tine. \n" +
+                        "Varianta ușoară la bicicletă este cu atingere jos. \n" +
+                        "La exercițiul din minutul 30 varianta ușoară este cu coborârea picioarelor cu unghi de 45 de grade, iar important este să ai spatele bine lipit de podea. \n" +
+                        "Începând cu minutul 35 vom începe să ne relaxăm, poți închide din lumini dacă dorești. Pune-te într-o poziție comodă, inspiră și expiră de 3 ori, ține palmele relaxate."
             }
         }
         return description
