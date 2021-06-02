@@ -104,11 +104,7 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
             }
 
             // set to 1
-            val settings1 = context?.getSharedPreferences(RESTORE_VALUES, Context.MODE_PRIVATE)
-            val e = settings1!!.edit()
-            e.clear()
-            e.putInt(ON_PAUSE_VALUES, 1)
-            e.apply()
+            saveCollection()
             dialog.dismiss()
         }
         val mDialog = mBuilder.create()
@@ -123,6 +119,14 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
         val config: Configuration = activity.resources.configuration
         config.setLocale(locale)
         resources.updateConfiguration(config, resources.displayMetrics)
+    }
+
+    private fun saveCollection() {
+        val settings1 = context?.getSharedPreferences(RESTORE_VALUES, Context.MODE_PRIVATE)
+        val e = settings1!!.edit()
+        e.clear()
+        e.putInt(ON_PAUSE_VALUES, 1)
+        e.apply()
     }
 
     override fun onDestroy() {
