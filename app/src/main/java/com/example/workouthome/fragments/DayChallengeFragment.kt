@@ -44,7 +44,7 @@ class DayChallengeFragment : Fragment(R.layout.fragment_day_challenge) {
 
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        val challengeViewModel = activity?.let { ChallengeViewModel() }
+        val challengeViewModel = activity?.let { ChallengeViewModel(requireActivity()) }
         super.onViewCreated(view, savedInstanceState)
         val path = challengeViewModel?.setChallengeVideo(dayNumber)
         val description = challengeViewModel?.setChallengeDescription(dayNumber)

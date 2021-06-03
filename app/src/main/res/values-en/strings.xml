@@ -520,5 +520,56 @@
     <string name="drink">Drink</string>
     <string name="which">which</string>
 
+    <string name="description_challenge_day_1">"Hi. My name is Alexy and together we will make some moves! If you are a beginner please work easy! \n"
+                        "Keep your abdomen tense during exercise. \n"
+                        "When half-floating, the elbows go diagonally and the buttocks are tight. If you can, do the leg floats. \n"
+                        "In knee flexion, you need to keep your legs at shoulder level and your toes slightly open to the outside. When you go down, your buttocks are the first to go down, don't let the pressure on your knees. \n"
+                        "Inhale through your nose, exhale through your mouth and take water breaks (20-30 seconds). \n"
+                        "The easiest way to roll exercise is to keep your legs bent. Always keep your back position with your shoulders pulled forward and your abdomen tense inside. \n"
+                        "In push-ups, the step as large as possible and the knee does not exceed the fingertips. \n"
+                        "For floor exercises you will need a mattress or something you feel comfortable with."</string>
+
+
+    <string name="description_challenge_day_3">"Tighten your abdomen well during exercise. \n"
+                         "He clenched his fists and struck hard. \n"
+                         "In the abdomen, be careful with the position of the back, the abdomen must be inserted inside, the lumbar glued to the floor, the neck up, the shoulders raised and the chest in front. \n"
+                         "Don't forget to take breaks to drink water! \n"
+                         "Always keep your abdomen tense!"</string>
+
+    <string name="description_challenge_day_4">"If you are advanced, please do the exercises with weights. \n"
+                         "In knee flexion, the buttocks always go backwards, the toes are perfectly open, the knees are outwards and the spine is straight. \n"
+                         "When floating, the easy option is on your knees. \n"
+                         "Don't forget to take breaks to drink water! \n"
+                         "Always keep your abdomen tense!"</string>
+
+    <string name="description_challenge_day_5">"In the 3rd minute exercise, keep the tips slightly diagonally, the back straight, the buttocks far behind and take side steps with a kick. \n "
+                         "In combat exercises, keep your abdomen tense and your fist clenched. \n"
+                         "When bending, the angle should be 90 degrees, the back should not be hunched, but in its natural shape perpendicular, and when lifting it tightens the buttocks. \n"
+                         "If you don't have butt bands you can do without, but I recommend you buy for guaranteed results. \n"
+                         "Don't forget to take breaks to drink water! \n"
+                         "Always keep your abdomen tense!"</string>
+
+    <string name="description_challenge_day_6">"The term ‘Yoga’ is derived from the Sanskrit root ‘yuj’, which means union - the union between body, mind and spirit or consciousness. It is a way to unite different aspects of what we are. \n"
+                         "Yoga reduces stress and anxiety, implicitly the physical effects of stress on the body. \n"
+                         "Yoga improves flexibility and balance, but also increases muscle strength. \n"
+                         "Yoga can reduce inflammation in the body and improve heart health."</string>
+
+    <string name="description_challenge_day_7">"Today is your day off! \n"
+                         "Eat healthy! \n"
+                         "Hydrate yourself! \n"
+                         "Relax! \n"
+                         "Rest! "</string>
+
+    <string name="description_challenge_day_10">"For the exercises that I consider with a higher difficulty, you will always have an easier option. \n"
+                         "In the 21st minute exercise, the easy option is on your knees. \n"
+                         "In the exercises for the buttocks, the ones on the ground, if you don\'t have strips you can put water bottles on yourself. \n"
+                         "The lightweight bike variant is touch down. \n"
+                         "In the 30 minute exercise, the easy option is to lower your legs at a 45-degree angle, and it's important to have your back firmly attached to the floor. \n"
+                         "Starting with the 35th minute we will start to relax, you can turn off the lights if you want. Put yourself in a comfortable position, inhale and exhale 3 times, keep your palms relaxed."</string>
+
+    <string name="description_challenge_day_11">"During training, tighten your buttocks and focus on the muscles you are working on. \n"
+                         "In the 9.45 minute exercise, take the weight, move the tips away and try not to balance, just tense your buttocks. We do 20 reps, and in the last 10 you stay down with maintenance and make them short. The buttocks go far back, the first one down is the pool. \n"
+                         "At the 24:50 minute, when back bending, the easier option is to do step and lift of the tops instead of jumping. \n"
+                         "At 34:30 he did not flex his back, he remained motionless."</string>
 
 </resources>
