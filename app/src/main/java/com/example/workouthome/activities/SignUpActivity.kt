@@ -3,6 +3,7 @@ package com.example.workouthome.activities
 import android.os.Build
 import android.os.Bundle
 import android.text.TextUtils
+import android.util.Log
 import android.view.WindowInsets
 import android.view.WindowManager
 import android.widget.Toast
@@ -10,9 +11,9 @@ import com.example.workouthome.R
 import com.example.workouthome.firebase.FirestoreClass
 import com.example.workouthome.model.User
 import com.example.workouthome.utils.UiUtils
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.auth.*
 import kotlinx.android.synthetic.main.activity_sign_up.*
+
 
 @Suppress("DEPRECATION")
 class SignUpActivity : BaseActivity() {
@@ -94,12 +95,22 @@ class SignUpActivity : BaseActivity() {
             FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
+
                         val firebaseUser: FirebaseUser = task.result!!.user!!
                         val registeredEmail = firebaseUser.email!!
                         val user = User(firebaseUser.uid, name, registeredEmail)
                         FirestoreClass().registerUser(this, user)
                     } else {
-                        showErrorSnackBar(resources.getString(R.string.failed_sign_up))
+                        UiUtils.hideProgressDialog()
+                        try {
+                            throw task.exception!!
+                        } catch (weakPassword: FirebaseAuthWeakPasswordException) {
+                            showErrorSnackBar(resources.getString(R.string.weak_password))
+                        } catch (malformedEmail: FirebaseAuthInvalidCredentialsException) {
+                            showErrorSnackBar(resources.getString(R.string.malformed_email))
+                        } catch (existEmail: FirebaseAuthUserCollisionException) {
+                            showErrorSnackBar(resources.getString(R.string.exist_email))
+                        }
                     }
                 }
         }

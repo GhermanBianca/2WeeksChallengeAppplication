@@ -9,6 +9,10 @@
     <string name="hint_password">Password</string>
     <string name="hint_name">Full name</string>
     <string name="complete_field">Complete all the fields to customize the profile!</string>
+    <string name="weak_password">Weak password!</string>
+    <string name="malformed_email">Address format is wrong!!</string>
+    <string name="exist_email">A user with this address already exists! </string>
+
 
     <string name="title_water_reminder">Water Reminder</string>
 

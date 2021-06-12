@@ -50,6 +50,9 @@
     <string name="enter_email">Te rog să introduci email-ul</string>
     <string name="enter_password">Te rog să introduci parola</string>
     <string name="please_confirm_password">Te rog să confirmi parola</string>
+    <string name="weak_password">Parolă slabă!</string>
+    <string name="malformed_email">Formatul adresei este greșit!</string>
+    <string name="exist_email">Există deja un utilizator cu această adresă!</string>
 
     <string name="female">Feminin</string>
     <string name="male">Masculin</string>

@@ -10,6 +10,10 @@
     <string name="hint_password">Parolă</string>
     <string name="hint_name">Nume complet</string>
     <string name="complete_field">Completează câmpurile pentru a personaliza profilul!</string>
+    <string name="weak_password">Parolă slabă!</string>
+    <string name="malformed_email">Formatul adresei este greșit!</string>
+    <string name="exist_email">Există deja un utilizator cu această adresă!</string>
+
 
     <string name="title_water_reminder">Alertă Hidratare</string>
 
