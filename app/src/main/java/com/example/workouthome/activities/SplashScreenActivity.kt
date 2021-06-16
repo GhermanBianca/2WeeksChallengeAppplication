@@ -42,7 +42,7 @@ class SplashScreenActivity : AppCompatActivity() {
                 startActivity(Intent(this, IntroActivity::class.java))
             }
             finish()
-        }, 3000) // change with 1 for testing
+        }, 3000)
 
          //This is for always login
 //        Handler().postDelayed({
